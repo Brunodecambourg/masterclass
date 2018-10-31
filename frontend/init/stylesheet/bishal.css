@@ -1,1 +1,9 @@
 /* Bishal */
+
+figure {
+  margin: 0 0 0 !important;
+}
+
+.u-btn-pill {
+  border-radius: 6.1875rem !important;
+}
