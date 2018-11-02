@@ -44,6 +44,8 @@ import "./js/front.min.js"
 import "./js/components/hs.slick-carousel.js"
 import "./vendor/jquery/dist/jquery.min.js"
 import "./vendor/bootstrap/bootstrap.min.js"
+import "./vendor/fancybox/jquery.fancybox.min.js"
+import "./vendor/fancybox/jquery.fancybox.min.css"
 
 
 import "./vendor/appear.js"
@@ -73,6 +75,6 @@ import "./img/logos/logo_cci.png"
 import "./img/logos/logo_pole-emploi.png"
 import "./img/logos/logo_bge.png"
 import "./img/logos/logo_initiative-france.png"
-import " ./img/logos/logo_cma.png"
+import "./img/logos/logo_cma.png"
 
 import "./svg/clients-logo/amazon.svg"
