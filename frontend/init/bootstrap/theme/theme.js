@@ -39,6 +39,12 @@ import "./vendor/jquery-validation/dist/jquery.validate.min.js"
 import "./vendor/slick-carousel/slick/slick.min.js"
 import "./vendor/slick-carousel/slick/slick.css"
 import "./vendor/slick-carousel/slick/slick-theme.css"
+import "./css/front.css"
+import "./js/front.min.js"
+import "./js/components/hs.slick-carousel.js"
+import "./vendor/jquery/dist/jquery.min.js"
+import "./vendor/bootstrap/bootstrap.min.js"
+
 
 import "./vendor/appear.js"
 import "./vendor/jquery.countdown.min.js"
@@ -57,7 +63,7 @@ import "./vendor/jquery.countdown.min.js"
 /* ------------------------------------*\
 #ASSETS
 #* ------------------------------------*/
-import "./svg/logos/logo.svg"
+import "./svg/logos/logo-white.svg"
 import "./img/bg-shapes/bg3.png"
 import "./img/615x750/img3.jpg"
 import "./img/100x100/img1.jpg"
@@ -67,3 +73,6 @@ import "./img/logos/logo_cci.png"
 import "./img/logos/logo_pole-emploi.png"
 import "./img/logos/logo_bge.png"
 import "./img/logos/logo_initiative-france.png"
+import " ./img/logos/logo_cma.png"
+
+import "./svg/clients-logo/amazon.svg"
