@@ -8,6 +8,11 @@ figure {
   border-radius: 6.1875rem !important;
 }
 
+.custom_logo {
+  height: 70px;
+  margin-top: 20px;
+}
+
 .custom_logo-4 {
   width: 4rem;
 }

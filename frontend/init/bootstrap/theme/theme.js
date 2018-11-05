@@ -65,6 +65,8 @@ import "./vendor/jquery.countdown.min.js"
 #ASSETS
 #* ------------------------------------*/
 import "./svg/logos/logo-white.svg"
+import "./svg/logos/logo-projects-locaux.svg"
+import "./svg/logos/logo-projects-locaux-blc.svg"
 import "./img/bg-shapes/bg3.png"
 import "./img/615x750/img3.jpg"
 import "./img/100x100/img1.jpg"
