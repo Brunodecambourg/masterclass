@@ -15,3 +15,7 @@ figure {
 .custom_logo-9 {
   width: 9rem;
 }
+
+.input-group-lg > .form-control {
+  text-align: center;
+}
