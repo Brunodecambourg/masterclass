@@ -82,3 +82,4 @@ import "./img/logos/logo_initiative-france.png"
 import "./img/logos/logo_cma.png"
 
 import "./svg/clients-logo/amazon.svg"
+import "./svg/flat-icons/sitting-woman-flat-concept-illustration.svg"

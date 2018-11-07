@@ -36,7 +36,7 @@ figure {
 }
 
 .padding-top {
-  padding-top: 12rem;
+  padding-top: 15%;
 }
 
 .m-l-10 {
@@ -47,8 +47,8 @@ figure {
   font-size: 1.5rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 565px) {
   .padding-top {
-    padding-top: 6rem;
+    padding-top: 5%;
   }
 }
