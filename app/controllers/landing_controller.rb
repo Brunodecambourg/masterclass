@@ -16,4 +16,7 @@ class LandingController < ApplicationController
 
   def bishal4
   end
+  
+  def bishal5
+  end
 end

@@ -30,11 +30,30 @@
                             <p>Veuillez confirmer votre adresse e-mail afin de créer un tout nouvel espace de travail.</p>
                         </div>
                         <!-- End Title -->
-                    
+                        
                         <!-- Input -->
                         <div class="js-form-message mb-4">
+                            <label class="h6 small d-block text-uppercase">Nom</label>
                             <div class="js-focus-state input-group u-form">
-                                <input type="email" class="form-control u-form__input" name="email" required="" placeholder="nom@example.com" aria-label="jack@walley.com" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                                <input type="text" class="form-control u-form__input" name="nom" required="" placeholder="votre nom" aria-label="jack@walley.com" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                            </div>
+                        </div>
+                        <!-- End Input -->
+
+                        <!-- Input -->
+                        <div class="js-form-message mb-4">
+                            <label class="h6 small d-block text-uppercase">Prénom</label>
+                            <div class="js-focus-state input-group u-form">
+                                <input type="text" class="form-control u-form__input" name="prenom" required="" placeholder="votre prénom" aria-label="jack@walley.com" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                            </div>
+                        </div>
+                        <!-- End Input -->
+
+                        <!-- Input -->
+                        <div class="js-form-message mb-4">
+                            <label class="h6 small d-block text-uppercase">Email</label>
+                            <div class="js-focus-state input-group u-form">
+                                <input type="emaili" class="form-control u-form__input" name="email" required="" placeholder="votre adresse email" aria-label="jack@walley.com" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
                             </div>
                         </div>
                         <!-- End Input -->
@@ -47,13 +66,6 @@
                         </div>
                         <!-- End Button -->
 
-                        <div class="row align-items-lg-center">
-                            <div class="col-lg-12 order-lg-1 mb-7 mb-lg-0">
-                                <!-- SVG Icon -->
-                                <%= image_tag asset_pack_path('init/bootstrap/theme/svg/flat-icons/sitting-woman-flat-concept-illustration.svg'), :alt => "SVG Illustration" %>
-                                <!-- End SVG Icon -->
-                            </div>
-                        </div>
                     </div>
                 </div>
             </form>
