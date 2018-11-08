@@ -9,8 +9,8 @@ figure {
 }
 
 .custom_logo {
-  height: 70px;
-  margin-top: 20px;
+  height: 85px;
+  padding: 1rem;
 }
 
 .custom_logo-4 {
@@ -19,6 +19,10 @@ figure {
 
 .custom_logo-9 {
   width: 9rem;
+}
+
+.modified-container {
+  width: 55% !important;
 }
 
 .input-group-lg > .form-control {
@@ -36,7 +40,7 @@ figure {
 }
 
 .padding-top {
-  padding-top: 15%;
+  padding-top: 10rem;
 }
 
 .m-l-10 {
@@ -47,8 +51,12 @@ figure {
   font-size: 1.5rem;
 }
 
-@media (max-width: 565px) {
-  .padding-top {
-    padding-top: 5%;
+.mb-4 {
+  margin-bottom: 0.5rem !important;
+}
+
+@media (max-width: 768px) {
+  .u-space-3 {
+    padding-top: 3rem;
   }
 }

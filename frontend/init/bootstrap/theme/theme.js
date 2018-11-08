@@ -83,3 +83,4 @@ import "./img/logos/logo_cma.png"
 
 import "./svg/clients-logo/amazon.svg"
 import "./svg/flat-icons/sitting-woman-flat-concept-illustration.svg"
+import "./svg/flat-icons/walking-man-flat-concept-illustration.svg"

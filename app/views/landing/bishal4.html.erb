@@ -1,0 +1,84 @@
+<!-- Header -->
+<header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md u-header--untransitioned" data-header-fix-moment="500" data-header-fix-effect="slide">
+  <div class="u-header__section custom_header">
+    <div id="logoAndNav" class="container">
+      <!-- Nav -->
+      <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
+        <!-- Logo -->
+        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space custom_logo-2" href="/landing/bishal" aria-label="Front">
+          <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/logo-projects-locaux-blc.svg'), :alt => "Logo", :class => " custom_logo" %>
+        </a>
+        <!-- End Logo -->
+      </nav>
+      <!-- End Nav -->
+    </div>
+  </div>
+</header>
+<!-- End Header -->
+
+<main class="content" role="main">
+    <div class="container shadow-sm modified-container">
+        <div class="row no-gutters">
+            <div class="col-md-8 col-lg-7 col-xl-6 offset-md-2 offset-lg-2 offset-xl-3 u-space-3">
+                <!-- Form -->
+                <form class="js-validate mt-5">
+                    <!-- Title -->
+                    <div class="mb-7">
+                        <h3 class="text-primary font-weight-bold">Trouvez un espace de travail</h3>
+                        <p>Veuillez vous connecter pour que nous puissions vous proposer les autres espaces créés autour de vous.</p>
+                    </div>
+                    <!-- End Title -->
+
+                    <!-- Input -->
+                    <div class="js-form-message mb-4">
+                        <div class="js-focus-state input-group u-form">
+                            <input type="text" class="form-control u-form__input" name="username" required="" placeholder="Identifiant" aria-label="nom@example.com" data-msg="Please enter a valid username." data-error-class="u-has-error" data-success-class="u-has-success">
+                        </div>
+                    </div>
+                    <!-- End Input -->
+
+                    <!-- Input -->
+                    <div class="js-form-message mb-4">
+                        
+                        <div class="js-focus-state input-group u-form">
+                            <input type="password" class="form-control u-form__input" name="password" required="" placeholder="Mot de passe" aria-label="********" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
+                        </div>
+
+                    </div>
+                    <!-- End Input -->
+
+                    <div class="row align-items-center mb-5">
+                        <div class="col-12 text-right">
+                            <a class="small u-link-muted" href="recover-account.html">Mot de passe oublié</a>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center mb-5">
+                        <div class="col-12">
+                            <span class="small text-muted">Vous n'avez pas de compte?</span>
+                            <a class="small" href="/landing/bishal3">S'inscrire</a>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="row align-items-center mb-5 text-center">
+                        <div class="col-12 ">
+                            <button type="submit" class="btn btn-block u-btn-primary--air transition-3d-hover">Valider</button>
+                        </div>
+                    </div>
+                    <!-- End Button -->
+                </form>
+                <!-- End Form -->
+
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-lg-1 mb-7 mb-lg-0">
+                        <!-- SVG Icon -->
+                        <%= image_tag asset_pack_path('init/bootstrap/theme/svg/flat-icons/walking-man-flat-concept-illustration.svg'), :alt => "SVG Illustration" %>
+                        <!-- End SVG Icon -->
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+</main>
