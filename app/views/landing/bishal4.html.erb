@@ -17,68 +17,67 @@
 <!-- End Header -->
 
 <main class="content" role="main">
-    <div class="container shadow-sm modified-container">
-        <div class="row no-gutters">
-            <div class="col-md-8 col-lg-7 col-xl-6 offset-md-2 offset-lg-2 offset-xl-3 u-space-3">
-                <!-- Form -->
-                <form class="js-validate mt-5">
+    <!-- Front for -->
+    <div class="container padding-top u-space-3-bottom">
+        <div class="w-md-80 w-lg-50 mx-auto mb-9">
+            <!-- Link -->
+            <div class="media shadow-sm p-4" href="/landing/bishal3"> 
+                <div class="col-12 mb-5">
                     <!-- Title -->
-                    <div class="mb-7">
+                    <div class="mb-4">
                         <h3 class="text-primary font-weight-bold">Trouvez un espace de travail</h3>
                         <p>Veuillez vous connecter pour que nous puissions vous proposer les autres espaces créés autour de vous.</p>
                     </div>
                     <!-- End Title -->
 
-                    <!-- Input -->
-                    <div class="js-form-message mb-4">
-                        <div class="js-focus-state input-group u-form">
-                            <input type="text" class="form-control u-form__input" name="username" required="" placeholder="Identifiant" aria-label="nom@example.com" data-msg="Please enter a valid username." data-error-class="u-has-error" data-success-class="u-has-success">
+                    <!-- Form -->
+                    <form class="js-validate mt-5">
+                        <!-- Input -->
+                        <div class="js-form-message mb-4">
+                            <div class="js-focus-state input-group u-form">
+                                <input type="text" class="form-control u-form__input" name="username" required="" placeholder="Identifiant" aria-label="nom@example.com" data-msg="Please enter a valid username." data-error-class="u-has-error" data-success-class="u-has-success">
+                            </div>
                         </div>
-                    </div>
-                    <!-- End Input -->
+                        <!-- End Input -->
 
-                    <!-- Input -->
-                    <div class="js-form-message mb-4">
-                        
-                        <div class="js-focus-state input-group u-form">
-                            <input type="password" class="form-control u-form__input" name="password" required="" placeholder="Mot de passe" aria-label="********" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
+                        <!-- Input -->
+                        <div class="js-form-message mb-4">
+                            <div class="js-focus-state input-group u-form">
+                                <input type="password" class="form-control u-form__input" name="password" required="" placeholder="Mot de passe" aria-label="********" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
+                            </div>
                         </div>
+                        <!-- End Input -->
 
-                    </div>
-                    <!-- End Input -->
-
-                    <div class="row align-items-center mb-5">
                         <div class="col-12 text-right">
                             <a class="small u-link-muted" href="recover-account.html">Mot de passe oublié</a>
                         </div>
-                    </div>
 
-                    <div class="row align-items-center mb-5">
-                        <div class="col-12">
+                        <div class="col-12 mb-4">
                             <span class="small text-muted">Vous n'avez pas de compte?</span>
                             <a class="small" href="/landing/bishal3">S'inscrire</a>
                         </div>
-                    </div>
 
-                    <!-- Button -->
-                    <div class="row align-items-center mb-5 text-center">
-                        <div class="col-12 ">
-                            <button type="submit" class="btn btn-block u-btn-primary--air transition-3d-hover">Valider</button>
+                        <!-- Button -->
+                        <div class="row align-items-center mb-5 text-center">
+                            <div class="col-12 ">
+                                <button type="submit" class="btn btn-block u-btn-primary--air transition-3d-hover">Valider</button>
+                            </div>
+                        </div>
+                        <!-- End Button -->
+                    </form>
+
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-12 order-lg-1 mb-7 mb-lg-0">
+                            <!-- SVG Icon -->
+                            <%= image_tag asset_pack_path('init/bootstrap/theme/svg/flat-icons/walking-man-flat-concept-illustration.svg'), :alt => "SVG Illustration" %>
+                            <!-- End SVG Icon -->
                         </div>
                     </div>
-                    <!-- End Button -->
-                </form>
-                <!-- End Form -->
-
-                <div class="row align-items-lg-center">
-                    <div class="col-lg-12 order-lg-1 mb-7 mb-lg-0">
-                        <!-- SVG Icon -->
-                        <%= image_tag asset_pack_path('init/bootstrap/theme/svg/flat-icons/walking-man-flat-concept-illustration.svg'), :alt => "SVG Illustration" %>
-                        <!-- End SVG Icon -->
-                    </div>
+                    
                 </div>
-
             </div>
+            <!-- End Link -->
         </div> 
     </div>
+    <!-- End Front for -->
 </main>

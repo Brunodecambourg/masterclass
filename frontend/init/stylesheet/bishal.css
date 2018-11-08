@@ -51,9 +51,6 @@ figure {
   font-size: 1.5rem;
 }
 
-.mb-4 {
-  margin-bottom: 0.5rem !important;
-}
 
 @media (max-width: 768px) {
   .u-space-3 {
