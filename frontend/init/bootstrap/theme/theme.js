@@ -45,6 +45,9 @@ import "./js/components/hs.slick-carousel.js"
 import "./vendor/jquery/dist/jquery.min.js"
 import "./vendor/bootstrap/bootstrap.min.js"
 
+import "./vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css"
+import "./vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"
+
 
 
 import "./vendor/appear.js"

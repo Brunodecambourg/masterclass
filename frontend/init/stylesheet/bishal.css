@@ -51,6 +51,23 @@ figure {
   font-size: 1.5rem;
 }
 
+.inline {
+  display: inline;
+  text-align: justify;
+}
+
+.input-height {
+  height: calc(2.25rem + 2px) !important;
+  padding: 0.5rem;
+}
+
+.input-group-text-modified {
+  padding: 0.5rem 1rem;
+}
+
+.resize-none {
+  resize: none;
+}
 
 @media (max-width: 768px) {
   .u-space-3 {
