@@ -4,7 +4,14 @@ import "./theme.css";
 /* ------------------------------------*\
 #VENDORS
 #* ------------------------------------*/
+
+//import "./vendor/jquery/dist/jquery.js"
+import "./vendor/bootstrap/bootstrap.min.js"
+
 import "./vendor/bootstrap/css/bootstrap.css"
+
+//import "~/bootstrap-tagsinput/dist/bootstrap-tagsinput.min"
+//import "~/bootstrap-tagsinput/src/bootstrap-tagsinput.css"
 import "./vendor/animate.css/animate.min.css"
 
 import "./vendor/font-awesome/css/fontawesome-all.min.css"
@@ -12,6 +19,10 @@ import "./vendor/bootstrap-select/dist/css/bootstrap-select.min.css"
 import "./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"
 //import "./vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css"
 //import "./vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"
+//import "./vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.js"
+
+
+import "./vendor/jquery-validation/dist/jquery.validate.min.js"
 
 import "./vendor/circles/circles.min.js"
 import "./vendor/clipboard/dist/clipboard.min.js"
@@ -34,7 +45,6 @@ import "./vendor/hs-bg-video/hs-bg-video.css"
 import "./vendor/hs-megamenu/src/hs.megamenu.js"
 import "./vendor/hs-megamenu/src/hs.megamenu.css"
 
-import "./vendor/jquery-validation/dist/jquery.validate.min.js"
 
 import "./vendor/slick-carousel/slick/slick.min.js"
 import "./vendor/slick-carousel/slick/slick.css"
@@ -42,12 +52,9 @@ import "./vendor/slick-carousel/slick/slick-theme.css"
 import "./css/front.css"
 import "./js/front.min.js"
 import "./js/components/hs.slick-carousel.js"
-import "./vendor/jquery/dist/jquery.min.js"
-import "./vendor/bootstrap/bootstrap.min.js"
 
-import "./vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css"
-import "./vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"
 
+//import "./vendor/jquery-migrate/dist/jquery-migrate.min.js"
 
 
 import "./vendor/appear.js"
@@ -87,3 +94,4 @@ import "./img/logos/logo_cma.png"
 import "./svg/clients-logo/amazon.svg"
 import "./svg/flat-icons/sitting-woman-flat-concept-illustration.svg"
 import "./svg/flat-icons/walking-man-flat-concept-illustration.svg"
+import "./svg/flat-icons/analysis-flat-concept-illustration.svg"

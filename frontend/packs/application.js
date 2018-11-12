@@ -10,6 +10,13 @@
 import Turbolinks from "turbolinks";
 import Rails from "rails-ujs";
 
+//import "jquery/dist/jquery.min";
+
+import { $, jQuery } from "jquery";
+// export for others scripts to use
+window.$ = $;
+window.jQuery = jQuery;
+
 import "init";
 import "init/bootstrap/bootstrap";
 import "init/stylesheet/stylesheet";
