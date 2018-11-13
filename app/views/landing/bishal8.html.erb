@@ -124,19 +124,25 @@
                                         <li class="selected active">
                                             <a role="option" class="dropdown-item selected active" aria-disabled="false" tabindex="0" aria-selected="true">
                                                 <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">Completed tasks</span>
+                                                <span class="text">Créateur</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
                                                 <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">Incomplete tasks</span>
+                                                <span class="text">Repreneur</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
                                                 <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">All tasks</span>
+                                                <span class="text">Cédant</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
+                                                <span class=" bs-ok-default check-mark"></span>
+                                                <span class="text">Recherche local</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -167,25 +173,6 @@
                         <!-- Transaction Table -->
                         <div class="table-responsive-md u-datatable">
                             <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer">
-                                <div class="dataTables_length" id="DataTables_Table_0_length">
-                                    <label>
-                                        Show 
-                                        <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="">
-                                            <option value="10">10</option>
-                                            <option value="25">25</option>
-                                            <option value="50">50</option>
-                                            <option value="100">100</option>
-                                        </select> 
-                                        entries
-                                    </label>
-                                </div>
-                                
-                                <div id="DataTables_Table_0_filter" class="dataTables_filter">
-                                    <label>
-                                        Search:
-                                        <input type="search" class="" placeholder="" aria-controls="DataTables_Table_0">
-                                    </label>
-                                </div>
                                 
                                 <table class="js-datatable table table-borderless u-datatable__striped u-datatable__content dataTable no-footer" data-dt-info="#datatableInfo" data-dt-search="#datatableSearch" data-dt-entries="#datatableEntries" data-dt-page-length="12" data-dt-is-responsive="false" data-dt-is-show-paging="true" data-dt-pagination="datatablePagination" data-dt-pagination-classes="pagination mb-0" data-dt-pagination-items-classes="page-item" data-dt-pagination-links-classes="page-link" data-dt-pagination-next-classes="page-item" data-dt-pagination-next-link-classes="page-link" data-dt-pagination-next-link-markup="<span aria-hidden=&quot;true&quot;>»</span>" data-dt-pagination-prev-classes="page-item" data-dt-pagination-prev-link-classes="page-link" data-dt-pagination-prev-link-markup="<span aria-hidden=&quot;true&quot;>«</span>" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
                                     <thead>
@@ -222,7 +209,7 @@
                                             
                                             <th scope="col" class="font-weight-medium sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Due data : activate to sort column ascending" style="width: 173px;">
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    Horizon du projet <small> (N, N+1, N+2 ”+”) </small>
+                                                    Horizon du projet
                                                     <div class="ml-2">
                                                         <span class="fa fa-angle-up u-datatable__thead-icon"></span>
                                                         <span class="fa fa-angle-down u-datatable__thead-icon"></span>
@@ -237,6 +224,11 @@
                                                         <span class="fa fa-angle-up u-datatable__thead-icon"></span>
                                                         <span class="fa fa-angle-down u-datatable__thead-icon"></span>
                                                     </div>
+                                                </div>
+                                            </th>
+
+                                            <th scope="col" class="font-weight-medium sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 181px;">
+                                                <div class="d-flex justify-content-between align-items-center">
                                                 </div>
                                             </th>
                                         </tr>
@@ -256,8 +248,12 @@
                                                 <span class="fa fa-circle text-primary small mr-1"></span>
                                                 03 sept. 2018 (CCI Aisne)
                                             </td>
+                                            <td>
+                                                <a href="bishal9">Details</a>
+                                            </td>
                                         </tr>
 
+                                        
                                         <tr role="row" class="odd">
                                             <td class="align-middle font-weight-normal sorting_1">Paul Langevin</td>
                                             <td class="align-middle">Coiffure</td>
@@ -270,8 +266,12 @@
                                                 <span class="fa fa-circle text-primary small mr-1"></span>
                                                 03 sept. 2018
                                             </td>
+                                            <td>
+                                                <a href="#">Details</a>
+                                            </td>
                                         </tr>
 
+                                        
                                         <tr role="row" class="odd">
                                             <td class="align-middle font-weight-normal sorting_1">Julien Thomas</td>
                                             <td class="align-middle">Cafe</td>
@@ -284,7 +284,12 @@
                                                 <span class="fa fa-circle text-success small mr-1"></span>
                                                 03 sept. 2018
                                             </td>
+                                            <td>
+                                                <a href="#">Details</a>
+                                            </td>
                                         </tr>
+
+                                        
 
                                         <tr role="row" class="odd">
                                             <td class="align-middle font-weight-normal sorting_1">William Lorraine</td>
@@ -298,7 +303,12 @@
                                                 <span class="fa fa-circle text-warning small mr-1"></span>
                                                 03 sept. 2018
                                             </td>
+                                            <td>
+                                                <a href="#">Details</a>
+                                            </td>
                                         </tr>
+
+                                       
                                     </tbody>
                                 </table>
                                 
