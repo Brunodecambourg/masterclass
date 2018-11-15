@@ -58,16 +58,12 @@
         </div>
     </div>
 
-    
-
-
-    <!-- Dummy -->
+    <!-- Table -->
     <div class="u-bg-light-blue-50">
       <div class="container u-space-2">
         <div class="bg-white p-4">
           <!-- Activity Menu -->
-          <div class="row justify-content-sm-between align-items-sm-center">
-            
+          <div class="row justify-content-sm-between align-items-sm-center">           
             <div class="col-md-6">
               <div class="d-flex">
                 <div class="dropdown bootstrap-select js-select u-select mr-2 fit-width">
@@ -175,9 +171,7 @@
             <div class="col-md-5 col-lg-4 mb-2 mb-md-0">
               <a class="btn btn-sm btn-primary" href="#addTaskModal" data-modal-target="#addTaskModal" data-overlay-color="#111722">Imprimer</a>
               <a class="btn btn-sm btn-secondary" href="#addTaskModal" data-modal-target="#addTaskModal" data-overlay-color="#111722">Envoyer par mail</a>
-            </div>
-
-            
+            </div>       
           </div>
           <!-- End Activity Menu -->
 
@@ -185,167 +179,168 @@
 
           <!-- Activity Table -->
           <div class="table-responsive-md u-datatable">
-            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="DataTables_Table_0"></label></div><table class="js-datatable table table-borderless u-datatable__striped u-datatable__content u-datatable__trigger mb-5 dataTable no-footer" data-dt-info="#datatableInfo" data-dt-search="#datatableSearch" data-dt-entries="#datatableEntries" data-dt-page-length="12" data-dt-is-responsive="false" data-dt-is-show-paging="true" data-dt-details-invoker=".js-datatabale-details" data-dt-select-all-control="#invoiceToggleAllCheckbox" data-dt-pagination="datatablePagination" data-dt-pagination-classes="pagination mb-0" data-dt-pagination-items-classes="page-item" data-dt-pagination-links-classes="page-link" data-dt-pagination-next-classes="page-item" data-dt-pagination-next-link-classes="page-link" data-dt-pagination-next-link-markup="<span aria-hidden=&quot;true&quot;>»</span>" data-dt-pagination-prev-classes="page-item" data-dt-pagination-prev-link-classes="page-link" data-dt-pagination-prev-link-markup="<span aria-hidden=&quot;true&quot;>«</span>" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-              <thead>
-                <tr class="text-uppercase font-size-10 text-center" role="row">
-                  <th scope="col" class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Checkbox : activate to sort column descending" aria-sort="ascending" style="width: 67px;">
-                    <div class="custom-control custom-checkbox d-flex align-items-center">
-                      <input type="checkbox" class="custom-control-input" id="invoiceToggleAllCheckbox">
-                      <label class="custom-control-label" for="invoiceToggleAllCheckbox">
-                        <span class="text-hide">Checkbox</span>
-                      </label>
-                    </div>
-                  </th>
-                  
-                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Order : activate to sort column ascending" style="width: 157px;">
-                    <div class="d-flex justify-content-between align-items-center">
-                      Nom
-                      <div class="ml-2">
-                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                      </div>
-                    </div>
-                  </th>
-                  
-                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Client : activate to sort column ascending" style="width: 240px;">
-                    <div class="d-flex justify-content-between align-items-center">
-                      SECTEUR D’ACTIVITÉ
-                      <div class="ml-2">
-                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                      </div>
-                    </div>
-                  </th>
-                  
-                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Amount : activate to sort column ascending" style="width: 171px;">
-                    <div class="d-flex justify-content-between align-items-center">
-                      CRÉATEUR/ CÉDANT
-                      <div class="ml-2">
-                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                      </div>
-                    </div>
-                  </th>
-                  
-                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date : activate to sort column ascending" style="width: 126px;">
-                    <div class="d-flex justify-content-between align-items-center">
-                      HORIZON DU PROJET
-                      <div class="ml-2">
-                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                      </div>
-                    </div>
-                  </th>
-                  
-                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 157px;">
-                    <div class="d-flex justify-content-between align-items-center">
-                      DATE DE MISE À JOUR
-                      <div class="ml-2">
-                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                      </div>
-                    </div>
-                  </th>
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer">   
+                <table class="js-datatable table table-borderless u-datatable__striped u-datatable__content u-datatable__trigger mb-5 dataTable no-footer" data-dt-info="#datatableInfo" data-dt-search="#datatableSearch" data-dt-entries="#datatableEntries" data-dt-page-length="12" data-dt-is-responsive="false" data-dt-is-show-paging="true" data-dt-details-invoker=".js-datatabale-details" data-dt-select-all-control="#invoiceToggleAllCheckbox" data-dt-pagination="datatablePagination" data-dt-pagination-classes="pagination mb-0" data-dt-pagination-items-classes="page-item" data-dt-pagination-links-classes="page-link" data-dt-pagination-next-classes="page-item" data-dt-pagination-next-link-classes="page-link" data-dt-pagination-next-link-markup="<span aria-hidden=&quot;true&quot;>»</span>" data-dt-pagination-prev-classes="page-item" data-dt-pagination-prev-link-classes="page-link" data-dt-pagination-prev-link-markup="<span aria-hidden=&quot;true&quot;>«</span>" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                    <thead>
+                        <tr class="text-uppercase font-size-10 text-center" role="row">
+                        <th scope="col" class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Checkbox : activate to sort column descending" aria-sort="ascending" style="width: 67px;">
+                            <div class="custom-control custom-checkbox d-flex align-items-center">
+                            <input type="checkbox" class="custom-control-input" id="invoiceToggleAllCheckbox">
+                            <label class="custom-control-label" for="invoiceToggleAllCheckbox">
+                                <span class="text-hide">Checkbox</span>
+                            </label>
+                            </div>
+                        </th>
+                        
+                        <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Order : activate to sort column ascending" style="width: 157px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                            Nom
+                            <div class="ml-2">
+                                <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                                <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                            </div>
+                            </div>
+                        </th>
+                        
+                        <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Client : activate to sort column ascending" style="width: 240px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                            SECTEUR D’ACTIVITÉ
+                            <div class="ml-2">
+                                <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                                <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                            </div>
+                            </div>
+                        </th>
+                        
+                        <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Amount : activate to sort column ascending" style="width: 171px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                            CRÉATEUR/ CÉDANT
+                            <div class="ml-2">
+                                <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                                <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                            </div>
+                            </div>
+                        </th>
+                        
+                        <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date : activate to sort column ascending" style="width: 126px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                            HORIZON DU PROJET
+                            <div class="ml-2">
+                                <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                                <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                            </div>
+                            </div>
+                        </th>
+                        
+                        <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 157px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                            DATE DE MISE À JOUR
+                            <div class="ml-2">
+                                <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                                <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                            </div>
+                            </div>
+                        </th>
 
-                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 181px;">
-                    <div class="d-flex justify-content-between align-items-center"></div>
-                  </th>
-                
-                </tr>
-              </thead>
-              <tbody class="font-size-14">
-                <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
-                  <td class="align-middle sorting_1">
-                    <div class="custom-control custom-checkbox d-flex align-items-center">
-                      <input type="checkbox" class="custom-control-input" id="invoiceCheckbox01">
-                      <label class="custom-control-label" for="invoiceCheckbox01">
-                        <span class="text-hide">Checkbox</span>
-                      </label>
-                    </div>
-                  </td>
-                  
-                  <td class="align-middle text-secondary font-weight-normal">Paul Langevin</td>
-                  <td class="align-middle">
-                    <div class="media align-items-center">
-                      <span class="u-icon u-icon-success--air rounded-circle mr-2">
-                        <span class="u-icon__inner font-weight-medium">C</span>
-                      </span>
-                      <span>Coiffure</span>
-                    </div>
-                  </td>
+                        <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 181px;">
+                            <div class="d-flex justify-content-between align-items-center"></div>
+                        </th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody class="font-size-14">
+                        <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
+                            <td class="align-middle sorting_1">
+                                <div class="custom-control custom-checkbox d-flex align-items-center">
+                                <input type="checkbox" class="custom-control-input" id="invoiceCheckbox01">
+                                <label class="custom-control-label" for="invoiceCheckbox01">
+                                    <span class="text-hide">Checkbox</span>
+                                </label>
+                                </div>
+                            </td>
+                            
+                            <td class="align-middle text-secondary font-weight-normal">Paul Langevin</td>
+                            <td class="align-middle">
+                                <div class="media align-items-center">
+                                <span class="u-icon u-icon-success--air rounded-circle mr-2">
+                                    <span class="u-icon__inner font-weight-medium">C</span>
+                                </span>
+                                <span>Coiffure</span>
+                                </div>
+                            </td>
 
-                  <td class="align-middle text-warning">
-                    <span class="fa fa-arrow-up mr-1"></span>
-                    Créateur
-                  </td>
+                            <td class="align-middle text-warning">
+                                <span class="fa fa-arrow-up mr-1"></span>
+                                Créateur
+                            </td>
 
-                  <td class="align-middle text-primary">2018</td>
-                  <td class="align-middle text-primary">03 Sept. 2018</td>
-                  <td class="align-middle text-primary">Details</td>
-                </tr>
+                            <td class="align-middle text-primary">2018</td>
+                            <td class="align-middle text-primary">03 Sept. 2018</td>
+                            <td class="align-middle text-primary">Details</td>
+                        </tr>
 
-                <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
-                  <td class="align-middle sorting_1">
-                    <div class="custom-control custom-checkbox d-flex align-items-center">
-                      <input type="checkbox" class="custom-control-input" id="invoiceCheckbox02">
-                      <label class="custom-control-label" for="invoiceCheckbox01">
-                        <span class="text-hide">Checkbox</span>
-                      </label>
-                    </div>
-                  </td>
-                  
-                  <td class="align-middle text-secondary font-weight-normal">Julien Thomas</td>
-                  <td class="align-middle">
-                    <div class="media align-items-center">
-                      <span class="u-icon u-icon-danger--air rounded-circle mr-2">
-                        <span class="u-icon__inner font-weight-medium">C</span>
-                      </span>
-                      <span>Cafe</span>
-                    </div>
-                  </td>
+                        <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
+                            <td class="align-middle sorting_1">
+                                <div class="custom-control custom-checkbox d-flex align-items-center">
+                                <input type="checkbox" class="custom-control-input" id="invoiceCheckbox02">
+                                <label class="custom-control-label" for="invoiceCheckbox01">
+                                    <span class="text-hide">Checkbox</span>
+                                </label>
+                                </div>
+                            </td>
+                        
+                            <td class="align-middle text-secondary font-weight-normal">Julien Thomas</td>
+                            <td class="align-middle">
+                                <div class="media align-items-center">
+                                <span class="u-icon u-icon-danger--air rounded-circle mr-2">
+                                    <span class="u-icon__inner font-weight-medium">C</span>
+                                </span>
+                                <span>Cafe</span>
+                                </div>
+                            </td>
 
-                  <td class="align-middle text-danger">
-                    <span class="fa fa-arrow-down mr-1"></span>
-                     Cédant
-                  </td>
+                            <td class="align-middle text-danger">
+                                <span class="fa fa-arrow-down mr-1"></span>
+                                Cédant
+                            </td>
 
-                  <td class="align-middle text-primary">2019</td>
-                  <td class="align-middle text-primary">03 Mar. 2019</td>
-                  <td class="align-middle text-primary">Details</td>
-                </tr>
+                            <td class="align-middle text-primary">2019</td>
+                            <td class="align-middle text-primary">03 Mar. 2019</td>
+                            <td class="align-middle text-primary">Details</td>
+                        </tr>
 
-                <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
-                  <td class="align-middle sorting_1">
-                    <div class="custom-control custom-checkbox d-flex align-items-center">
-                      <input type="checkbox" class="custom-control-input" id="invoiceCheckbox03">
-                      <label class="custom-control-label" for="invoiceCheckbox01">
-                        <span class="text-hide">Checkbox</span>
-                      </label>
-                    </div>
-                  </td>
-                  
-                  <td class="align-middle text-secondary font-weight-normal ">William Lorraine</td>
-                  <td class="align-middle">
-                    <div class="media align-items-center">
-                      <span class="u-icon u-icon-success--air rounded-circle mr-2">
-                        <span class="u-icon__inner font-weight-medium">F</span>
-                      </span>
-                      <span>Formage</span>
-                    </div>
-                  </td>
+                        <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
+                            <td class="align-middle sorting_1">
+                                <div class="custom-control custom-checkbox d-flex align-items-center">
+                                <input type="checkbox" class="custom-control-input" id="invoiceCheckbox03">
+                                <label class="custom-control-label" for="invoiceCheckbox01">
+                                    <span class="text-hide">Checkbox</span>
+                                </label>
+                                </div>
+                            </td>
+                        
+                            <td class="align-middle text-secondary font-weight-normal ">William Lorraine</td>
+                            <td class="align-middle">
+                                <div class="media align-items-center">
+                                <span class="u-icon u-icon-success--air rounded-circle mr-2">
+                                    <span class="u-icon__inner font-weight-medium">F</span>
+                                </span>
+                                <span>Formage</span>
+                                </div>
+                            </td>
 
-                  <td class="align-middle text-warning">
-                    <span class="fa fa-arrow-down mr-1"></span>
-                    Créateur
-                  </td>
+                            <td class="align-middle text-warning">
+                                <span class="fa fa-arrow-down mr-1"></span>
+                                Créateur
+                            </td>
 
-                  <td class="align-middle text-primary">2017</td>
-                  <td class="align-middle text-primary">15 Aug. 2017</td>
-                  <td class="align-middle text-primary">Details</td>
-                </tr>
-                
-                </tbody>
-            </table><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 6 of 24 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">Previous</a><span><a class="paginate_button current" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="DataTables_Table_0" data-dt-idx="5" tabindex="0" id="DataTables_Table_0_next">Next</a></div></div>
+                            <td class="align-middle text-primary">2017</td>
+                            <td class="align-middle text-primary">15 Aug. 2017</td>
+                            <td class="align-middle text-primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>   
+            </div>
           </div>
           <!-- End Activity Table -->
 
@@ -378,5 +373,5 @@
         </div>
       </div>
     </div>
-    <!-- End Dummy -->
+    <!-- End Table -->
 </main>
