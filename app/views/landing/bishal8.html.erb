@@ -1,15 +1,28 @@
 <header id="header" class="u-header">
     <div class="u-header__section custom_header">
-       <div id="logoAndNav" class="container">
-            <!-- Nav -->
+        <div id="logoAndNav" class="container">
             <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
                 <!-- Logo -->
-                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="../home/index.html" aria-label="Front">
+                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Front">
                     <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/logo-projects-locaux-blc.svg'), :alt => "Logo", :class => " custom_logo" %>
                 </a>
                 <!-- End Logo -->
+                
+                <!-- Navigation -->
+                <div id="navBar" class="collapse navbar-collapse py-0">
+                    <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
+                        <!-- Button -->
+                        <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
+                            <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
+                                Mon compte
+                            </a>
+                        </li>
+                        <!-- End Button -->
+                    </ul>
+                </div>
+                <!-- End Navigation -->
             </nav>
-            <!-- End Nav -->
+            
         </div>
     </div>
 </header>
@@ -18,18 +31,6 @@
     <div class="bg-primary">
         <div class="container u-space-1-top pb-3">
             <div class="row">
-                <div class="col-lg-5 order-lg-2 text-lg-right mb-4 mb-lg-0">
-                    <div class="d-flex d-lg-inline-block justify-content-between justify-content-lg-end align-items-center align-items-lg-start">
-                        <!-- Breadcrumb -->
-                        <ol class="breadcrumb breadcrumb-white breadcrumb-no-gutter mb-0">
-                            <li class="breadcrumb-item">
-                                <a class="breadcrumb-item active" href="#">Mon compte</a>
-                            </li>
-                        </ol>
-                        <!-- End Breadcrumb -->
-
-                    </div>
-                </div>
                 <div class="col-lg-7 order-lg-1">
                     <!-- User Info -->
                     <div class="media d-block d-sm-flex align-items-sm-center">
@@ -57,294 +58,325 @@
         </div>
     </div>
 
+    
+
+
+    <!-- Dummy -->
     <div class="u-bg-light-blue-50">
-        <div class="container u-space-2">
-            <div class="bg-white p-4">
-                <!-- Nav -->
-                <div class="row justify-content-between align-items-center mb-4">
-                    <div class="col-md-5 order-md-2 text-md-right mb-3 mb-md-0">
-                        <!-- Select -->
-                        <div class="dropdown bootstrap-select js-select u-select mr-2 fit-width">
-                            <select class="js-select u-select mr-2" data-width="fit" data-style="u-btn-primary--air btn-sm" tabindex="-98">
-                                <option value="taskSelect1" title="View" selected="">Completed tasks</option>
-                                <option value="taskSelect2">Incomplete tasks</option>
-                                <option value="taskSelect3">All tasks</option>
-                            </select>
-                            <button type="button" class="btn dropdown-toggle u-btn-primary--air btn-sm" data-toggle="dropdown" role="button" title="View" aria-expanded="false">
-                                <div class="filter-option">
-                                    <div class="filter-option-inner">
-                                        <div class="filter-option-inner-inner">Afficher</div>
-                                    </div> 
-                                </div>
-                            </button>
-                            <div class="dropdown-menu" role="combobox" x-placement="bottom-start" style="max-height: 347px; overflow: hidden; min-height: 0px; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 43px, 0px);">
-                                <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1" style="max-height: 315px; overflow-y: auto; min-height: 0px;">
-                                    <ul class="dropdown-menu inner show">
-                                        <li class="selected active">
-                                            <a role="option" class="dropdown-item selected active" aria-disabled="false" tabindex="0" aria-selected="true">
-                                                <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">Completed tasks</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
-                                                <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">Incomplete tasks</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
-                                                <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">All tasks</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Select -->
+      <div class="container u-space-2">
+        <div class="bg-white p-4">
+          <!-- Activity Menu -->
+          <div class="row justify-content-sm-between align-items-sm-center">
+            
+            <div class="col-md-6">
+              <div class="d-flex">
+                <div class="dropdown bootstrap-select js-select u-select mr-2 fit-width">
+                  <select class="js-select u-select mr-2" data-width="fit" data-style="u-btn-primary--air btn-sm" tabindex="-98">
+                    <option value="taskSelect1" title="View" selected="">Completed tasks</option>
+                    <option value="taskSelect2">Incomplete tasks</option>
+                    <option value="taskSelect3">All tasks</option>
+                  </select>
+                  <button type="button" class="btn dropdown-toggle u-btn-primary--air btn-sm" data-toggle="dropdown" role="button" title="View" aria-expanded="false">
+                  <div class="filter-option">
+                    <div class="filter-option-inner">
+                      <div class="filter-option-inner-inner">Afficher</div>
+                    </div> 
+                  </div>
+                  </button>
+                  <div class="dropdown-menu" role="combobox" x-placement="bottom-start" style="max-height: 347px; overflow: hidden; min-height: 0px; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 43px, 0px);">
+                    <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1" style="max-height: 315px; overflow-y: auto; min-height: 0px;">
+                      <ul class="dropdown-menu inner show">
+                        <li class="selected active">
+                          <a role="option" class="dropdown-item selected active" aria-disabled="false" tabindex="0" aria-selected="true">
+                            <span class=" bs-ok-default check-mark"></span>
+                            <span class="text">Ma Liste</span>
+                          </a>
+                        </li>
+                        
+                        <li>
+                          <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
+                            <span class=" bs-ok-default check-mark"></span>
+                            <span class="text">Toutes Le Liste</span>
+                          </a>
+                        </li>
+                        
+                        <li>
+                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
+                                <span class=" bs-ok-default check-mark"></span>
+                                <span class="text">List 1</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
+                                <span class=" bs-ok-default check-mark"></span>
+                                <span class="text">List 2</span>
+                            </a>
+                        </li>
 
-                        <!-- Select -->
-                        <div class="dropdown bootstrap-select js-select u-select mr-2 fit-width">
-                            <select class="js-select u-select mr-2" data-width="fit" data-style="u-btn-primary--air btn-sm" tabindex="-98">
-                                <option value="taskSelect1" title="View" selected="">Completed tasks</option>
-                                <option value="taskSelect2">Incomplete tasks</option>
-                                <option value="taskSelect3">All tasks</option>
-                            </select>
-                            <button type="button" class="btn dropdown-toggle u-btn-primary--air btn-sm" data-toggle="dropdown" role="button" title="View" aria-expanded="false">
-                                <div class="filter-option">
-                                    <div class="filter-option-inner">
-                                        <div class="filter-option-inner-inner">Filtres</div>
-                                    </div> 
-                                </div>
-                            </button>
-                            <div class="dropdown-menu" role="combobox" x-placement="bottom-start" style="max-height: 347px; overflow: hidden; min-height: 0px; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 43px, 0px);">
-                                <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1" style="max-height: 315px; overflow-y: auto; min-height: 0px;">
-                                    <ul class="dropdown-menu inner show">
-                                        <li class="selected active">
-                                            <a role="option" class="dropdown-item selected active" aria-disabled="false" tabindex="0" aria-selected="true">
-                                                <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">Créateur</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
-                                                <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">Repreneur</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
-                                                <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">Cédant</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
-                                                <span class=" bs-ok-default check-mark"></span>
-                                                <span class="text">Recherche local</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Select -->
+                        <li>
+                            <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
+                                <span class=" bs-ok-default check-mark"></span>
+                                <span class="text">List 3</span>
+                            </a>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="col-md-7 order-md-1">
-                        <!-- Nav Pills -->
-                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="pills-one-tab" data-toggle="pill" href="#pills-one" role="tab" aria-controls="pills-one" aria-selected="true">Imprimer</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-two-tab" data-toggle="pill" href="#pills-two" role="tab" aria-controls="pills-two" aria-selected="false">Envoyer par mail</a>
-                            </li>
-                        </ul>
-                        <!-- End Nav Pills -->
-                    </div>
+                  </div>
                 </div>
-                <!-- End Nav -->
 
-                
-                <div class="tab-content" id="pills-tabContent">
-                    <!-- Content One -->
-                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab">
-                        <!-- Transaction Table -->
-                        <div class="table-responsive-md u-datatable">
-                            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer">
-                                
-                                <table class="js-datatable table table-borderless u-datatable__striped u-datatable__content dataTable no-footer" data-dt-info="#datatableInfo" data-dt-search="#datatableSearch" data-dt-entries="#datatableEntries" data-dt-page-length="12" data-dt-is-responsive="false" data-dt-is-show-paging="true" data-dt-pagination="datatablePagination" data-dt-pagination-classes="pagination mb-0" data-dt-pagination-items-classes="page-item" data-dt-pagination-links-classes="page-link" data-dt-pagination-next-classes="page-item" data-dt-pagination-next-link-classes="page-link" data-dt-pagination-next-link-markup="<span aria-hidden=&quot;true&quot;>»</span>" data-dt-pagination-prev-classes="page-item" data-dt-pagination-prev-link-classes="page-link" data-dt-pagination-prev-link-markup="<span aria-hidden=&quot;true&quot;>«</span>" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                                    <thead>
-                                        <tr class="text-uppercase font-size-14" role="row">
-                                            <th scope="col" class="font-weight-medium sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Task : activate to sort column descending" style="width: 252px;">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    Nom
-                                                    <div class="ml-2">
-                                                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                                                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </th>
-
-                                            <th scope="col" class="font-weight-medium sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Project : activate to sort column ascending" style="width: 168px;">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    Secteur d’activité
-                                                    <div class="ml-2">
-                                                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                                                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </th>
-
-                                            <th scope="col" class="font-weight-medium sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Priority : activate to sort column ascending" style="width: 168px;">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    Créateur/ Cédant
-                                                    <div class="ml-2">
-                                                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                                                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </th>
-                                            
-                                            <th scope="col" class="font-weight-medium sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Due data : activate to sort column ascending" style="width: 173px;">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    Horizon du projet
-                                                    <div class="ml-2">
-                                                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                                                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </th>
-
-                                            <th scope="col" class="font-weight-medium sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 181px;">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    Date de mise à jour
-                                                    <div class="ml-2">
-                                                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
-                                                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </th>
-
-                                            <th scope="col" class="font-weight-medium sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 181px;">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    
-                                    <tbody class="font-size-14">
-                                        
-                                        <tr role="row" class="odd">
-                                            <td class="align-middle font-weight-normal sorting_1">Paul L.</td>
-                                            <td class="align-middle">Coiffure</td>
-                                            <td class="align-middle text-danger">
-                                                <span class="fa fa-arrow-up mr-1"></span>
-                                                Créateur
-                                            </td>
-                                            <td class="align-middle">2018/ 2019/ 2020+</td>
-                                            <td class="align-middle">
-                                                <span class="fa fa-circle text-primary small mr-1"></span>
-                                                03 sept. 2018 (CCI Aisne)
-                                            </td>
-                                            <td>
-                                                <a href="bishal9">Details</a>
-                                            </td>
-                                        </tr>
-
-                                        
-                                        <tr role="row" class="odd">
-                                            <td class="align-middle font-weight-normal sorting_1">Paul Langevin</td>
-                                            <td class="align-middle">Coiffure</td>
-                                            <td class="align-middle text-danger">
-                                                <span class="fa fa-arrow-down mr-1"></span>
-                                                Cédant
-                                            </td>
-                                            <td class="align-middle">2020+</td>
-                                            <td class="align-middle">
-                                                <span class="fa fa-circle text-primary small mr-1"></span>
-                                                03 sept. 2018
-                                            </td>
-                                            <td>
-                                                <a href="#">Details</a>
-                                            </td>
-                                        </tr>
-
-                                        
-                                        <tr role="row" class="odd">
-                                            <td class="align-middle font-weight-normal sorting_1">Julien Thomas</td>
-                                            <td class="align-middle">Cafe</td>
-                                            <td class="align-middle text-warning">
-                                                <span class="fa fa-arrow-up mr-1"></span>
-                                                Créateur
-                                            </td>
-                                            <td class="align-middle">2020+</td>
-                                            <td class="align-middle">
-                                                <span class="fa fa-circle text-success small mr-1"></span>
-                                                03 sept. 2018
-                                            </td>
-                                            <td>
-                                                <a href="#">Details</a>
-                                            </td>
-                                        </tr>
-
-                                        
-
-                                        <tr role="row" class="odd">
-                                            <td class="align-middle font-weight-normal sorting_1">William Lorraine</td>
-                                            <td class="align-middle">Formage</td>
-                                            <td class="align-middle text-warning">
-                                                <span class="fa fa-arrow-up mr-1"></span>
-                                                Créateur
-                                            </td>
-                                            <td class="align-middle">2018</td>
-                                            <td class="align-middle">
-                                                <span class="fa fa-circle text-warning small mr-1"></span>
-                                                03 sept. 2018
-                                            </td>
-                                            <td>
-                                                <a href="#">Details</a>
-                                            </td>
-                                        </tr>
-
-                                       
-                                    </tbody>
-                                </table>
-                                
-                                <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
-                                    Showing 1 to 8 of 8 entries
-                                </div>
-                                
-                                <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
-                                    <a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">
-                                        Previous
-                                    </a>
-                                    <span>
-                                        <a class="paginate_button current" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a>
-                                    </span>
-                                    <a class="paginate_button next disabled" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" id="DataTables_Table_0_next">
-                                        Next
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Transaction Table -->
+                <div class="dropdown bootstrap-select js-select u-select mr-2 fit-width">
+                  <select class="js-select u-select mr-2" data-width="fit" data-style="u-btn-primary--air btn-sm" tabindex="-98">
+                    <option value="taskSelect1" title="View" selected="">Completed tasks</option>
+                    <option value="taskSelect2">Incomplete tasks</option>
+                    <option value="taskSelect3">All tasks</option>
+                  </select>
+                  <button type="button" class="btn dropdown-toggle u-btn-primary--air btn-sm" data-toggle="dropdown" role="button" title="View" aria-expanded="false">
+                    <div class="filter-option">
+                      <div class="filter-option-inner">
+                        <div class="filter-option-inner-inner">Filtres</div>
+                      </div> 
                     </div>
-                    <!-- End Content One -->
-
-                    <!-- Content Two -->
-                    <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
-                        <div class="text-center py-4">
-                            <div class="w-md-80 w-lg-50 text-center mx-auto">
-                                <img class="w-50 mb-7" src="../../assets/svg/flat-icons/events-flat-concept-illustration.svg" alt="SVG Illustration">
-                                <h4 class="h5 font-weight-normal">All due dates to tasks &amp; other notes in this project will appear here.</h4>
-                            </div>
-                        </div>
+                  </button>
+                  <div class="dropdown-menu" role="combobox" x-placement="bottom-start" style="max-height: 347px; overflow: hidden; min-height: 0px; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 43px, 0px);">
+                    <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1" style="max-height: 315px; overflow-y: auto; min-height: 0px;">
+                      <ul class="dropdown-menu inner show">
+                        <li class="selected active">
+                          <a role="option" class="dropdown-item selected active" aria-disabled="false" tabindex="0" aria-selected="true">
+                            <span class=" bs-ok-default check-mark"></span>
+                            <span class="text">Créateur</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
+                            <span class=" bs-ok-default check-mark"></span>
+                            <span class="text">Repreneur</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
+                            <span class=" bs-ok-default check-mark"></span>
+                            <span class="text">Cédant</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a role="option" class="dropdown-item" aria-disabled="false" tabindex="0" aria-selected="false">
+                            <span class=" bs-ok-default check-mark"></span>
+                            <span class="text">Recherche local</span>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                    <!-- End Content Two -->
+                  </div>
                 </div>
+              </div>
             </div>
+
+            <div class="col-md-5 col-lg-4 mb-2 mb-md-0">
+              <a class="btn btn-sm btn-primary" href="#addTaskModal" data-modal-target="#addTaskModal" data-overlay-color="#111722">Imprimer</a>
+              <a class="btn btn-sm btn-secondary" href="#addTaskModal" data-modal-target="#addTaskModal" data-overlay-color="#111722">Envoyer par mail</a>
+            </div>
+
+            
+          </div>
+          <!-- End Activity Menu -->
+
+          <hr class="my-5">
+
+          <!-- Activity Table -->
+          <div class="table-responsive-md u-datatable">
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="DataTables_Table_0"></label></div><table class="js-datatable table table-borderless u-datatable__striped u-datatable__content u-datatable__trigger mb-5 dataTable no-footer" data-dt-info="#datatableInfo" data-dt-search="#datatableSearch" data-dt-entries="#datatableEntries" data-dt-page-length="12" data-dt-is-responsive="false" data-dt-is-show-paging="true" data-dt-details-invoker=".js-datatabale-details" data-dt-select-all-control="#invoiceToggleAllCheckbox" data-dt-pagination="datatablePagination" data-dt-pagination-classes="pagination mb-0" data-dt-pagination-items-classes="page-item" data-dt-pagination-links-classes="page-link" data-dt-pagination-next-classes="page-item" data-dt-pagination-next-link-classes="page-link" data-dt-pagination-next-link-markup="<span aria-hidden=&quot;true&quot;>»</span>" data-dt-pagination-prev-classes="page-item" data-dt-pagination-prev-link-classes="page-link" data-dt-pagination-prev-link-markup="<span aria-hidden=&quot;true&quot;>«</span>" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+              <thead>
+                <tr class="text-uppercase font-size-10 text-center" role="row">
+                  <th scope="col" class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Checkbox : activate to sort column descending" aria-sort="ascending" style="width: 67px;">
+                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                      <input type="checkbox" class="custom-control-input" id="invoiceToggleAllCheckbox">
+                      <label class="custom-control-label" for="invoiceToggleAllCheckbox">
+                        <span class="text-hide">Checkbox</span>
+                      </label>
+                    </div>
+                  </th>
+                  
+                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Order : activate to sort column ascending" style="width: 157px;">
+                    <div class="d-flex justify-content-between align-items-center">
+                      Nom
+                      <div class="ml-2">
+                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                      </div>
+                    </div>
+                  </th>
+                  
+                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Client : activate to sort column ascending" style="width: 240px;">
+                    <div class="d-flex justify-content-between align-items-center">
+                      SECTEUR D’ACTIVITÉ
+                      <div class="ml-2">
+                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                      </div>
+                    </div>
+                  </th>
+                  
+                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Amount : activate to sort column ascending" style="width: 171px;">
+                    <div class="d-flex justify-content-between align-items-center">
+                      CRÉATEUR/ CÉDANT
+                      <div class="ml-2">
+                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                      </div>
+                    </div>
+                  </th>
+                  
+                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date : activate to sort column ascending" style="width: 126px;">
+                    <div class="d-flex justify-content-between align-items-center">
+                      HORIZON DU PROJET
+                      <div class="ml-2">
+                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                      </div>
+                    </div>
+                  </th>
+                  
+                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 157px;">
+                    <div class="d-flex justify-content-between align-items-center">
+                      DATE DE MISE À JOUR
+                      <div class="ml-2">
+                        <span class="fa fa-angle-up u-datatable__thead-icon"></span>
+                        <span class="fa fa-angle-down u-datatable__thead-icon"></span>
+                      </div>
+                    </div>
+                  </th>
+
+                  <th scope="col" class="font-weight-bold sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status : activate to sort column ascending" style="width: 181px;">
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </th>
+                
+                </tr>
+              </thead>
+              <tbody class="font-size-14">
+                <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
+                  <td class="align-middle sorting_1">
+                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                      <input type="checkbox" class="custom-control-input" id="invoiceCheckbox01">
+                      <label class="custom-control-label" for="invoiceCheckbox01">
+                        <span class="text-hide">Checkbox</span>
+                      </label>
+                    </div>
+                  </td>
+                  
+                  <td class="align-middle text-secondary font-weight-normal">Paul Langevin</td>
+                  <td class="align-middle">
+                    <div class="media align-items-center">
+                      <span class="u-icon u-icon-success--air rounded-circle mr-2">
+                        <span class="u-icon__inner font-weight-medium">C</span>
+                      </span>
+                      <span>Coiffure</span>
+                    </div>
+                  </td>
+
+                  <td class="align-middle text-warning">
+                    <span class="fa fa-arrow-up mr-1"></span>
+                    Créateur
+                  </td>
+
+                  <td class="align-middle text-primary">2018</td>
+                  <td class="align-middle text-primary">03 Sept. 2018</td>
+                  <td class="align-middle text-primary">Details</td>
+                </tr>
+
+                <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
+                  <td class="align-middle sorting_1">
+                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                      <input type="checkbox" class="custom-control-input" id="invoiceCheckbox02">
+                      <label class="custom-control-label" for="invoiceCheckbox01">
+                        <span class="text-hide">Checkbox</span>
+                      </label>
+                    </div>
+                  </td>
+                  
+                  <td class="align-middle text-secondary font-weight-normal">Julien Thomas</td>
+                  <td class="align-middle">
+                    <div class="media align-items-center">
+                      <span class="u-icon u-icon-danger--air rounded-circle mr-2">
+                        <span class="u-icon__inner font-weight-medium">C</span>
+                      </span>
+                      <span>Cafe</span>
+                    </div>
+                  </td>
+
+                  <td class="align-middle text-danger">
+                    <span class="fa fa-arrow-down mr-1"></span>
+                     Cédant
+                  </td>
+
+                  <td class="align-middle text-primary">2019</td>
+                  <td class="align-middle text-primary">03 Mar. 2019</td>
+                  <td class="align-middle text-primary">Details</td>
+                </tr>
+
+                <tr class="js-datatabale-details odd font-size-13" data-details="" role="row">
+                  <td class="align-middle sorting_1">
+                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                      <input type="checkbox" class="custom-control-input" id="invoiceCheckbox03">
+                      <label class="custom-control-label" for="invoiceCheckbox01">
+                        <span class="text-hide">Checkbox</span>
+                      </label>
+                    </div>
+                  </td>
+                  
+                  <td class="align-middle text-secondary font-weight-normal ">William Lorraine</td>
+                  <td class="align-middle">
+                    <div class="media align-items-center">
+                      <span class="u-icon u-icon-success--air rounded-circle mr-2">
+                        <span class="u-icon__inner font-weight-medium">F</span>
+                      </span>
+                      <span>Formage</span>
+                    </div>
+                  </td>
+
+                  <td class="align-middle text-warning">
+                    <span class="fa fa-arrow-down mr-1"></span>
+                    Créateur
+                  </td>
+
+                  <td class="align-middle text-primary">2017</td>
+                  <td class="align-middle text-primary">15 Aug. 2017</td>
+                  <td class="align-middle text-primary">Details</td>
+                </tr>
+                
+                </tbody>
+            </table><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 6 of 24 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">Previous</a><span><a class="paginate_button current" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="DataTables_Table_0" data-dt-idx="5" tabindex="0" id="DataTables_Table_0_next">Next</a></div></div>
+          </div>
+          <!-- End Activity Table -->
+
+          <!-- Pagination -->
+          <div class="d-flex justify-content-between align-items-center">
+            <nav id="datatablePagination" aria-label="Activity pagination">
+              <ul class="pagination mb-0">				
+                <li class="page-item">				  
+                  <a id="datatablePaginationPrev" class="page-link" href="javascript:;" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                  </a>				
+                </li>
+                <li class="page-item active">
+                  <a id="datatablePaginationPage0" class="page-link" href="javascript:;" data-dt-page-to="0">1</a>
+                </li>
+                <li class="page-item">
+                  <a id="datatablePagination1" class="page-link" href="javascript:;" data-dt-page-to="1">2</a>
+                </li>
+                <li class="page-item">				  
+                  <a id="datatablePaginationNext" class="page-link" href="javascript:;" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                  </a>				
+                </li>				
+              </ul>
+            </nav>
+
+            <small id="datatableInfo" class="text-secondary">Showing 1 to 3 of 3 Entries</small>
+          </div>
+          <!-- End Pagination -->
         </div>
+      </div>
     </div>
+    <!-- End Dummy -->
 </main>

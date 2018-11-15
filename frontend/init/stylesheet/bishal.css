@@ -69,6 +69,10 @@ figure {
   resize: none;
 }
 
+.font-size-10 {
+  font-size: 0.7rem;
+}
+
 @media (max-width: 768px) {
   .u-space-3 {
     padding-top: 3rem;
