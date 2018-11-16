@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'landing/bishal7'
   get 'landing/bishal8'
   get 'landing/bishal9'
+  get 'landing/bishal10'
 
   root to: 'landing#show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
