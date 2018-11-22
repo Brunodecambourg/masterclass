@@ -78,3 +78,27 @@ figure {
     padding-top: 3rem;
   }
 }
+
+
+/* ============================================== */
+
+#video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 90%;
+  width: auto; 
+  height: 97%;
+  z-index: -100;
+  top: 0;
+}
+
+.bg-soft{
+  background: #e6e9ec !important;
+}
+
+
+
+  
+    

@@ -91,8 +91,20 @@ import "./img/logos/logo_pole-emploi.png"
 import "./img/logos/logo_bge.png"
 import "./img/logos/logo_initiative-france.png"
 import "./img/logos/logo_cma.png"
+import "./img/1920x1080/img20.jpg"
+import "./svg/logos/open.svg"
+import "./img/logos/open.png"
+
+
 
 import "./svg/clients-logo/amazon.svg"
 import "./svg/flat-icons/sitting-woman-flat-concept-illustration.svg"
 import "./svg/flat-icons/walking-man-flat-concept-illustration.svg"
 import "./svg/flat-icons/analysis-flat-concept-illustration.svg"
+import "./svg/flat-icons/in-the-office-flat-concept-illustration.svg"
+
+
+import "./img/320x320/img1.jpg"
+import "./img/450x450/img1.jpg"
+import "./img/280x310/img1.jpg"
+import "./img/300x180/img1.jpg"
