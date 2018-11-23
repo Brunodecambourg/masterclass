@@ -1,75 +1,338 @@
-<!-- Header -->
-<header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md u-header--untransitioned" data-header-fix-moment="500" data-header-fix-effect="slide">
-  <div class="u-header__section custom_header">
+<header id="header" class="u-header">
+  <div class="u-header__section">
     <div id="logoAndNav" class="container">
       <!-- Nav -->
       <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
         <!-- Logo -->
-        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space custom_logo-2" href="/landing/bishal" aria-label="Front">
-          <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/logo-projects-locaux-blc.svg'), :alt => "Logo", :class => " custom_logo" %>
+        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="../../html/home/index.html" aria-label="Front">
+          <%= image_tag asset_pack_path('init/bootstrap/theme/img/logos/open.png'), :alt => "Logo", :class => "custom_logo" %>
         </a>
         <!-- End Logo -->
+        
+        <!-- Responsive Toggle Button -->
+        <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+          <span id="hamburgerTrigger" class="u-hamburger__box">
+            <span class="u-hamburger__inner"></span>
+          </span>
+        </button>
+        <!-- End Responsive Toggle Button -->
+
+        <!-- Navigation -->
+        <div id="navBar" class="collapse navbar-collapse py-0">
+          <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
+            <!-- Home -->
+            <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+              <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                Autour de moi
+                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
+              </a> 
+            </li>
+            <!-- End Home -->
+
+            <!-- Pages -->
+            <li class="nav-item hs-has-sub-menu u-header__nav-item hs-sub-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+              <a id="pagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">
+                Nouvelle recherche
+                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
+              </a>
+            </li>
+            <!-- End Pages -->
+
+            <!-- Button -->
+            <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
+              <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover" href="#" target="_blank">
+                Je suis une enseigne
+              </a>
+            </li>
+            <!-- End Button -->
+          </ul>
+        </div>
+        <!-- End Navigation -->
       </nav>
       <!-- End Nav -->
     </div>
   </div>
 </header>
-<!-- End Header -->
 
-<!-- Main -->
-<main id="content" role="main">
-  <!-- Front for -->
-  <div class="container mt-9 pt-9 u-space-3-bottom">
-    <div class="w-md-80 w-lg-50 mx-auto mb-9">
-      <!-- Title -->
-      <div class="mb-3">
-        <h3 class="text-primary text-center font-weight-bold">Vos premiers pas sur Projets-Locaux.fr</h3>
-      </div>
+<div class="container u-space-3">
+  <div class="u-cubeportfolio">
+    <!-- Filter -->
+    <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
+      <li class="list-inline-item cbp-filter-item u-cubeportfolio__item cbp-filter-item-active" data-filter="*">Tous les secteurs</li>
+      <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".branding">Alimentaire</li>
+      <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".abstract">Beauté</li>
+      <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".graphic">Restauration</li>
+      <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".illustration">Prêt-à-porter</li>
+      <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".abstract">Maison</li>
+      <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".graphic">Services</li>
+    </ul>
+    <!-- End Filter -->
 
-      <!-- Link -->
-      <a class="media align-items-center shadow-sm p-4" href="/landing/bishal3">
-        <div class="d-flex pr-4">
-          <span class="u-icon u-icon-primary--air u-icon--lg rounded-circle">
-            <span class="fa fa-plus u-icon__inner"></span>
-          </span>
+    <!-- Content -->
+    <div class="cbp cbp-caption-active cbp-caption-overlayBottomAlong cbp-ready" data-layout="grid" data-controls="#filterControls" data-animation="quicksand" data-x-gap="32" data-y-gap="32" data-media-queries="[
+      {&quot;width&quot;: 1500, &quot;cols&quot;: 4}, {&quot;width&quot;: 1100, &quot;cols&quot;: 4},
+      {&quot;width&quot;: 800, &quot;cols&quot;: 3}, {&quot;width&quot;: 480, &quot;cols&quot;: 2},
+      {&quot;width&quot;: 300, &quot;cols&quot;: 1}]" style="height: 1364px;"><div class="cbp-wrapper-outer">
+    
+      <div class="cbp-wrapper">
+        <!-- Item -->
+        <div class="cbp-item graphic" style="width: 253px; left: 0px; top: 0px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img1.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
+        <!-- End Item -->
 
-        <span class="media-body">
-          <h3 class="h5">Créer un espace de travail </h3>
-          <p class="mb-1 text-justify" style="font-size:0.8rem">Commencer dès à présent à enregistrer vos porteurs de projets locaux</p>  
-        </span>
-
-        <span class="fa fa-angle-right m-l-10"></span> 
-      </a>
-      <!-- End Link -->
-
-      <!-- Divider -->
-      <div class="my-2">
-      </div>
-      <!-- End Divider -->
-
-      <!-- Link -->
-      <a class="media align-items-center shadow-sm p-4" href="/landing/bishal4">
-        <div class="d-flex pr-4">
-          <span class="u-icon u-icon-primary--air u-icon--lg rounded-circle">
-            <span class="fa fa-search u-icon__inner"></span>
-          </span>
+        <!-- Item -->
+        <div class="cbp-item branding" style="width: 253px; left: 285px; top: 0px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img2.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
+          <!-- End Item -->
 
-        <span class="media-body">
-          <h3 class="h5">Inviter vos partenaires à créer leur espace </h3>
-          <p class="mb-1 text-justify" style="font-size:0.8rem">Inviter vos partenaires à créer leur espace de travail afin de partager avec vous les profils de porteurs de projets locaux qu’ils ont enregistré</p>  
-        </span>
+        <!-- Item -->
+        <div class="cbp-item abstract illustration" style="width: 253px; left: 570px; top: 0px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img3.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
 
-        <span class="fa fa-angle-right m-l-10"></span> 
-      </a>
-      <!-- End Link -->
+        <!-- Item -->
+        <div class="cbp-item abstract illustration" style="width: 253px; left: 855px; top: 0px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="../portfolio/single-page-simple.html">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img4.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
 
+        <!-- Item -->
+        <div class="cbp-item graphic illustration" style="width: 253px; left: 0px; top: 349px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img5.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
 
+        <!-- Item -->
+        <div class="cbp-item graphic illustration" style="width: 253px; left: 285px; top: 349px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img6.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item branding" style="width: 253px; left: 570px; top: 349px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img7.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item abstract illustration" style="width: 253px; left: 855px; top: 349px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img8.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item graphic" style="width: 253px; left: 0px; top: 698px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img9.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item branding" style="width: 253px; left: 285px; top: 698px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img10.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item branding" style="width: 253px; left: 570px; top: 698px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img11.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item graphic" style="width: 253px; left: 855px; top: 698px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img12.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item abstract" style="width: 253px; left: 0px; top: 1047px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img13.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Remind Me More</h4>
+                <p class="small mb-0">
+                  by Tiberiu Neamu
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item branding" style="width: 253px; left: 285px; top: 1047px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img14.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item branding" style="width: 253px; left: 570px; top: 1047px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img15.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item graphic" style="width: 253px; left: 855px; top: 1047px;">
+          <div class="cbp-item-wrapper">
+            <a class="cbp-caption" href="#">
+              <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img16.jpg'), :alt => "image", :class => "rounded" %>
+              <div class="py-3">
+                <h4 class="h6 text-dark mb-0">Enseigne</h4>
+                <p class="small mb-0">
+                  Secteur
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+      </div>
     </div>
-    <!-- End Title -->
-  
+    <!-- End Content -->
   </div>
-  <!-- End Front for -->
-</main>
-<!-- End Main -->
+</div>
