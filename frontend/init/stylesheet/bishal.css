@@ -98,7 +98,37 @@ figure {
   background: #e6e9ec !important;
 }
 
+.font-weight-semi-bold{
+  font-weight: 600 !important;
+}
 
+.list-group {
+  list-style: none;
+}
+
+.list-group-borderless .list-group-item {
+  border: none;
+}
+
+.list-group-flush .list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.list-group .list-group-item {
+  font-size: 0.875rem;
+}
+
+.content-centered-y {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.z-index-n1 {
+  z-index: -1;
+}
 
   
     
