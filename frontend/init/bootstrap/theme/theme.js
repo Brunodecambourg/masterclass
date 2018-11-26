@@ -54,7 +54,7 @@ import "./js/front.min.js"
 import "./js/components/hs.slick-carousel.js"
 
 
-//import "./vendor/jquery-migrate/dist/jquery-migrate.min.js"
+import "./vendor/jquery-migrate/dist/jquery-migrate.min.js"
 
 
 import "./vendor/appear.js"
