@@ -1,3 +1,59 @@
+<header id="header" class="u-header mb-7">
+  <div class="u-header__section">
+    <div id="logoAndNav" class="container">
+      <!-- Nav -->
+      <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
+        <!-- Logo -->
+        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Front">
+          <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/oppn-blue.svg'), :alt => "Logo", :class => "custom_logo" %>
+        </a>
+        <!-- End Logo -->
+        
+        <!-- Responsive Toggle Button -->
+        <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+          <span id="hamburgerTrigger" class="u-hamburger__box">
+            <span class="u-hamburger__inner"></span>
+          </span>
+        </button>
+        <!-- End Responsive Toggle Button -->
+
+        <!-- Navigation -->
+        <div id="navBar" class="collapse navbar-collapse py-0">
+          <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
+            <!-- Home -->
+            <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+              <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                Autour de moi
+                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
+              </a> 
+            </li>
+            <!-- End Home -->
+
+            <!-- Pages -->
+            <li class="nav-item hs-has-sub-menu u-header__nav-item hs-sub-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+              <a id="pagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">
+                Nouvelle recherche
+                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
+              </a>
+            </li>
+            <!-- End Pages -->
+
+            <!-- Button -->
+            <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
+              <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover" href="#" target="_blank">
+                Je suis une enseigne
+              </a>
+            </li>
+            <!-- End Button -->
+          </ul>
+        </div>
+        <!-- End Navigation -->
+      </nav>
+      <!-- End Nav -->
+    </div>
+  </div>
+</header>
+
 <div class="bg-light">
     <div class="container space-2">
         <div class="row justify-content-between align-items-center mb-4">
@@ -42,41 +98,12 @@
                     <div class="card-body p-4">
                         <!-- List of Icons -->
                         <div class="row justify-content-between align-items-center mb-4">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <a class="small text-secondary" href="#">
                                     <span class="fas fa-bookmark text-primary mr-1"></span>
                                     OPN-52
                                 </a>
-                            </div>
-                            
-                            <div class="col-6 text-right">
-                                <!-- Settings -->
-                                <div class="position-relative">
-                                    <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                        <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                    </a>
-
-                                    <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms;">
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cogs dropdown-item-icon"></small>
-                                            Settings
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                            Repository
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                            Download
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-archive dropdown-item-icon"></small>
-                                            Archive
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- End Settings -->
-                            </div>
+                            </div> 
                         </div>
                         <!-- End List of Icons -->
 
@@ -152,41 +179,13 @@
                     <div class="card-body p-4">
                         <!-- List of Icons -->
                         <div class="row justify-content-between align-items-center mb-4">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <a class="small text-secondary" href="#">
                                     <span class="fas fa-bookmark text-primary mr-1"></span>
                                     OPN-51
                                 </a>
                             </div>
                             
-                            <div class="col-6 text-right">
-                                <!-- Settings -->
-                                <div class="position-relative">
-                                    <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                        <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                    </a>
-
-                                    <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms;">
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cogs dropdown-item-icon"></small>
-                                            Settings
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                            Repository
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                            Download
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-archive dropdown-item-icon"></small>
-                                            Archive
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- End Settings -->
-                            </div>
                         </div>
                         <!-- End List of Icons -->
 
@@ -262,40 +261,11 @@
                     <div class="card-body p-4">
                         <!-- List of Icons -->
                         <div class="row justify-content-between align-items-center mb-4">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <a class="small text-secondary" href="#">
                                     <span class="fas fa-bookmark text-primary mr-1"></span>
                                     OPN-50
                                 </a>
-                            </div>
-                            
-                            <div class="col-6 text-right">
-                                <!-- Settings -->
-                                <div class="position-relative">
-                                    <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                        <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                    </a>
-
-                                    <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms;">
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cogs dropdown-item-icon"></small>
-                                            Settings
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                            Repository
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                            Download
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-archive dropdown-item-icon"></small>
-                                            Archive
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- End Settings -->
                             </div>
                         </div>
                         <!-- End List of Icons -->
@@ -374,40 +344,11 @@
                     <div class="card-body p-4">
                         <!-- List of Icons -->
                         <div class="row justify-content-between align-items-center mb-4">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <a class="small text-secondary" href="#">
                                     <span class="fas fa-bookmark text-primary mr-1"></span>
                                     OPN-49
                                 </a>
-                            </div>
-                            
-                            <div class="col-6 text-right">
-                                <!-- Settings -->
-                                <div class="position-relative">
-                                    <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                        <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                    </a>
-
-                                    <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms;">
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cogs dropdown-item-icon"></small>
-                                            Settings
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                            Repository
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                            Download
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-archive dropdown-item-icon"></small>
-                                            Archive
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- End Settings -->
                             </div>
                         </div>
                         <!-- End List of Icons -->
@@ -484,40 +425,11 @@
                     <div class="card-body p-4">
                         <!-- List of Icons -->
                         <div class="row justify-content-between align-items-center mb-4">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <a class="small text-secondary" href="#">
                                     <span class="fas fa-bookmark text-primary mr-1"></span>
                                     OPN-48
                                 </a>
-                            </div>
-                            
-                            <div class="col-6 text-right">
-                                <!-- Settings -->
-                                <div class="position-relative">
-                                    <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                        <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                    </a>
-
-                                    <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms;">
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cogs dropdown-item-icon"></small>
-                                            Settings
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                            Repository
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                            Download
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-archive dropdown-item-icon"></small>
-                                            Archive
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- End Settings -->
                             </div>
                         </div>
                         <!-- End List of Icons -->
@@ -594,40 +506,11 @@
                     <div class="card-body p-4">
                         <!-- List of Icons -->
                         <div class="row justify-content-between align-items-center mb-4">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <a class="small text-secondary" href="#">
                                     <span class="fas fa-bookmark text-primary mr-1"></span>
                                     OPN-47
                                 </a>
-                            </div>
-                            
-                            <div class="col-6 text-right">
-                                <!-- Settings -->
-                                <div class="position-relative">
-                                    <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                        <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                    </a>
-
-                                    <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms;">
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cogs dropdown-item-icon"></small>
-                                            Settings
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                            Repository
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                            Download
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <small class="fas fa-archive dropdown-item-icon"></small>
-                                            Archive
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- End Settings -->
                             </div>
                         </div>
                         <!-- End List of Icons -->

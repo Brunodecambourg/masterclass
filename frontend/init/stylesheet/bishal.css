@@ -9,8 +9,13 @@ figure {
 }
 
 .custom_logo {
-  height: 85px;
-  padding: 1rem;
+  height: 50px;
+  padding-top: 1rem;
+}
+
+.main_logo {
+  height: 65px;
+  padding-top: 1rem;
 }
 
 .custom_logo-4 {

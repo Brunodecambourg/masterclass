@@ -1,3 +1,59 @@
+<header id="header" class="u-header mb-7">
+  <div class="u-header__section">
+    <div id="logoAndNav" class="container">
+      <!-- Nav -->
+      <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
+        <!-- Logo -->
+        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Front">
+          <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/oppn-blue.svg'), :alt => "Logo", :class => "custom_logo" %>
+        </a>
+        <!-- End Logo -->
+        
+        <!-- Responsive Toggle Button -->
+        <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+          <span id="hamburgerTrigger" class="u-hamburger__box">
+            <span class="u-hamburger__inner"></span>
+          </span>
+        </button>
+        <!-- End Responsive Toggle Button -->
+
+        <!-- Navigation -->
+        <div id="navBar" class="collapse navbar-collapse py-0">
+          <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
+            <!-- Home -->
+            <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+              <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                Autour de moi
+                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
+              </a> 
+            </li>
+            <!-- End Home -->
+
+            <!-- Pages -->
+            <li class="nav-item hs-has-sub-menu u-header__nav-item hs-sub-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+              <a id="pagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">
+                Nouvelle recherche
+                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
+              </a>
+            </li>
+            <!-- End Pages -->
+
+            <!-- Button -->
+            <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
+              <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover" href="#" target="_blank">
+                Je suis une enseigne
+              </a>
+            </li>
+            <!-- End Button -->
+          </ul>
+        </div>
+        <!-- End Navigation -->
+      </nav>
+      <!-- End Nav -->
+    </div>
+  </div>
+</header>
+
 <div class="container u-space-3">
     <div class="w-40 mx-auto">
         <form class="js-validate">

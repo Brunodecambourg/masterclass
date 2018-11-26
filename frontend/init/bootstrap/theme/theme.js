@@ -104,6 +104,8 @@ import "./svg/flat-icons/analysis-flat-concept-illustration.svg"
 import "./svg/flat-icons/in-the-office-flat-concept-illustration.svg"
 
 import "./svg/logos/oppn-white.svg"
+import "./svg/logos/oppn-blue.svg"
+
 
 import "./img/160x160/img1.jpg"
 import "./img/160x160/img2.jpg"
