@@ -115,6 +115,7 @@ import "./img/160x160/img5.jpg"
 import "./img/160x160/img6.jpg"
 
 
+import "./img/64x64/img1.jpg"
 
 
 import "./img/320x320/img1.jpg"

@@ -54,771 +54,523 @@
   </div>
 </header>
 
-<div class="bg-light">
-    <div class="container space-2">
-        <div class="row justify-content-between align-items-center mb-4">
-            <!-- Title -->
-            <div class="col-sm-4 col-md-6 mb-3 mb-sm-0">
-                <h2 class="h6 mb-0">52 adresses vous accueillent ! </h2>
-            </div>
-            <!-- End Title -->
-
-            <!-- Filter -->
-            <div class="col-sm-8 col-md-6 text-sm-right">
-                <ul class="list-inline mb-0">    
-                    <li class="list-inline-item">
-                        <!-- Select -->
-                        <div class="dropdown bootstrap-select js-select dropdown-select fit-width">
-                            <select class="js-select selectpicker dropdown-select" data-width="fit" data-style="btn-soft-primary btn-sm" tabindex="-98">
-                                <option value="alphabeticalOrderSelect1" selected="">A-à-Z</option>
-                                <option value="alphabeticalOrderSelect2">Z-à-A</option>
-                            </select>
-                            <div class="dropdown-menu " role="combobox">
-                                <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1">
-                                    <ul class="dropdown-menu inner show"></ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Select -->
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-sm btn-soft-primary" href="bishal3">
-                        <span class="fas fa-th-large"></span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <span class="btn btn-sm btn-soft-primary active">
-                        <span class="fas fa-list"></span>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Filter -->
-        </div>
-
-        <div class="mb-7">
-            <!-- Projects -->
-            <div class="card mb-5">
-                <div class="card-body p-5">
-                    <!-- List of Icons -->
-                    <div class="row justify-content-between align-items-center mb-3">
-                        <div class="col-6">
-                            <a class="small text-secondary" href="#">
-                                <span class="fas fa-bookmark text-primary mr-1"></span>
-                                OPN-52
-                            </a>
-                        </div>
-                        <div class="col-6 text-right">
-                            <!-- Settings -->
-                            <div class="position-relative">
-                                <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                </a>
-
-                                <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold dropdown-menu-right u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms; right: 0px;">
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cogs dropdown-item-icon"></small>
-                                        Settings
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                        Repository
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                        Download
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-archive dropdown-item-icon"></small>
-                                        Archive
-                                    </a>
-                                </div>
-                            </div>
-                             <!-- End Settings -->
-                        </div>
-                    </div>
-                    <!-- End List of Icons -->
-
-                    <!-- Details -->
-                    <div class="d-sm-flex">
-                        <div class="u-lg-avatar mb-3 mb-sm-0 mr-3">
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/160x160/img6.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                        </div>
-
-                        <div class="mr-3">
-                            <!-- Title -->
-                            <div class="mb-3">
-                                <h3 class="h5 mb-1">Lyon</h3>
-                                <p class="font-size-1">123 rue de la liberté</p>
-                            </div>
-                            <!-- End Title -->
-
-                            <div class="d-sm-flex align-items-sm-center">
-                                <!-- Members List -->
-                                <div class="mb-3 mb-sm-0 mr-4">
-                                    <h4 class="small font-weight-normal text-secondary mb-0">12 visiteurs vous précèdent</h4>
-
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliza Donovan">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img3.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cler Lockhart">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img4.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Josephina Mack">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img5.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0">
-                                            <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
-                                                <span class="btn-icon__inner">+7</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Members List -->
-
-                                <!-- Budget -->
-                                <div class="u-ver-divider u-ver-divider--none-sm pr-4 mb-3 mb-sm-0 mr-4">
-                                    <span class="text-dark">Carte</span>
-                                </div>
-                                <!-- End Budget -->
-
-                                <!-- Priority -->
-                                <a class="mr-4" href="#">
-                                    <span class="fas fa-arrow-up text-warning small"></span>
-                                    <span class="text-dark">Prendre rdv</span>
-                                </a>
-                                <!-- End Priority -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Details -->
+<main id='content' role='main'>
+    <div class="bg-light">
+        <div class="container space-2">
+            <div class="row justify-content-between align-items-center mb-4">
+                <!-- Title -->
+                <div class="col-sm-4 col-md-6 mb-3 mb-sm-0">
+                    <h2 class="h6 mb-0">52 adresses vous accueillent ! </h2>
                 </div>
-            </div>
-            <!-- End Projects -->
+                <!-- End Title -->
 
-            <!-- Projects -->
-            <div class="card mb-5">
-                <div class="card-body p-5">
-                    <!-- List of Icons -->
-                    <div class="row justify-content-between align-items-center mb-3">
-                        <div class="col-6">
-                            <a class="small text-secondary" href="#">
-                                <span class="fas fa-bookmark text-primary mr-1"></span>
-                                OPN-51
-                            </a>
-                        </div>
-                        <div class="col-6 text-right">
-                            <!-- Settings -->
-                            <div class="position-relative">
-                                <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                </a>
+                
 
-                                <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold dropdown-menu-right u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms; right: 0px;">
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cogs dropdown-item-icon"></small>
-                                        Settings
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                        Repository
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                        Download
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-archive dropdown-item-icon"></small>
-                                        Archive
-                                    </a>
+                <!-- Filter -->
+                <div class="col-sm-8 col-md-6 text-sm-right">
+                    
+
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <!-- Search -->
+                            <div class="js-focus-state input-group input-group-sm u-form u-form--sm">
+                                <div class="input-group-prepend u-form__prepend">
+                                <span class="input-group-text u-form__text">
+                                    <span class="fa fa-search u-form__text-inner"></span>
+                                </span>
+                                </div>
+                                <input id="datatableSearch" class="form-control u-form__input" type="email" placeholder="Recherche par mot-clé" aria-label="Search activities">
+                            </div>
+                            <!-- End Search -->
+                        </li>
+                        <li class="list-inline-item">
+                            <!-- Select -->
+                            <div class="dropdown bootstrap-select js-select dropdown-select fit-width">
+                                <select class="js-select selectpicker dropdown-select" data-width="fit" data-style="btn-soft-primary btn-sm" tabindex="-98">
+                                    <option value="alphabeticalOrderSelect1" selected="">A-à-Z</option>
+                                    <option value="alphabeticalOrderSelect2">Z-à-A</option>
+                                </select>
+                                <div class="dropdown-menu " role="combobox">
+                                    <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1">
+                                        <ul class="dropdown-menu inner show"></ul>
+                                    </div>
                                 </div>
                             </div>
-                             <!-- End Settings -->
-                        </div>
-                    </div>
-                    <!-- End List of Icons -->
-
-                    <!-- Details -->
-                    <div class="d-sm-flex">
-                        <div class="u-lg-avatar mb-3 mb-sm-0 mr-3">
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/160x160/img4.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                        </div>
-
-                        <div class="mr-3">
-                            <!-- Title -->
-                            <div class="mb-3">
-                                <h3 class="h5 mb-1">Nice</h3>
-                                <p class="font-size-1">123 rue de la liberté</p>
-                            </div>
-                            <!-- End Title -->
-
-                            <div class="d-sm-flex align-items-sm-center">
-                                <!-- Members List -->
-                                <div class="mb-3 mb-sm-0 mr-4">
-                                    <h4 class="small font-weight-normal text-secondary mb-0">8 visiteurs vous précèdent</h4>
-
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliza Donovan">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img3.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cler Lockhart">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img4.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Josephina Mack">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img5.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0">
-                                            <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
-                                                <span class="btn-icon__inner">+3</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Members List -->
-
-                                <!-- Budget -->
-                                <div class="u-ver-divider u-ver-divider--none-sm pr-4 mb-3 mb-sm-0 mr-4">
-                                    <span class="text-dark">Carte</span>
-                                </div>
-                                <!-- End Budget -->
-
-                                <!-- Priority -->
-                                <a class="mr-4" href="#">
-                                    <span class="fas fa-arrow-up text-warning small"></span>
-                                    <span class="text-dark">Prendre rdv</span>
-                                </a>
-                                <!-- End Priority -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Details -->
-                </div>
-            </div>
-            <!-- End Projects -->
-
-            <!-- Projects -->
-            <div class="card mb-5">
-                <div class="card-body p-5">
-                    <!-- List of Icons -->
-                    <div class="row justify-content-between align-items-center mb-3">
-                        <div class="col-6">
-                            <a class="small text-secondary" href="#">
-                                <span class="fas fa-bookmark text-primary mr-1"></span>
-                                OPN-50
-                            </a>
-                        </div>
-                        <div class="col-6 text-right">
-                            <!-- Settings -->
-                            <div class="position-relative">
-                                <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                </a>
-
-                                <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold dropdown-menu-right u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms; right: 0px;">
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cogs dropdown-item-icon"></small>
-                                        Settings
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                        Repository
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                        Download
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-archive dropdown-item-icon"></small>
-                                        Archive
-                                    </a>
-                                </div>
-                            </div>
-                             <!-- End Settings -->
-                        </div>
-                    </div>
-                    <!-- End List of Icons -->
-
-                    <!-- Details -->
-                    <div class="d-sm-flex">
-                        <div class="u-lg-avatar mb-3 mb-sm-0 mr-3">
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/160x160/img3.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                        </div>
-
-                        <div class="mr-3">
-                            <!-- Title -->
-                            <div class="mb-3">
-                                <h3 class="h5 mb-1">Bordeaux</h3>
-                                <p class="font-size-1">123 rue de la liberté</p>
-                            </div>
-                            <!-- End Title -->
-
-                            <div class="d-sm-flex align-items-sm-center">
-                                <!-- Members List -->
-                                <div class="mb-3 mb-sm-0 mr-4">
-                                    <h4 class="small font-weight-normal text-secondary mb-0">12 visiteurs vous précèdent</h4>
-
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliza Donovan">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img3.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cler Lockhart">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img4.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Josephina Mack">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img5.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0">
-                                            <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
-                                                <span class="btn-icon__inner">+7</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Members List -->
-
-                                <!-- Budget -->
-                                <div class="u-ver-divider u-ver-divider--none-sm pr-4 mb-3 mb-sm-0 mr-4">
-                                    <span class="text-dark">Carte</span>
-                                </div>
-                                <!-- End Budget -->
-
-                                <!-- Priority -->
-                                <a class="mr-4" href="#">
-                                    <span class="fas fa-arrow-up text-warning small"></span>
-                                    <span class="text-dark">Prendre rdv</span>
-                                </a>
-                                <!-- End Priority -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Details -->
-                </div>
-            </div>
-            <!-- End Projects -->
-
-            <!-- Projects -->
-            <div class="card mb-5">
-                <div class="card-body p-5">
-                    <!-- List of Icons -->
-                    <div class="row justify-content-between align-items-center mb-3">
-                        <div class="col-6">
-                            <a class="small text-secondary" href="#">
-                                <span class="fas fa-bookmark text-primary mr-1"></span>
-                                OPN-49
-                            </a>
-                        </div>
-                        <div class="col-6 text-right">
-                            <!-- Settings -->
-                            <div class="position-relative">
-                                <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                </a>
-
-                                <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold dropdown-menu-right u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms; right: 0px;">
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cogs dropdown-item-icon"></small>
-                                        Settings
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                        Repository
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                        Download
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-archive dropdown-item-icon"></small>
-                                        Archive
-                                    </a>
-                                </div>
-                            </div>
-                             <!-- End Settings -->
-                        </div>
-                    </div>
-                    <!-- End List of Icons -->
-
-                    <!-- Details -->
-                    <div class="d-sm-flex">
-                        <div class="u-lg-avatar mb-3 mb-sm-0 mr-3">
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/160x160/img4.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                        </div>
-
-                        <div class="mr-3">
-                            <!-- Title -->
-                            <div class="mb-3">
-                                <h3 class="h5 mb-1">Dijon</h3>
-                                <p class="font-size-1">123 rue de la liberté</p>
-                            </div>
-                            <!-- End Title -->
-
-                            <div class="d-sm-flex align-items-sm-center">
-                                <!-- Members List -->
-                                <div class="mb-3 mb-sm-0 mr-4">
-                                    <h4 class="small font-weight-normal text-secondary mb-0">12 visiteurs vous précèdent</h4>
-
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliza Donovan">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img3.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cler Lockhart">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img4.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Josephina Mack">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img5.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0">
-                                            <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
-                                                <span class="btn-icon__inner">+7</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Members List -->
-
-                                <!-- Budget -->
-                                <div class="u-ver-divider u-ver-divider--none-sm pr-4 mb-3 mb-sm-0 mr-4">
-                                    <span class="text-dark">Carte</span>
-                                </div>
-                                <!-- End Budget -->
-
-                                <!-- Priority -->
-                                <a class="mr-4" href="#">
-                                    <span class="fas fa-arrow-up text-warning small"></span>
-                                    <span class="text-dark">Prendre rdv</span>
-                                </a>
-                                <!-- End Priority -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Details -->
-                </div>
-            </div>
-            <!-- End Projects -->
-
-            <!-- Projects -->
-            <div class="card mb-5">
-                <div class="card-body p-5">
-                    <!-- List of Icons -->
-                    <div class="row justify-content-between align-items-center mb-3">
-                        <div class="col-6">
-                            <a class="small text-secondary" href="#">
-                                <span class="fas fa-bookmark text-primary mr-1"></span>
-                                OPN-48
-                            </a>
-                        </div>
-                        <div class="col-6 text-right">
-                            <!-- Settings -->
-                            <div class="position-relative">
-                                <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                    <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                </a>
-
-                                <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold dropdown-menu-right u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms; right: 0px;">
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cogs dropdown-item-icon"></small>
-                                        Settings
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                        Repository
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                        Download
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-archive dropdown-item-icon"></small>
-                                        Archive
-                                    </a>
-                                </div>
-                            </div>
-                             <!-- End Settings -->
-                        </div>
-                    </div>
-                    <!-- End List of Icons -->
-
-                    <!-- Details -->
-                    <div class="d-sm-flex">
-                        <div class="u-lg-avatar mb-3 mb-sm-0 mr-3">
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/160x160/img5.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                        </div>
-
-                        <div class="mr-3">
-                            <!-- Title -->
-                            <div class="mb-3">
-                                <h3 class="h5 mb-1">Strasbourg</h3>
-                                <p class="font-size-1">123 rue de la liberté</p>
-                            </div>
-                            <!-- End Title -->
-
-                            <div class="d-sm-flex align-items-sm-center">
-                                <!-- Members List -->
-                                <div class="mb-3 mb-sm-0 mr-4">
-                                    <h4 class="small font-weight-normal text-secondary mb-0">12 visiteurs vous précèdent</h4>
-
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliza Donovan">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img3.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cler Lockhart">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img4.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Josephina Mack">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img5.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0">
-                                            <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
-                                                <span class="btn-icon__inner">+7</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Members List -->
-
-                                <!-- Budget -->
-                                <div class="u-ver-divider u-ver-divider--none-sm pr-4 mb-3 mb-sm-0 mr-4">
-                                    <span class="text-dark">Carte</span>
-                                </div>
-                                <!-- End Budget -->
-
-                                <!-- Priority -->
-                                <a class="mr-4" href="#">
-                                    <span class="fas fa-arrow-up text-warning small"></span>
-                                    <span class="text-dark">Prendre rdv</span>
-                                </a>
-                                <!-- End Priority -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Details -->
-                </div>
-            </div>
-            <!-- End Projects -->
-
-            <!-- Projects -->
-            <div class="card mb-5">
-                <div class="card-body p-5">
-                    <!-- List of Icons -->
-                    <div class="row justify-content-between align-items-center mb-3">
-                        <div class="col-6">
-                            <a class="small text-secondary" href="#">
-                                <span class="fas fa-bookmark text-primary mr-1"></span>
-                                OPN-47
-                            </a>
-                        </div>
-                        <div class="col-6 text-right">
-                            <!-- Settings -->
-                            <div class="position-relative">
-                                <a id="settingsDropdown1Invoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded" href="javascript:;" role="button" aria-controls="settingsDropdown1" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#settingsDropdown1" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                    <span class="fas fa-ellipsis-h btn-icon__inner"></span>
-                                </a>
-
-                                <div id="settingsDropdown1" class="dropdown-menu dropdown-unfold dropdown-menu-right u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="settingsDropdown1Invoker" style="min-width: 160px; animation-duration: 300ms; right: 0px;">
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cogs dropdown-item-icon"></small>
-                                        Settings
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-code-branch dropdown-item-icon"></small>
-                                        Repository
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                                        Download
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <small class="fas fa-archive dropdown-item-icon"></small>
-                                        Archive
-                                    </a>
-                                </div>
-                            </div>
-                             <!-- End Settings -->
-                        </div>
-                    </div>
-                    <!-- End List of Icons -->
-
-                    <!-- Details -->
-                    <div class="d-sm-flex">
-                        <div class="u-lg-avatar mb-3 mb-sm-0 mr-3">
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/160x160/img6.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                        </div>
-
-                        <div class="mr-3">
-                            <!-- Title -->
-                            <div class="mb-3">
-                                <h3 class="h5 mb-1">Lille</h3>
-                                <p class="font-size-1">123 rue de la liberté</p>
-                            </div>
-                            <!-- End Title -->
-
-                            <div class="d-sm-flex align-items-sm-center">
-                                <!-- Members List -->
-                                <div class="mb-3 mb-sm-0 mr-4">
-                                    <h4 class="small font-weight-normal text-secondary mb-0">12 visiteurs vous précèdent</h4>
-
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliza Donovan">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img3.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cler Lockhart">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img4.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Josephina Mack">
-                                            <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
-                                                <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img5.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item ml-n3 mr-0">
-                                            <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
-                                                <span class="btn-icon__inner">+7</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Members List -->
-
-                                <!-- Budget -->
-                                <div class="u-ver-divider u-ver-divider--none-sm pr-4 mb-3 mb-sm-0 mr-4">
-                                    <span class="text-dark">Carte</span>
-                                </div>
-                                <!-- End Budget -->
-
-                                <!-- Priority -->
-                                <a class="mr-4" href="#">
-                                    <span class="fas fa-arrow-up text-warning small"></span>
-                                    <span class="text-dark">Prendre rdv</span>
-                                </a>
-                                <!-- End Priority -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Details -->
-                </div>
-            </div>
-            <!-- End Projects -->
-
-            <!-- Pagination -->
-            <div class="d-flex justify-content-between align-items-center">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination mb-0">
-                        <li class="page-item ml-0">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">«</span>
-                                <span class="sr-only">Previous</span>
+                            <!-- End Select -->
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-sm btn-soft-primary" href="bishal3">
+                            <span class="fas fa-th-large"></span>
                             </a>
                         </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#">8</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">»</span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                        <li class="list-inline-item">
+                            <span class="btn btn-sm btn-soft-primary active">
+                            <span class="fas fa-list"></span>
+                            </span>
                         </li>
                     </ul>
-                </nav>
-
-                <small class="d-none d-sm-inline-block text-secondary">Showing 6 out of 52</small>
+                </div>
+                <!-- End Filter -->
             </div>
-            <!-- End Pagination -->
+
+            <div class="mb-7">
+                <!-- Projects -->
+                <div class="card mb-5">
+                    <div class="card-body p-5">  
+                        <!-- Transaction Table -->
+                        <div class="table-responsive-md u-datatable">
+                            <table class="js-datatable table table-borderless u-datatable__striped u-datatable__content mb-5">
+                                <tbody class="font-size-14">
+                                    <tr>
+                                        <td class="align-middle font-weight-normal">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/160x160/img6.jpg'), :alt => "image", :class => "img-fluid rounded-circle custom-icon" %>
+                                        </td>
+                                        <td class="align-middle text-primary font-weight-bold">Lyon</td>
+                                        <td class="align-middle text-secondary">123 rue de la liberté</td>
+                                        <td class="align-middle text-secondary">7 visiteurs vous précèdent</td>
+                                        <td class="align-middle text-secondary">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0">
+                                                    <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
+                                                        <span class="btn-icon__inner tex-secondary">+5</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-success small mr-1"></span>
+                                            <a href="#"> Voir sur la carte</a>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-warning small mr-1"></span>
+                                            <a href="#">Prendre rdv</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="align-middle font-weight-normal">
+                                            
+                                        </td>
+                                        <td class="align-middle text-secondary"></td>
+                                        <td class="align-middle text-secondary">456 rue de la liberté</td>
+                                        <td class="align-middle text-secondary">9 visiteurs vous précèdent</td>
+                                        <td class="align-middle text-secondary">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0">
+                                                    <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
+                                                        <span class="btn-icon__inner tex-secondary">+7</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-success small mr-1"></span>
+                                            <a href="#"> Voir sur la carte</a></td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-warning small mr-1"></span>
+                                            <a href="#">Prendre rdv</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="align-middle font-weight-normal">
+                                            
+                                        </td>
+                                        <td class="align-middle text-secondary"></td>
+                                        <td class="align-middle text-secondary">789 rue de la liberté</td>
+                                        <td class="align-middle text-secondary">10 visiteurs vous précèdent</td>
+                                        <td class="align-middle text-secondary">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0">
+                                                    <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
+                                                        <span class="btn-icon__inner tex-secondary">+8</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="align-middle">
+                                            <a href="#"> 
+                                                <span class="fa fa-circle text-success small mr-1"></span>
+                                                Voir sur la carte
+                                            </a>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-warning small mr-1"></span>
+                                            <a href="#">Prendre rdv</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="align-middle font-weight-normal">
+                                            
+                                        </td>
+                                        <td class="align-middle text-secondary"></td>
+                                        <td class="align-middle text-secondary">101 rue de la liberté</td>
+                                        <td class="align-middle text-secondary">7 visiteurs vous précèdent</td>
+                                        <td class="align-middle text-secondary">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0">
+                                                    <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
+                                                        <span class="btn-icon__inner tex-secondary">+5</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="align-middle">
+                                            <a href="#"> 
+                                                <span class="fa fa-circle text-success small mr-1"></span>
+                                                Voir sur la carte
+                                            </a>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-warning small mr-1"></span>
+                                            <a href="#">Prendre rdv</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- End Transaction Table -->
+
+                        <!-- Transaction Table -->
+                        <div class="table-responsive-md u-datatable">
+                            <table class="js-datatable table table-borderless u-datatable__striped u-datatable__content mb-5">
+                                <tbody class="font-size-14">
+                                    <tr>
+                                        <td class="align-middle font-weight-normal">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/160x160/img5.jpg'), :alt => "image", :class => "img-fluid rounded-circle custom-icon" %>
+                                        </td>
+                                        <td class="align-middle text-primary font-weight-bold">Nice</td>
+                                        <td class="align-middle text-secondary">123 rue de la liberté</td>
+                                        <td class="align-middle text-secondary">7 visiteurs vous précèdent</td>
+                                        <td class="align-middle text-secondary">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0">
+                                                    <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
+                                                        <span class="btn-icon__inner tex-secondary">+5</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-success small mr-1"></span>
+                                            <a href="#"> Voir sur la carte</a>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-warning small mr-1"></span>
+                                            <a href="#">Prendre rdv</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="align-middle font-weight-normal">
+                                            
+                                        </td>
+                                        <td class="align-middle text-secondary"></td>
+                                        <td class="align-middle text-secondary">456 rue de la liberté</td>
+                                        <td class="align-middle text-secondary">9 visiteurs vous précèdent</td>
+                                        <td class="align-middle text-secondary">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0">
+                                                    <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
+                                                        <span class="btn-icon__inner tex-secondary">+7</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-success small mr-1"></span>
+                                            <a href="#"> Voir sur la carte</a></td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-warning small mr-1"></span>
+                                            <a href="#">Prendre rdv</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="align-middle font-weight-normal">
+                                            
+                                        </td>
+                                        <td class="align-middle text-secondary"></td>
+                                        <td class="align-middle text-secondary">789 rue de la liberté</td>
+                                        <td class="align-middle text-secondary">10 visiteurs vous précèdent</td>
+                                        <td class="align-middle text-secondary">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0">
+                                                    <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
+                                                        <span class="btn-icon__inner tex-secondary">+8</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="align-middle">
+                                            <a href="#"> 
+                                                <span class="fa fa-circle text-success small mr-1"></span>
+                                                Voir sur la carte
+                                            </a>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-warning small mr-1"></span>
+                                            <a href="#">Prendre rdv</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="align-middle font-weight-normal">
+                                            
+                                        </td>
+                                        <td class="align-middle text-secondary"></td>
+                                        <td class="align-middle text-secondary">101 rue de la liberté</td>
+                                        <td class="align-middle text-secondary">7 visiteurs vous précèdent</td>
+                                        <td class="align-middle text-secondary">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sean Lewis">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="James Collins">
+                                                    <div class="u-sm-avatar u-sm-avatar--bordered rounded-circle">
+                                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/32x32/img2.jpg'), :alt => "image", :class => "img-fluid rounded-circle" %>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item ml-n3 mr-0">
+                                                    <a class="btn btn-sm btn-icon btn-light rounded-circle" href="#">
+                                                        <span class="btn-icon__inner tex-secondary">+5</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="align-middle">
+                                            <a href="#"> 
+                                                <span class="fa fa-circle text-success small mr-1"></span>
+                                                Voir sur la carte
+                                            </a>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="fa fa-circle text-warning small mr-1"></span>
+                                            <a href="#">Prendre rdv</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- End Transaction Table -->
+                    </div>
+                </div>
+                <!-- End Projects -->
+
+            
+
+                <!-- Pagination -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination mb-0">
+                            <li class="page-item ml-0">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">«</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">»</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <small class="d-none d-sm-inline-block text-secondary">Showing 6 out of 52</small>
+                </div>
+                <!-- End Pagination -->          
+            </div>
+
+            
         </div>
     </div>
-</div>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer id="SVGwave7BottomShape" class="position-relative border-top pt-5" style="">
+    <!-- Lists -->
+    <div class="container space-top-2 space-top-md-3 space-bottom-2">
+        <!-- Logo -->
+        <a class="d-inline-flex align-items-center mb-4" href="bishal" aria-label="oppn">
+            <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/oppn-blue.svg'), :alt => "Logo", :class => "custom_logo" %>
+        </a>
+        <!-- End Logo -->
+
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 mb-7 mb-sm-7">
+                <div class="mb-4">
+                    <h2 class="text-primary h5">Oppn vous ouvre les portes des franchises, partout en France</h2>
+                </div>
+                <a class="btn btn-primary btn-sm transition-3d-hover" href="bishal2" target="_blank">Toutes les enseignes</a>
+            </div>
+
+            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-8 ml-lg-auto">
+                <h4 class="h6 font-weight-semi-bold">A propos</h4>
+
+                <!-- List Group -->
+                <ul class="list-group list-group-flush list-group-borderless mb-0">
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Mentions légales</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Données personnelles</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">CGU</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Nous contacter</a></li>
+                </ul>
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-sm-4 col-lg-3 mb-4 mb-sm-8 ml-lg-auto">
+                <h4 class="h6 font-weight-semi-bold">Vos visites par thème</h4>
+
+                <!-- List Group -->
+                <ul class="list-group list-group-flush list-group-borderless mb-0">
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchises alimentaire</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchises beauté</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchise restauration</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchise prêt-à-porter</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchise maison</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchise service </a></li>
+
+                </ul>
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-8 ml-lg-auto">
+                <h4 class="h6 font-weight-semi-bold">Nos sites</h4>
+
+                <!-- List Group -->
+                <ul class="list-group list-group-flush list-group-borderless mb-0">
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Le Groupe</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="https://insiti.com/" _target="blank">inSiti</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Loop</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Projets-locaux</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Conceptstor</a></li>
+                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Oppn</a></li>
+
+                </ul>
+                <!-- End List Group -->
+            </div>
+    </div>
+    </div>
+    <!-- End Lists -->
+
+    <!-- Social Networks -->
+    <div class="container space-1 ">
+      <div class="row justify-content-end">
+        <div class="col-md-5 text-right">
+           <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-0">
+              <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
+                <span class="fab fa-facebook-f btn-icon__inner"></span>
+              </a>
+            </li>
+            <li class="list-inline-item mx-0">
+              <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
+                <span class="fab fa-twitter btn-icon__inner"></span>
+              </a>
+            </li>
+            <li class="list-inline-item mx-0">
+              <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
+                <span class="fab fa-instagram btn-icon__inner"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Social Networks -->
+
+    <!-- SVG Shape -->
+    <figure class="ie-wave-7-bottom w-80 w-md-65 w-lg-50 position-absolute bottom-0 left-0 z-index-n1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 589.5 112.7" style="enable-background:new 0 0 589.5 112.7;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwave7BottomShape">
+            <style type="text/css">
+                .wave-7-bottom-0{fill:#377DFF;}
+            </style>
+            <linearGradient id="wave7BottomID" gradientUnits="userSpaceOnUse" x1="275.6292" y1="4.2812" x2="303.6378" y2="163.1255">
+                <stop class="stop-color-info" offset="0" style="stop-color:#00DFFC"></stop>
+                <stop class="stop-color-primary" offset="1" style="stop-color:#377DFF"></stop>
+            </linearGradient>
+            <path fill="url(#wave7BottomID)" d="M0,64.7c0,0,131.5-62.5,277-23.5s205,66,312.5,71.5H0L0,64.7z"></path>
+            <path class="wave-7-bottom-0 fill-primary" d="M0,0c0,0.1,38.9,5.7,42.5,6.4c37.7,7.3,74.4,19.5,108.4,37.3c15.5,8.2,30.3,17.6,45.6,26.3  c22.2,12.7,45.4,22.1,70.1,28.9c11,3,22.2,5.5,33.4,7.7c13.6,2.6,27.3,4.7,41,6.2c0,0-341,0-341,0S0,0.2,0,0z"></path>
+        </svg>
+    </figure>
+    <!-- End SVG Shape -->
+</footer>
+<!-- ========== END FOOTER ========== -->
