@@ -1,11 +1,13 @@
 import "./js/front.min";
+import "./js/custom-front";
 import "./theme.css";
+
 
 /* ------------------------------------*\
 #VENDORS
 #* ------------------------------------*/
 
-//import "./vendor/jquery/dist/jquery.js"
+import "./vendor/jquery/dist/jquery.js"
 import "./vendor/bootstrap/bootstrap.min.js"
 
 import "./vendor/bootstrap/css/bootstrap.css"
@@ -21,6 +23,8 @@ import "./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"
 //import "./vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"
 //import "./vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.js"
 
+
+import "./vendor/"
 
 import "./vendor/jquery-validation/dist/jquery.validate.min.js"
 
@@ -44,6 +48,8 @@ import "./vendor/hs-bg-video/hs-bg-video.css"
 
 import "./vendor/hs-megamenu/src/hs.megamenu.js"
 import "./vendor/hs-megamenu/src/hs.megamenu.css"
+
+import "./vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"
 
 
 import "./vendor/slick-carousel/slick/slick.min.js"
@@ -146,3 +152,6 @@ import "./img/32x32/img7.jpg"
 import "./img/32x32/img8.jpg"
 import "./img/32x32/img9.jpg"
 import "./img/32x32/img10.jpg"
+
+import "./img/bg-shapes/bg1.png"
+import "./img/533x711/img2.jpg"

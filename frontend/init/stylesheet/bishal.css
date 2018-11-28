@@ -283,3 +283,10 @@ figure {
     display: none;
   }
 }
+
+
+/* ================ Corpo CSS ==================== */
+
+.bg{
+  background-image: url(../bootstrap/theme/img/bg-shapes/bg1.png);
+}
