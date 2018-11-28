@@ -245,3 +245,41 @@ figure {
   width: 80% !important;
   height: 80% !important;
 }
+
+.img-svg{
+  width: 100%;
+  height: 100%;
+}
+
+@media(max-width:991px){  
+  .scrollDown{
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .num-visitor, .img-visitor{
+    display: none;
+  }
+}
+
+@media(max-width:767px){
+  .heroTitle{
+    position: relative;
+    top: 8rem;
+  }
+
+  .table-width{
+    width:115%;
+  }
+  
+}
+
+@media(max-width:576px){
+  .scrollDown{
+    display: none;
+  }
+
+  .fa-circle{
+    display: none;
+  }
+}
