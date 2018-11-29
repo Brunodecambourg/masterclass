@@ -155,3 +155,9 @@ import "./img/32x32/img10.jpg"
 
 import "./img/bg-shapes/bg1.png"
 import "./img/533x711/img2.jpg"
+import "./img/282x500/img1.jpg"
+
+import "./img/logos/dijon.jpg"
+import "./img/logos/dijon.png"
+import "./img/logos/casino.png"
+import "./img/logos/ar.png"

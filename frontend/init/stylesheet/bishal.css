@@ -290,3 +290,62 @@ figure {
 .bg{
   background-image: url(../bootstrap/theme/img/bg-shapes/bg1.png);
 }
+
+
+.hero-img-icon1--transform{
+  transform: matrix(0.3347, 0, 0, 0.3347, 35, -185);
+  width: 35%;
+  border: 10px solid #fff;
+  border-radius: 50%;
+}
+
+.hero-img-icon2--transform{
+  transform: matrix(0.3347, 0, 0, 0.3347, 65, -250);
+  width: 35%;
+  border: 10px solid #fff;
+  border-radius: 50%;
+}
+
+.hero-img-icon3--transform{
+  transform: matrix(0.3347, 0, 0, 0.3347, 430, -520);
+  width: 30%;
+  border: 10px solid #fff;
+  border-radius: 50%;
+}
+
+.hero-img-icon4--transform{
+  transform: matrix(0.3347, 0, 0, 0.3347, -220, -300);
+  width: 20%;
+  border-radius: 50%;
+  border: 6px solid #fff;
+}
+
+.hero-img-icon5--transform{
+  transform: matrix(0.3347, 0, 0, 0.3347, 75, -325);
+  width: 35%;
+  border-radius: 50%;
+}
+
+
+.b-n22{
+  bottom: -22% !important;
+}
+.fl-img{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.fr-img{
+  position: absolute;
+  width: 65.5%;
+  height: 56%;
+  top: 37.5%;
+  left: 37.5%;
+  transform: translate(-50%,-50%);
+  
+}
+
+/*     
+
+transform="matrix(0.3347 0 0 0.3347 161.0156 95.0156)"
+*/

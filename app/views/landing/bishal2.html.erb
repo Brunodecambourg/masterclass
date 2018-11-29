@@ -1,568 +1,101 @@
-<header id="header" class="u-header">
-  <div class="u-header__section">
-    <div id="logoAndNav" class="container">
-      <!-- Nav -->
-      <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
-        <!-- Logo -->
-        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Front">
-          <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/oppn-blue.svg'), :alt => "Logo", :class => "custom_logo" %>
-        </a>
-        <!-- End Logo -->
-        
-        <!-- Responsive Toggle Button -->
-        <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-          <span id="hamburgerTrigger" class="u-hamburger__box">
-            <span class="u-hamburger__inner"></span>
-          </span>
-        </button>
-        <!-- End Responsive Toggle Button -->
-
-        <!-- Navigation -->
-        <div id="navBar" class="collapse navbar-collapse py-0">
-          <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
-            <!-- Home -->
-            <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
-              <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                Autour de moi
-                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-              </a> 
-            </li>
-            <!-- End Home -->
-
-            <!-- Pages -->
-            <li class="nav-item hs-has-sub-menu u-header__nav-item hs-sub-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
-              <a id="pagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">
-                Nouvelle recherche
-                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-              </a>
-            </li>
-            <!-- End Pages -->
-
-            <!-- Button -->
-            <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
-              <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover" href="#" target="_blank">
-                Je suis une enseigne
-              </a>
-            </li>
-            <!-- End Button -->
-          </ul>
+    <!-- Devices v2 Section -->
+    <div class="u-gradient-half-primary-v1 u-devices-v2">
+        <div class="container u-space-3 position-relative z-index-2">
+            <!-- Title -->
+            <div class="w-md-80 w-lg-50 text-center mx-auto">
+                <span class="u-icon bg-white u-icon--xl rounded-circle mb-4">
+                    <span class="fas fa-paper-plane text-primary u-icon__inner font-size-32"></span>
+                </span>
+                <h2 class="h1 text-white"> <span class="font-weight-bold">inSiti</span> Groupe</h2>
+                <p class="lead u-text-light mb-0">78, boulevard de la République, 92100 Boulogne-Billancourt Tél: +33 1 77 19 32 10</p>
+            </div>
+            <!-- End Title -->
         </div>
-        <!-- End Navigation -->
-      </nav>
-      <!-- End Nav -->
-    </div>
-  </div>
-</header>
 
-<main id='content' role='main'>
-  <div class="container u-space-3">
-    <div class="u-cubeportfolio">
-      <!-- Filter -->
-      <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
-        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item cbp-filter-item-active" data-filter="*">Tous les secteurs</li>
-        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".branding">Alimentaire</li>
-        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".abstract">Beauté</li>
-        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".graphic">Restauration</li>
-        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".illustration">Prêt-à-porter</li>
-        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".abstract">Maison</li>
-        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".graphic">Services</li>
-      </ul>
-      <!-- End Filter -->
-
-      <!-- Content -->
-      <div class="cbp cbp-caption-active cbp-caption-overlayBottomAlong cbp-ready" data-layout="grid" data-controls="#filterControls" data-animation="quicksand" data-x-gap="32" data-y-gap="32" 
-        data-media-queries="[
-              {'width': 1500, 'cols': 4},
-              {'width': 1100, 'cols': 4},
-              {'width': 800, 'cols': 3},
-              {'width': 480, 'cols': 2},
-              {'width': 300, 'cols': 1}
-            ]" style="height: 1364px;">
-        <div class="cbp-wrapper-outer">
-          <div class="cbp-wrapper">
-            <!-- Item -->
-            <div class="cbp-item graphic" style="width: 253px; left: 0px; top: 0px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img1.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
+        <!-- Devices v2 -->
+        <div class="d-none d-lg-block">
+            <!-- SVG Tablet Mockup -->
+            <div class="u-devices-v2__tablet">
+                <figure class="w-75 u-devices-v2__tablet-svg">
+                    <%= image_tag asset_pack_path('init/bootstrap/theme/img/533x711/img2.jpg'), :alt => "image", :class => "fl-img"%>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 603 892" style="enable-background:new 0 0 603 892;" xml:space="preserve">
+                        
+                        <path id="BG_Color" class="u-fill-white" d="M603,51.8v788.5c0,28.5-23.3,51.8-51.8,51.8H51.8C23.3,892,0,868.7,0,840.2L0,51.8
+                            C0,23.3,23.3,0,51.8,0l499.5,0C579.7,0,603,23.3,603,51.8z"/>
+                        <circle id="tabletFrameTouchID1" class="u-fill-gray-75" cx="302.5" cy="846.5" r="25.5"/>
+                        <circle id="tabletFrameCameraID1" class="u-fill-gray-75" cx="301.8" cy="45.9" r="6.2"/>
+                        <g>
+                            <defs>
+                            <rect id="tabletFrameID1" x="36" y="86" width="533" height="711"/>
+                            </defs>
+                            <clipPath id="tabletFrameID2">
+                            <use xlink:href="#tabletFrameID1"  style="overflow:visible;"/>
+                            </clipPath>
+                            <g style="clip-path:url(#tabletFrameID2);">
+                            <!-- Apply your (533px width to 711px height) image here -->
+                            </g>
+                            <use class="u-fill-none u-stroke-light-blue-125" xlink:href="#tabletFrameID1" stroke-miterlimit="10" style="overflow: visible;"/>
+                        </g>
+                    </svg>
+                </figure>
             </div>
-            <!-- End Item -->
+            <!-- End SVG Tablet Mockup -->
 
-            <!-- Item -->
-            <div class="cbp-item branding" style="width: 253px; left: 285px; top: 0px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img2.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
+            <!-- SVG Phone Mockup -->
+            <div class="u-devices-v2__phone b-n22">
+            <figure class="w-75 u-devices-v2__phone-svg">
+                <%= image_tag asset_pack_path('init/bootstrap/theme/img/282x500/img2.jpg'), :alt => "image", :class => "fr-img"%>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 317.5 665" style="enable-background:new 0 0 317.5 665;" xml:space="preserve">
+                <path class="u-fill-white" d="M263,666H54c-29.7,0-54-24.3-54-54V55C0,25.3,24.3,1,54,1h209c29.7,0,54,24.3,54,54v557
+                    C317,641.7,292.7,666,263,666z"/>
+                <circle class="u-fill-gray-75" cx="159.5" cy="619.5" r="25.5"/>
+                <path class="u-fill-gray-75" fill-rule="evenodd" clip-rule="evenodd" d="M180,52h-42c-2.2,0-4-1.8-4-4v0c0-2.2,1.8-4,4-4h42c2.2,0,4,1.8,4,4v0C184,50.2,182.2,52,180,52z"/>
+                <g>
+                    <defs>
+                    <rect id="phoneFrameID1" x="19.4" y="81.3" width="280" height="500"/>
+                    </defs>
+                    <clipPath id="phoneFrameID2">
+                    <use xlink:href="#phoneFrameID1"  style="overflow:visible;"/>
+                    </clipPath>
+                    <g style="clip-path:url(#phoneFrameID2);">
+                    <!-- Apply your (282px width to 500px height) image here -->
+                    </g>
+                    <use class="u-fill-none u-stroke-light-blue-125" xlink:href="#phoneFrameID1" stroke-miterlimit="10" style="overflow: visible;"/>
+                </g>
+                </svg>
+            </figure>
             </div>
-              <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item abstract illustration" style="width: 253px; left: 570px; top: 0px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img3.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item abstract illustration" style="width: 253px; left: 855px; top: 0px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="../portfolio/single-page-simple.html">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img4.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item graphic illustration" style="width: 253px; left: 0px; top: 349px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img5.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item graphic illustration" style="width: 253px; left: 285px; top: 349px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img6.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item branding" style="width: 253px; left: 570px; top: 349px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img7.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item abstract illustration" style="width: 253px; left: 855px; top: 349px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img8.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item graphic" style="width: 253px; left: 0px; top: 698px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img9.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item branding" style="width: 253px; left: 285px; top: 698px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img10.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item branding" style="width: 253px; left: 570px; top: 698px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img11.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item graphic" style="width: 253px; left: 855px; top: 698px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img12.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item abstract" style="width: 253px; left: 0px; top: 1047px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img13.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item branding" style="width: 253px; left: 285px; top: 1047px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img14.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item branding" style="width: 253px; left: 570px; top: 1047px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img15.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-            <!-- Item -->
-            <div class="cbp-item graphic" style="width: 253px; left: 855px; top: 1047px;">
-              <div class="cbp-item-wrapper">
-                <a class="cbp-caption" href="#">
-                  <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img16.jpg'), :alt => "image", :class => "rounded" %>
-                  <div class="media align-items-center shadow-sm pt-4">
-                    <span class="d-flex mr-1">
-                      <%= image_tag asset_pack_path('init/bootstrap/theme/img/64x64/img1.jpg'), :alt => "image", :class => "img-fluid rounded-circle img-modified" %>
-                    </span>
-                    <span class="media-body">
-                      <span class="d-flex justify-content-between align-items-center font-weight-bold">
-                        Enseigne
-                      </span>
-                      <p class="small mb-0">
-                        Secteur
-                      </p>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- End Item -->
-
-          </div>
+            <!-- End SVG Phone Mockup -->
         </div>
-      </div>
-      <!-- End Content -->
+        <!-- End Devices v2 -->
+
+        <!-- SVG Background Shape -->
+        <figure class="w-100 u-content-centered-y position-absolute-bottom-right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 1653 222.1" style="enable-background:new 0 0 1653 222.1;" xml:space="preserve">
+            <g opacity=".3">
+                <path class="u-fill-none u-stroke-white" stroke-miterlimit="10" d="M0.5,200.2c0,0,1.3,0.4,3.8,1.2"/>
+                <path class="u-fill-none u-stroke-white" stroke-miterlimit="10" stroke-dasharray="7.9643,7.9643" d="M12,203.4c31.8,8.4,125.8,28.7,233.9,11.3c74.3-12,150.4-23.1,219.4-55c51.4-23.8,93.7-64.1,147.1-84.2
+                c24.2-9.1,49.4-15.5,74.7-20.5c65.8-12.9,137.3-16.7,205.9-8c67.6,8.6,125.9,33.9,179.7,52.6c335.2,116.6,538.6-59.1,574.2-93.5"
+                />
+                <path class="u-fill-none u-stroke-white" stroke-miterlimit="10" d="M1649.7,3.4c1.8-1.9,2.8-2.9,2.8-2.9"/>
+            </g>
+            <g>
+                <circle class="u-fill-none u-stroke-white" stroke-width="12" stroke-miterlimit="10" stroke-opacity=".15" cx="1286.1" cy="139.1" r="7.9"/>
+                <circle class="u-fill-none u-stroke-white" stroke-width="5" stroke-miterlimit="10" cx="1286.1" cy="139.1" r="4.5"/>
+            </g>
+            <g>
+                <circle class="u-fill-none u-stroke-white" stroke-width="12" stroke-miterlimit="10" stroke-opacity=".15" cx="597.1" cy="82.1" r="7.9"/>
+                <circle class="u-fill-none u-stroke-white" stroke-width="5" stroke-miterlimit="10" cx="597.1" cy="82.1" r="4.5"/>
+            </g>
+            <g>
+                <circle class="u-fill-none u-stroke-white" stroke-width="12" stroke-miterlimit="10" stroke-opacity=".15" cx="448.1" cy="166.1" r="7.9"/>
+                <circle class="u-fill-none u-stroke-white" stroke-width="5" stroke-miterlimit="10" cx="448.1" cy="166.1" r="4.5"/>
+            </g>
+            </svg>
+        </figure>
+        <!-- End SVG Background Shape -->
     </div>
-  </div>
-</main>
-
-<!-- ========== FOOTER ========== -->
-
-<footer id="SVGwave7BottomShape" class="position-relative border-top pt-5" style="">
-    <!-- Lists -->
-    <div class="container space-top-2 space-top-md-3 space-bottom-2">
-        <!-- Logo -->
-        <a class="d-inline-flex align-items-center mb-4" href="bishal" aria-label="oppn">
-            <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/oppn-blue.svg'), :alt => "Logo", :class => "custom_logo" %>
-        </a>
-        <!-- End Logo -->
-
-        <div class="row mb-6">
-            <div class="col-sm-12 col-lg-4 mb-7 mb-sm-7">
-                <div class="mb-4">
-                    <h2 class="text-primary h5">Oppn vous ouvre les portes des franchises, partout en France</h2>
-                </div>
-                <a class="btn btn-primary btn-sm transition-3d-hover" href="bishal2" target="_blank">Toutes les enseignes</a>
-            </div>
-
-            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-8 ml-lg-auto">
-                <h4 class="h6 font-weight-semi-bold">A propos</h4>
-
-                <!-- List Group -->
-                <ul class="list-group list-group-flush list-group-borderless mb-0">
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Mentions légales</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Données personnelles</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">CGU</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Nous contacter</a></li>
-                </ul>
-                <!-- End List Group -->
-            </div>
-
-            <div class="col-sm-4 col-lg-3 mb-4 mb-sm-8 ml-lg-auto">
-                <h4 class="h6 font-weight-semi-bold">Vos visites par thème</h4>
-
-                <!-- List Group -->
-                <ul class="list-group list-group-flush list-group-borderless mb-0">
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchises alimentaire</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchises beauté</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchise restauration</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchise prêt-à-porter</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchise maison</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Franchise service </a></li>
-
-                </ul>
-                <!-- End List Group -->
-            </div>
-
-            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-8 ml-lg-auto">
-                <h4 class="h6 font-weight-semi-bold">Nos sites</h4>
-
-                <!-- List Group -->
-                <ul class="list-group list-group-flush list-group-borderless mb-0">
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Le Groupe</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="https://insiti.com/" _target="blank">inSiti</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Loop</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Projets-locaux</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Conceptstor</a></li>
-                    <li class="mb-n3"><a class="list-group-item list-group-item-action" href="#">Oppn</a></li>
-
-                </ul>
-                <!-- End List Group -->
-            </div>
-    </div>
-    </div>
-    <!-- End Lists -->
-
-    <!-- Social Networks -->
-    <div class="container space-1 ">
-      <div class="row justify-content-end">
-        <div class="col-md-5 text-right">
-           <ul class="list-inline mb-0">
-            <li class="list-inline-item mx-0">
-              <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
-                <span class="fab fa-facebook-f btn-icon__inner"></span>
-              </a>
-            </li>
-            <li class="list-inline-item mx-0">
-              <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
-                <span class="fab fa-twitter btn-icon__inner"></span>
-              </a>
-            </li>
-            <li class="list-inline-item mx-0">
-              <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
-                <span class="fab fa-instagram btn-icon__inner"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- End Social Networks -->
-
-    <!-- SVG Shape -->
-    <figure class="ie-wave-7-bottom w-80 w-md-65 w-lg-50 position-absolute bottom-0 left-0 z-index-n1">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 589.5 112.7" style="enable-background:new 0 0 589.5 112.7;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwave7BottomShape">
-            <style type="text/css">
-                .wave-7-bottom-0{fill:#377DFF;}
-            </style>
-            <linearGradient id="wave7BottomID" gradientUnits="userSpaceOnUse" x1="275.6292" y1="4.2812" x2="303.6378" y2="163.1255">
-                <stop class="stop-color-info" offset="0" style="stop-color:#00DFFC"></stop>
-                <stop class="stop-color-primary" offset="1" style="stop-color:#377DFF"></stop>
-            </linearGradient>
-            <path fill="url(#wave7BottomID)" d="M0,64.7c0,0,131.5-62.5,277-23.5s205,66,312.5,71.5H0L0,64.7z"></path>
-            <path class="wave-7-bottom-0 fill-primary" d="M0,0c0,0.1,38.9,5.7,42.5,6.4c37.7,7.3,74.4,19.5,108.4,37.3c15.5,8.2,30.3,17.6,45.6,26.3  c22.2,12.7,45.4,22.1,70.1,28.9c11,3,22.2,5.5,33.4,7.7c13.6,2.6,27.3,4.7,41,6.2c0,0-341,0-341,0S0,0.2,0,0z"></path>
-        </svg>
-    </figure>
-    <!-- End SVG Shape -->
-</footer>
-<!-- ========== END FOOTER ========== -->
+    <!-- End Devices v2 Section -->
