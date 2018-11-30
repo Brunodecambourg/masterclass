@@ -1,5 +1,5 @@
-import "./js/front.min";
-import "./js/custom-front";
+import "./js/front.min.js";
+import "./js/custom-front.js";
 import "./theme.css";
 
 
@@ -154,6 +154,7 @@ import "./img/32x32/img9.jpg"
 import "./img/32x32/img10.jpg"
 
 import "./img/bg-shapes/bg1.png"
+import "./img/bg-shapes/bg3.png"
 import "./img/533x711/img2.jpg"
 import "./img/282x500/img1.jpg"
 
@@ -161,3 +162,10 @@ import "./img/logos/dijon.jpg"
 import "./img/logos/dijon.png"
 import "./img/logos/casino.png"
 import "./img/logos/ar.png"
+
+import "./svg/logos/insiti.svg"
+import "./svg/logos/loop.svg"
+import "./img/logos/conceptstor.png"
+
+import "./svg/logos/insiti-group_blc.svg"
+import "./svg/logos/projets-locaux-logo.svg"
