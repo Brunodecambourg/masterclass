@@ -408,4 +408,8 @@ figure {
   }
 }
 
+/* ================= Conceptstor ====================== */
 
+.blog_card-bg{
+  background-image: url(../bootstrap/theme/img/500x550/img2.jpg);
+}
