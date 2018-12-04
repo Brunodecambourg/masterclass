@@ -1,5 +1,7 @@
 /* Bishal */
 
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
 figure {
   margin: 0 0 0 !important;
 }
@@ -52,9 +54,6 @@ figure {
   margin-left: 10px;
 }
 
-.fa-size {
-  font-size: 1.5rem;
-}
 
 .inline {
   display: inline;
@@ -410,8 +409,29 @@ figure {
 
 /* ================= Conceptstor ====================== */
 
+body{
+  font-family: 'Signika', sans-serif !important;
+}
+
+.text-custom{
+  color: #0f3552c9;
+}
+.bg-color{
+  background: linear-gradient(1deg, #eef2f7 0%, #eef2f7 0%, #9251AC 71%, #9251AC 100%);
+}
+
 .blog_card-bg{
   background-image: url(../bootstrap/theme/img/500x550/img2.jpg);
+}
+
+.white-border-1{
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+
+.fa-size {
+  font-size: 1.5rem;
 }
 
 .t-5{
@@ -425,3 +445,10 @@ figure {
 .mw-240{
   min-width: 250px !important;
 }
+
+
+
+
+/* background: linear-gradient(190deg, #8AE5E4 0%, #8AE5E4 30%, #B4F3B6 70%, #B4F3B6 100%); */
+/* background: linear-gradient(195deg, #9251AC 0%, #9251AC 30%, #D782D9 70%, #D782D9 100%); */
+/*   background: linear-gradient(180deg, #9251AC 0%, #D782D9 50%, #F6A4EB 100%) */
