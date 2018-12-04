@@ -24,7 +24,7 @@ import "./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"
 //import "./vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.js"
 
 
-import "./vendor/"
+
 
 import "./vendor/jquery-validation/dist/jquery.validate.min.js"
 
@@ -64,6 +64,7 @@ import "./vendor/jquery-migrate/dist/jquery-migrate.min.js"
 import "./vendor/appear.js"
 import "./vendor/jquery.countdown.min.js"
 
+import "./js/components/hs.go-to.js"
 
 // vendors fail
 // import "./vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"
@@ -100,8 +101,6 @@ import "./img/1920x1080/img20.jpg"
 import "./svg/logos/open.svg"
 import "./img/logos/open.png"
 
-
-
 import "./svg/clients-logo/amazon.svg"
 import "./svg/flat-icons/sitting-woman-flat-concept-illustration.svg"
 import "./svg/flat-icons/walking-man-flat-concept-illustration.svg"
@@ -111,7 +110,6 @@ import "./svg/flat-icons/in-the-office-flat-concept-illustration.svg"
 import "./svg/logos/oppn-white.svg"
 import "./svg/logos/oppn-blue.svg"
 
-
 import "./img/160x160/img1.jpg"
 import "./img/160x160/img2.jpg"
 import "./img/160x160/img3.jpg"
@@ -119,9 +117,7 @@ import "./img/160x160/img4.jpg"
 import "./img/160x160/img5.jpg"
 import "./img/160x160/img6.jpg"
 
-
 import "./img/64x64/img1.jpg"
-
 
 import "./img/320x320/img1.jpg"
 import "./img/450x450/img1.jpg"
@@ -161,7 +157,7 @@ import "./img/500x280/img4.jpg"
 import "./img/500x280/img5.jpg"
 import "./img/500x280/img6.jpg"
 import "./img/500x550/img2.jpg"
-
+import "./img/600x600/img1.jpg"
 
 import "./img/bg-shapes/bg1.png"
 import "./img/bg-shapes/bg3.png"

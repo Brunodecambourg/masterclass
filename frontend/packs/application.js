@@ -23,3 +23,9 @@ import "init/stylesheet/stylesheet";
 
 Turbolinks.start();
 Rails.start();
+
+//$(document).on('ready', function () {
+document.addEventListener('turbolinks:load', () => {
+    // initialization of cubeportfolio
+    $.HSCore.components.HSCubeportfolio.init('.cbp');
+});

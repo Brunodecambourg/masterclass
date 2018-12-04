@@ -413,3 +413,15 @@ figure {
 .blog_card-bg{
   background-image: url(../bootstrap/theme/img/500x550/img2.jpg);
 }
+
+.t-5{
+  top: 5px !important;
+}
+
+.l-n1{
+  left: -1.5rem !important;
+}
+
+.mw-240{
+  min-width: 250px !important;
+}
