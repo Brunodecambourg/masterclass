@@ -1,51 +1,57 @@
-<!-- Header -->
-<header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md" data-header-fix-moment="500" data-header-fix-effect="slide">
-    <div class="u-header__section">
-        <div id="logoAndNav" class="container">
-            <!-- Nav -->
-            <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
-                <!-- Logo -->
-                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Front">
-                    <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/projets-locaux-logo.svg'), :alt => "image", :class => "img-fluid" %>
-                    <span>Conceptstor.com</span>
-                </a>
-                <!-- End Logo -->
+<!-- Hero Section-->
+<div class="position-relative bg-custom overflow-hidden">
+    <div id="logoAndNav" class="container mw-95">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
+            <!-- Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Front">
+                <span class="text-purple">Conceptstor.com</span>
+            </a>
+            <!-- End Logo -->
 
-                <!-- Responsive Toggle Button -->
-                <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-                    <span id="hamburgerTrigger" class="u-hamburger__box">
-                    <span class="u-hamburger__inner"></span>
-                    </span>
-                </button>
-                <!-- End Responsive Toggle Button -->
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                <span id="hamburgerTrigger" class="u-hamburger__box">
+                <span class="u-hamburger__inner"></span>
+                </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
 
-                <!-- Navigation -->
-                <div id="navBar" class="collapse navbar-collapse py-0">
-                    <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
-                        <!-- Home -->
-                        <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
-                            <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                                A Propos  Groupe      
-                            </a>
-                        </li>
-                        <!-- End Home -->
+            <!-- Navigation -->
+            <div id="navBar" class="collapse navbar-collapse py-0">
+                <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
+                    <!-- Home -->
+                    <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                        <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0 text-white" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                            A Propos     
+                        </a>
+                    </li>
+                    <!-- End Home -->
 
-                        <!-- Button -->
-                        <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
-                            <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
-                                Me connecter
-                            </a>
-                        </li>
-                        <!-- End Button -->
-                    </ul>
-                </div>
-                <!-- End Navigation -->
-            </nav>
-            <!-- End Nav -->
-        </div>
+                    <!-- Home -->
+                    <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened ml-3" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                        <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0 text-white" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                            Groupe      
+                        </a>
+                    </li>
+                    <!-- End Home -->
+
+                    <!-- Button -->
+                    <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
+                        <a class="btn btn-custom btn-sm text-white" href="#" target="_blank">
+                            Me connecter
+                        </a>
+                    </li>
+                    <!-- End Button -->
+                </ul>
+            </div>
+            <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
     </div>
-</header>
-<!-- End Header -->
+</div>
+    <!-- End Hero Section 2 -->
+
 
 <main id="content" role="main">
     <div class="container u-space-4-top u-space-3-bottom">
@@ -76,7 +82,7 @@
                 <!-- Sticky Block -->
                 <div class="js-sticky-block pl-lg-4 position-relative" data-sticky-view="lg" data-start-point="#stickyBlockStartPoint" data-end-point="#stickyBlockEndPoint" data-offset-top="80" data-offset-bottom="130" style="z-index: 1; top: 0; width: 445px; height: 545px;">
                     <div class="mb-6">
-                        <h1 class="h4 text-primary font-weight-bold">Titre de l’image</h1>
+                        <h1 class="h4 text-purple font-weight-bold">Titre de l’image</h1>
                         <p class="mb-0 text-justify">Displaying this large amount of content in a smooth and seamless way was quite a challenge. By loading assets in the background, playing and stopping audio on the fly, parallaxing hotspots, and use of large images we succeeded in giving the user a smooth experience.</p>
                     </div>
                     <hr class="my-5">
@@ -85,43 +91,19 @@
                     <ul class="list-unstyled mb-0">
                         <li class="media mb-1">
                             <div class="d-flex w-50 w-sm-50">
-                                <h3 class="h6">Voir la page enseigne</h3>
-                            </div>
-                            <div class="media-body">
-                                <small class="text-muted">
-                                    Htmlstream
-                                </small>
+                                <a href="#"class="h6 text-purple font-weight-bold">Voir la page enseigne</a>
                             </div>
                         </li>
 
                         <li class="media mb-1">
                             <div class="d-flex w-50 w-sm-50">
-                                <h4 class="h6">Contacter l’enseigne</h4>
-                            </div>
-                            <div class="media-body">
-                                <small class="text-muted">
-                                    Maria Muszynska,
-                                </small>
+                                <a href="#" class="h6 text-purple font-weight-bold">Contacter l’enseigne</a>
                             </div>
                         </li>
 
-                        <li class="media">
+                        <li class="media mb-1">
                             <div class="d-flex w-50 w-sm-50">
-                                <h4 class="h6">Comparer les chiffres-clé</h4>
-                            </div>
-                            <div class="media-body">
-                                <small class="d-block text-muted mb-1">
-                                    FWA Site of the Day
-                                </small>
-                                <small class="d-block text-muted mb-1">
-                                    Awwwards Site of the Day
-                                </small>
-                                <small class="d-block text-muted mb-1">
-                                    CSSAwards Site of the Day
-                                </small>
-                                <small class="d-block text-muted">
-                                    Bronze ADCN Lamp (Digital Craft)
-                                </small>
+                                <a href="#" class="h6 text-purple font-weight-bold">Comparer les chiffres-clé</a>
                             </div>
                         </li>
                     </ul>
@@ -131,7 +113,7 @@
 
                     <div class="media">
                         <div class="d-flex w-40 w-sm-30">
-                            <h4 class="h6">Partager</h4>
+                            <h4 class="h6 text-purple font-weight-bold">Partager</h4>
                         </div>
                         <div class="media-body">
                             <!-- Social Networks -->
@@ -143,7 +125,7 @@
                                 </li>
                                 <li class="list-inline-item">
                                     <a class="u-bg-transparent u-icon u-icon--sm u-icon-secondary--air" href="#">
-                                    <span class="fab fa-google u-icon__inner"></span>
+                                    <span class="fab fa-instagram u-icon__inner"></span>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
@@ -164,7 +146,7 @@
         <div class="container u-space-3-top u-space-1-bottom">
             <!-- Title -->
             <div class="w-md-80 w-lg-50 text-center mx-auto mb-9">
-                <h2 class="text-primary">voir aussi sur le même <strong class="font-weight-bold">thème</strong></h2>
+                <h2 class="text-custom">voir aussi sur le même <strong class="font-weight-bold">thème</strong></h2>
             </div>
             <!-- End Title -->
 
@@ -187,7 +169,7 @@
                                         <div class="cbp-caption-defaultWrap">
                                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img1.jpg'), :alt=> "Image Description" %>
                                         </div>
-                                        <div class="cbp-caption-activeWrap bg-primary">
+                                        <div class="cbp-caption-activeWrap bg-custom">
                                             <div class="cbp-l-caption-alignCenter">
                                                 <div class="cbp-l-caption-body">
                                                     <h4 class="h6 text-white mb-0">Remind Me More</h4>
@@ -209,7 +191,7 @@
                                         <div class="cbp-caption-defaultWrap">
                                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img2.jpg'), :alt=> "Image Description" %>
                                         </div>
-                                        <div class="cbp-caption-activeWrap bg-primary">
+                                        <div class="cbp-caption-activeWrap bg-custom">
                                             <div class="cbp-l-caption-alignCenter">
                                                 <div class="cbp-l-caption-body">
                                                     <h4 class="h6 text-white mb-0">Workout Buddy</h4>
@@ -231,7 +213,7 @@
                                         <div class="cbp-caption-defaultWrap">
                                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img3.jpg'), :alt=> "Image Description" %>
                                         </div>
-                                        <div class="cbp-caption-activeWrap bg-primary">
+                                        <div class="cbp-caption-activeWrap bg-custom">
                                             <div class="cbp-l-caption-alignCenter">
                                                 <div class="cbp-l-caption-body">
                                                     <h4 class="h6 text-white mb-0">Tiger</h4>
@@ -253,7 +235,7 @@
                                         <div class="cbp-caption-defaultWrap">
                                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img5.jpg'), :alt=> "Image Description" %>
                                         </div>
-                                        <div class="cbp-caption-activeWrap bg-primary">
+                                        <div class="cbp-caption-activeWrap bg-custom">
                                             <div class="cbp-l-caption-alignCenter">
                                                 <div class="cbp-l-caption-body">
                                                     <h4 class="h6 text-white mb-0">Tiger</h4>
@@ -275,7 +257,7 @@
                                         <div class="cbp-caption-defaultWrap">
                                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img4.jpg'), :alt=> "Image Description" %>
                                         </div>
-                                        <div class="cbp-caption-activeWrap bg-primary">
+                                        <div class="cbp-caption-activeWrap bg-custom">
                                             <div class="cbp-l-caption-alignCenter">
                                                 <div class="cbp-l-caption-body">
                                                     <h4 class="h6 text-white mb-0">Tiger</h4>
@@ -296,7 +278,7 @@
                                     <div class="cbp-caption-defaultWrap">
                                         <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img6.jpg'), :alt=> "Image Description" %>
                                     </div>
-                                    <div class="cbp-caption-activeWrap bg-primary">
+                                    <div class="cbp-caption-activeWrap bg-custom">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <h4 class="h6 text-white mb-0">Tiger</h4>
@@ -317,7 +299,7 @@
                                         <div class="cbp-caption-defaultWrap">
                                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img8.jpg'), :alt=> "Image Description" %>
                                         </div>
-                                        <div class="cbp-caption-activeWrap bg-primary">
+                                        <div class="cbp-caption-activeWrap bg-custom">
                                             <div class="cbp-l-caption-alignCenter">
                                                 <div class="cbp-l-caption-body">
                                                     <h4 class="h6 text-white mb-0">Workout Buddy</h4>
@@ -339,7 +321,209 @@
                                         <div class="cbp-caption-defaultWrap">
                                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img12.jpg'), :alt=> "Image Description" %>
                                         </div>
-                                        <div class="cbp-caption-activeWrap bg-primary">
+                                        <div class="cbp-caption-activeWrap bg-custom">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <h4 class="h6 text-white mb-0">Tiger</h4>
+                                                    <p class="small u-text-light mb-0">
+                                                        by Cosmin Capitanu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Content -->
+            </div>
+            <!-- End Cubeportfolio -->
+        </div>
+        <!-- End Portfolio Section -->
+
+        <!-- Portfolio Section -->
+        <div class="container u-space-3-top u-space-1-bottom">
+            <!-- Title -->
+            <div class="w-md-80 w-lg-50 text-center mx-auto mb-9">
+                <h2 class="text-custom">voir aussi sur le même <strong class="font-weight-bold">secteur</strong></h2>
+            </div>
+            <!-- End Title -->
+
+            <div class="u-cubeportfolio">
+                <!-- Content -->
+                <div class="cbp cbp-caption-active cbp-caption-overlayBottomAlong cbp-ready" data-layout="grid" data-controls="#filterControls" data-animation="quicksand" data-x-gap="32" data-y-gap="32" data-media-queries="[
+                    {&quot;width&quot;: 1500, &quot;cols&quot;: 4},
+                    {&quot;width&quot;: 1100, &quot;cols&quot;: 4},
+                    {&quot;width&quot;: 800, &quot;cols&quot;: 3},
+                    {&quot;width&quot;: 480, &quot;cols&quot;: 2},
+                    {&quot;width&quot;: 300, &quot;cols&quot;: 1}
+                    ]" style="height: 512px;">
+                    <div class="cbp-wrapper-outer">
+                    
+                        <div class="cbp-wrapper">
+                            <!-- Item -->
+                            <div class="cbp-item rounded graphic" style="width: 253px; left: 0px; top: 0px;">
+                                <div class="cbp-item-wrapper">
+                                    <a class="cbp-caption" href="#">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img1.jpg'), :alt=> "Image Description" %>
+                                        </div>
+                                        <div class="cbp-caption-activeWrap bg-custom">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <h4 class="h6 text-white mb-0">Remind Me More</h4>
+                                                    <p class="small u-text-light mb-0">
+                                                        by Tiberiu Neamu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="cbp-item rounded branding" style="width: 253px; left: 285px; top: 0px;">
+                                <div class="cbp-item-wrapper">
+                                    <a class="cbp-caption" href="single-page-simple.html">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img2.jpg'), :alt=> "Image Description" %>
+                                        </div>
+                                        <div class="cbp-caption-activeWrap bg-custom">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <h4 class="h6 text-white mb-0">Workout Buddy</h4>
+                                                    <p class="small u-text-light mb-0">
+                                                        by Tiberiu Neamu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="cbp-item rounded abstract illustration" style="width: 253px; left: 570px; top: 0px;">
+                                <div class="cbp-item-wrapper">
+                                    <a class="cbp-caption" href="#">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img3.jpg'), :alt=> "Image Description" %>
+                                        </div>
+                                        <div class="cbp-caption-activeWrap bg-custom">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <h4 class="h6 text-white mb-0">Tiger</h4>
+                                                    <p class="small u-text-light mb-0">
+                                                        by Cosmin Capitanu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="cbp-item rounded abstract illustration" style="width: 253px; left: 855px; top: 0px;">
+                                <div class="cbp-item-wrapper">
+                                    <a class="cbp-caption" href="single-page-simple.html">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img5.jpg'), :alt=> "Image Description" %>
+                                        </div>
+                                        <div class="cbp-caption-activeWrap bg-custom">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <h4 class="h6 text-white mb-0">Tiger</h4>
+                                                    <p class="small u-text-light mb-0">
+                                                        by Cosmin Capitanu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="cbp-item rounded graphic illustration" style="width: 253px; left: 0px; top: 272px;">
+                                <div class="cbp-item-wrapper">
+                                    <a class="cbp-caption" href="#">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img4.jpg'), :alt=> "Image Description" %>
+                                        </div>
+                                        <div class="cbp-caption-activeWrap bg-custom">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <h4 class="h6 text-white mb-0">Tiger</h4>
+                                                    <p class="small u-text-light mb-0">
+                                                        by Cosmin Capitanu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="cbp-item rounded graphic illustration" style="width: 253px; left: 285px; top: 272px;"><div class="cbp-item-wrapper">
+                                <a class="cbp-caption" href="single-page-simple.html">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img6.jpg'), :alt=> "Image Description" %>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap bg-custom">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <h4 class="h6 text-white mb-0">Tiger</h4>
+                                                <p class="small u-text-light mb-0">
+                                                    by Cosmin Capitanu
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div></div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="cbp-item rounded branding" style="width: 253px; left: 570px; top: 272px;">
+                                <div class="cbp-item-wrapper">
+                                    <a class="cbp-caption" href="single-page-simple.html">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img8.jpg'), :alt=> "Image Description" %>
+                                        </div>
+                                        <div class="cbp-caption-activeWrap bg-custom">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <h4 class="h6 text-white mb-0">Workout Buddy</h4>
+                                                    <p class="small u-text-light mb-0">
+                                                        by Tiberiu Neamu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <div class="cbp-item rounded abstract illustration" style="width: 253px; left: 855px; top: 272px;">
+                                <div class="cbp-item-wrapper">
+                                    <a class="cbp-caption" href="single-page-simple.html">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/380x360/img12.jpg'), :alt=> "Image Description" %>
+                                        </div>
+                                        <div class="cbp-caption-activeWrap bg-custom">
                                             <div class="cbp-l-caption-alignCenter">
                                                 <div class="cbp-l-caption-body">
                                                     <h4 class="h6 text-white mb-0">Tiger</h4>
@@ -364,7 +548,7 @@
     </div>
 
     <!-- Contact Us Section -->
-    <div class="u-gradient-half-primary-v1">
+    <div class="bg-custom">
         <div class="container u-space-3-top u-space-4-bottom">
             <div class="row justify-content-md-between align-items-md-start">
                 <div class="col-md-6 mb-7 mb-md-0">

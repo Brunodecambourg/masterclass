@@ -1,13 +1,15 @@
 <!-- Main Section -->
 <main id="content" role="main">
     <!-- Hero Section-->
-    <div class="position-relative bg-img overflow-hidden">
-        <div id="logoAndNav" class="container mw-95">
+    <div class="position-relative overflow-hidden">
+        <div class="bg-img"></div>
+        <div class="overlay"></div>
+        <div id="logoAndNav" class="container mw-95 position-absolute mx-auto custom-position">
             <!-- Nav -->
-            <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
+            <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal mt-3">
                 <!-- Logo -->
                 <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Front">
-                    <span class="text-purple">Conceptstor.com</span>
+                    <span class="logo-font">Conceptstor</span>
                 </a>
                 <!-- End Logo -->
 
@@ -21,7 +23,7 @@
 
                 <!-- Navigation -->
                 <div id="navBar" class="collapse navbar-collapse py-0">
-                    <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
+                    <ul class="navbar-nav u-header__navbar-nav ml-auto">
                         <!-- Home -->
                         <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
                             <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0 text-white" href="javascript:;" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +42,7 @@
 
                         <!-- Button -->
                         <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
-                            <a class="btn btn-secondary btn-sm text-white" href="#" target="_blank">
+                            <a class="btn btn-custom btn-sm text-custom" href="#" target="_blank">
                                 Me connecter
                             </a>
                         </li>
@@ -49,182 +51,68 @@
                 </div>
                 <!-- End Navigation -->
             </nav>
-            <!-- End Nav -->
-        </div>
+            <!-- End Nav --> 
+
+            <!-- Hero Section -->
+            <div class="container mt-lg-5 mt-md-5 ">
+                <div class="w-lg-60 mb-5 mx-auto text-center">
+                    <h2 class="display-5 text-white font-weight-bold s-heading">Comparez toutes les franchises en quelques (milliers d’) images</h2>
+                    <p class="lead text-white">et contactez les meilleures.</p>
+                </div>
 
 
-        <!-- Hero Section -->
-        <div class="container mt-lg-5 ">
-            <div class="w-lg-60 mb-5 mx-auto text-center">
-                <h2 class="display-5 text-white font-weight-bold">Comparez toutes les franchises en quelques (milliers d’) images</h2>
-                <p class="lead text-white">et contactez les meilleures.</p>
-            </div>
-
-            <div class="w-lg-65 mx-auto">
+                <!-- Choose section -->
                 <form class="js-validate">
-                    <div class="row form-row">
-                        <div class="col-sm-5 mb-4">
-                            <div id="logoAndNav" class="container bg-white py-1 rounded">
-                                <!-- Nav -->
-                                <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
-                                    <!-- Navigation -->
-                                    <div id="navBar" class="collapse navbar-collapse py-0">
-                                        <ul class="navbar-nav u-header__navbar-nav mx-auto">
-                                            <!-- Choisi secteur -->
-                                            <li class="nav-item hs-has-sub-menu u-header__nav-item hs-sub-menu-opened mr-2" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
-                                                <a id="pagesMegaMenu" class="nav-link u-header__nav-link text-custom py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">
-                                                    Choisissez un secteur
-                                                    <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                                                </a>
-
-                                                <!-- Choisi secteur - Submenu -->
-                                                <ul id="pagesSubMenu" class="t-5 mw-240 l-n1 list-inline hs-sub-menu u-header__sub-menu py-3 mb-0 animated fadeOut" style="min-width: 220px; display: none;" aria-labelledby="pagesMegaMenu">
-                                                    <!-- Tous le secteurs -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesAbout" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAbout">
-                                                            Tous les secteurs
-                                                        </a>
-                                                    </li>
-                                                    <!-- End Tous les secteurs -->
-
-                                                    <!-- Alimentaire -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesServices">
-                                                            Alimentaire
-                                                        </a>
-                                                    </li>
-                                                    <!-- End Alimentaire -->
-
-                                                    <!-- Beauté -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesServices">
-                                                            Beauté
-                                                        </a>
-                                                    </li>
-                                                    <!-- End Beauté -->
-
-                                                    <!-- Restauration -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesServices">
-                                                            Restauration
-                                                        </a>
-                                                    </li>
-                                                    <!-- End Restauration -->
-
-                                                    <!-- Prêt-à-porter -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesServices">
-                                                            Prêt-à-porter
-                                                        </a>
-                                                    </li>
-                                                    <!-- End Prêt-à-porter -->
-
-                                                    <!-- Maison -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesServices">
-                                                            Maison
-                                                        </a>
-                                                    </li>
-                                                    <!-- End Maison -->
-
-                                                    <!-- Services -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesServices">
-                                                            Services
-                                                        </a>
-                                                    </li>
-                                                    <!-- End Services -->
-                                                </ul>
-                                                <!-- End Choisi secteur - Submenu -->
-                                            </li>
-                                            <!-- End choisi secteur -->
-                                        </ul>
-                                    </div>
-                                    <!-- End Navigation -->
-                                </nav>
-                                <!-- End Nav -->
+                    <div class="row w-lg-70 mx-auto">
+                        <!-- Input -->
+                        <div class="col-lg-5 col-sm-8 mx-auto mb-2">
+                            <div class="js-form-message">
+                                <select class="custom-select mb-2">
+                                    <option value="SecteurSelect1" disabled selected>Choisissez un secteur</option>
+                                    <option value="SecteurSelect2">Tous les secteurs</option>
+                                    <option value="SecteurSelect3">Alimentaire</option>
+                                    <option value="SecteurSelect4">Beauté</option>
+                                    <option value="SecteurSelect5">Restauration</option>
+                                    <option value="SecteurSelect6">Prêt-à-porter</option>
+                                    <option value="SecteurSelect7">Maison</option>
+                                    <option value="SecteurSelect8">Services</option>
+                                </select>
                             </div>
                         </div>
-                        
-                        <div class="col-sm-5 mb-4">                            
-                            <div id="logoAndNav" class="container bg-white py-1 rounded">
-                                <!-- Nav -->
-                                <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
-                                    <!-- Navigation -->
-                                    <div id="navBar" class="collapse navbar-collapse py-0">
-                                        <ul class="navbar-nav u-header__navbar-nav mx-auto">
-                                            <!-- Choisissez un thème -->
-                                            <li class="nav-item hs-has-sub-menu u-header__nav-item hs-sub-menu-opened mr-2" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
-                                                <a id="pagesMegaMenu" class="nav-link u-header__nav-link text-custom py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">
-                                                    Choisissez un thème
-                                                    <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                                                </a>
+                        <!-- End Input -->
+                    
 
-                                                <!-- Choisissez un thème - Submenu -->
-                                                <ul id="pagesSubMenu" class="list-inline hs-sub-menu u-header__sub-menu py-3 mb-0 animated fadeOut" style="min-width: 220px; display: none;" aria-labelledby="pagesMegaMenu">
-                                                    <!-- About -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesAbout" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAbout">
-                                                            About
-                                                            <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                                                        </a>
-
-                                                        <!-- Submenu (level 2) -->
-                                                        <ul id="navSubmenuPagesAbout" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px; display: none;" aria-labelledby="navLinkPagesAbout">
-                                                            <li class="dropdown-item px-0">
-                                                                <a class="nav-link u-list__link px-4" href="../pages/about-agency.html">About Agency</a>
-                                                            </li>
-                                                            <li class="dropdown-item px-0">
-                                                                <a class="nav-link u-list__link px-4" href="../pages/about-start-up.html">About Start-Up</a>
-                                                            </li>
-                                                        </ul>
-                                                        <!-- End Submenu (level 2) -->
-                                                    </li>
-                                                    <!-- End About -->
-
-                                                    <!-- Services -->
-                                                    <li class="dropdown-item hs-has-sub-menu">
-                                                        <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesServices">
-                                                            Services
-                                                            <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                                                        </a>
-
-                                                        <!-- Submenu (level 2) -->
-                                                        <ul id="navSubmenuPagesServices" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px; display: none;" aria-labelledby="navLinkPagesServices">
-                                                            <li class="dropdown-item px-0">
-                                                                <a class="nav-link u-list__link px-4" href="#">Services Agency</a>
-                                                            </li>
-                                                            <li class="dropdown-item px-0">
-                                                                <a class="nav-link u-list__link px-4" href="#">Services Start-Up</a>
-                                                            </li>
-                                                        </ul>
-                                                        <!-- End Submenu (level 2) -->
-                                                    </li>
-                                                    <!-- End Services -->
-                                                </ul>
-                                                <!-- End Choisissez un thème - Submenu -->
-                                            </li>
-                                            <!-- End Choisissez un thème -->
-                                        </ul>
-                                    </div>
-                                    <!-- End Navigation -->
-                                </nav>
-                                <!-- End Nav -->
+                        <!-- Input -->
+                        <div class="col-lg-5 col-sm-8 mx-auto mb-2">
+                            <div class="js-form-message">
+                                <select class="custom-select mb-2">
+                                    <option id="choose" value="ThemeSelect1" disabled selected>Choisissez un thème</option>
+                                    <option id="choose" value="ThemeSelect2">About</option>
+                                    <option class="" value="ThemeSelect3">Services</option>
+                                </select>
                             </div>
                         </div>
+                        <!-- End Input -->
 
-                        <div class="col-sm-2 mb-4">
-                            <button type="submit" class="btn btn-block btn-secondary u-btn-primary ">Valider</button>
+                        <div class="col-lg-2 col-sm-8 mx-auto mb-2">
+                            <button type="submit" class="btn btn-block btn-custom u-btn-primary text-custom">Valider</button>
                         </div>
+
                     </div>
                 </form>
+                <!-- End Choose section -->
             </div>
+            <!-- End Hero Section -->
+
+
         </div>
-        <!-- End Hero Section -->
+
+
+        
 
 
         <!-- SVG Background -->
-        <figure class="position-absolute-bottom-0">
+        <figure class="position-absolute-bottom-0 no-display">
             <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="140px" viewBox="20 -20 300 100" style="margin-bottom: -8px;" xml:space="preserve">
                 <path class="u-fill-primary" opacity=".075" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
                     c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"></path>

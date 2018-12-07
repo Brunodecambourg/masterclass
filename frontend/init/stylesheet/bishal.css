@@ -1,6 +1,7 @@
 /* Bishal */
 
 @import url('https://fonts.googleapis.com/css?family=Signika');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 
 figure {
   margin: 0 0 0 !important;
@@ -415,8 +416,11 @@ body{
  */
 }
 
-.new-font{
-  font-family: 'Signika', sans-serif !important;
+.logo-font{
+  font-family: 'Lobster Two', cursive;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .mw-95{
@@ -431,31 +435,70 @@ body{
   border: 0px solid #d4d7dd;
 }
 
-.text-custom{
-  color: #0f3552c9;
-}
-
 .bg-color{
   background: linear-gradient(1deg, #eef2f782 0%, #eef2f7b0 0%, #e0d8e296 71%, #eee6f1a8 100%);
 }
 
-
-.bg-img{
-  background-image: url(../bootstrap/theme/img/bg-shapes/bg8.png);
-  background-repeat: no-repeat;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
+.bg-custom{
+  background: linear-gradient(280deg, #676895 0%, #413763 100%);
 }
 
+
+.bg-img{
+  background-image: url(../bootstrap/theme/img/bg-shapes/bg11.png);
+  background-repeat: no-repeat;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.custom-position{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 /* background: linear-gradient(1deg, #eef2f7 0%, #eef2f7 0%, #9251AC 71%, #9251AC 100%); */
 /* background: linear-gradient(190deg, #8AE5E4 0%, #8AE5E4 30%, #B4F3B6 70%, #B4F3B6 100%); */
 /* background: linear-gradient(195deg, #9251AC 0%, #9251AC 30%, #D782D9 70%, #D782D9 100%); */
 /* background: linear-gradient(180deg, #9251AC 0%, #D782D9 50%, #F6A4EB 100%) */
 
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(21, 8, 23, 0.75);
+  opacity: 0.6;
+}
+
+.btn-custom{
+  background: #1de9b6;
+  border-color: #1de9b6;
+}
+
+.btn-custom:hover{
+  background: transparent;
+  color: #fff;
+  transition: all 0.2 ease-in;
+}
+
+.text-green{
+  color: #1de9b6;
+}
+
 .text-purple{
   color: #9251AC;
+}
+
+.text-custom{
+  color: #0f3552c9;
 }
 
 .lh-1{
@@ -501,8 +544,26 @@ body{
   min-width: 250px !important;
 }
 
+
+
 @media(max-width: 991px){
   .no-display{
     display: none;
   }
 }
+
+@media(max-width: 476px){
+  .s-heading{
+    font-size: 1.5rem;
+  }
+}
+#choose{
+  background: #fff !important;
+}
+
+#choose:hover{
+  background: #000 !important;
+  color: #fff !important;
+}
+
+
