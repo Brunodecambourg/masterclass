@@ -8,4 +8,6 @@ class LandingController < ApplicationController
   def bishal2
   end
 
+  
+
 end
