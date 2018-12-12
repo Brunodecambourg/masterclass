@@ -3,6 +3,18 @@
     <div id="logoAndNav" class="container mw-95">
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
+            
+            <!-- Test 
+            <div class="logo-container mr-2">
+                <div class="logo-box">
+                    <div class="logo">
+                        <h4 class="logo-text logo-text-1">C</h4> <br/>
+                        <h4 class="logo-text logo-text-2">S</h4>
+                    </div>
+                </div>
+            </div>
+             End Test -->
+            
             <!-- Logo -->
             <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Conceptstor">
                 <span class="logo-font text-custom">Conceptstor</span>
@@ -53,95 +65,76 @@
 <!-- End Header -->
 
 
-<main id="content" role="main">
+<main id="content" role="main">  
     <div class="container u-space-2-top u-space-2-bottom">
         <div class="row">
-            <div class="col-lg-7  mb-7 mb-lg-0">
-                <!-- Cubeportfolio -->
-                <div class="cbp cbp-caption-active cbp-caption-overlayBottomAlong cbp-ready" data-layout="grid" data-animation="quicksand" data-x-gap="32" data-y-gap="32" data-media-queries="[
-                    {&quot;width&quot;: 300, &quot;cols&quot;: 1}]" style="height: 100%;">
-                    
-                    <div class="cbp-wrapper-outer">
-                        <div class="cbp-wrapper">
-                            <!-- Item -->
-                            <div class="cbp-item">
-                                <div class="cbp-item-wrapper">
-                                    <div class="cbp-caption">
-                                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/600x600/img1.jpg'), :alt => "Image", :class=> "rounded"%>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Item -->            
-                        </div>
-                    </div>
-                </div>
-                <!-- End Cubeportfolio -->
+            <div class="col-lg-6 mb-7 mb-lg-0">
+                <%= image_tag asset_pack_path('init/bootstrap/theme/img/600x600/img1.jpg'), :alt => "Image", :class=> "rounded w-100 h-auto"%>
             </div>
-
-            <div id="stickyBlockStartPoint" class="col-lg-5">
+            <div class="col-lg-6">
                 <!-- Sticky Block -->
-                <div class="js-sticky-block pl-lg-4 position-relative" data-sticky-view="lg" data-start-point="#stickyBlockStartPoint" data-end-point="#stickyBlockEndPoint" data-offset-top="80" data-offset-bottom="130" style="z-index: 1; top: 0; width: 445px; height: 545px;">
-                    <div class="mb-6">
-                        <h1 class="h4 text-custom font-weight-bold">Titre de l’image</h1>
-                        <p class="mb-0 text-justify">Displaying this large amount of content in a smooth and seamless way was quite a challenge. By loading assets in the background, playing and stopping audio on the fly, parallaxing hotspots, and use of large images we succeeded in giving the user a smooth experience.</p>
-                    </div>
-                    <hr class="my-5">
-
-                    <!-- List -->
-                    <ul class="list-unstyled mb-0">
-                        <li class="media mb-1">
-                            <div class="d-flex w-50 w-sm-50">
-                                <a href="#"class="h6 text-custom font-weight-bold">Voir la page enseigne</a>
-                            </div>
-                        </li>
-
-                        <li class="media mb-1">
-                            <div class="d-flex w-50 w-sm-50">
-                                <a href="#" class="h6 text-custom font-weight-bold">Contacter l’enseigne</a>
-                            </div>
-                        </li>
-
-                        <li class="media mb-1">
-                            <div class="d-flex w-50 w-sm-50">
-                                <a href="#" class="h6 text-custom font-weight-bold">Comparer les chiffres-clé</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- End List -->
-
-                    <hr class="my-5">
-
-                    <div class="media">
-                        <div class="d-flex w-40 w-sm-30">
-                            <h4 class="h6 text-custom font-weight-bold">Partager</h4>
+                    <div class="js-sticky-block pl-lg-4 position-relative">
+                        <div class="mb-6">
+                            <h1 class="h4 text-custom font-weight-bold">Titre de l’image</h1>
+                            <p class="mb-0 text-justify">Displaying this large amount of content in a smooth and seamless way was quite a challenge. By loading assets in the background, playing and stopping audio on the fly, parallaxing hotspots, and use of large images we succeeded in giving the user a smooth experience.</p>
                         </div>
-                        <div class="media-body">
-                            <!-- Social Networks -->
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item">
-                                    <a class="u-bg-transparent u-icon u-icon--sm u-icon-secondary--air" href="#">
-                                    <span class="fab fa-facebook-f u-icon__inner"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="u-bg-transparent u-icon u-icon--sm u-icon-secondary--air" href="#">
-                                    <span class="fab fa-instagram u-icon__inner"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="u-bg-transparent u-icon u-icon--sm u-icon-secondary--air" href="#">
-                                    <span class="fab fa-twitter u-icon__inner"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <!-- End Social Networks -->
+                        <hr class="my-5">
+
+                        <!-- List -->
+                        <ul class="list-unstyled mb-0">
+                            <li class="media mb-1">
+                                <div class="d-flex w-50 w-sm-50">
+                                    <a href="#"class="h6 text-custom font-weight-bold">Voir la page enseigne</a>
+                                </div>
+                            </li>
+
+                            <li class="media mb-1">
+                                <div class="d-flex w-50 w-sm-50">
+                                    <a href="#" class="h6 text-custom font-weight-bold">Contacter l’enseigne</a>
+                                </div>
+                            </li>
+
+                            <li class="media mb-1">
+                                <div class="d-flex w-50 w-sm-50">
+                                    <a href="#" class="h6 text-custom font-weight-bold">Comparer les chiffres-clé</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- End List -->
+
+                        <hr class="my-5">
+
+                        <div class="media">
+                            <div class="d-flex w-40 w-sm-30">
+                                <h4 class="h6 text-custom font-weight-bold">Partager</h4>
+                            </div>
+                            <div class="media-body">
+                                <!-- Social Networks -->
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a class="u-bg-transparent u-icon u-icon--sm u-icon-secondary--air" href="#">
+                                        <span class="fab fa-facebook-f u-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="u-bg-transparent u-icon u-icon--sm u-icon-secondary--air" href="#">
+                                        <span class="fab fa-instagram u-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="u-bg-transparent u-icon u-icon--sm u-icon-secondary--air" href="#">
+                                        <span class="fab fa-twitter u-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- End Social Networks -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- End Sticky Block -->
+                    <!-- End Sticky Block -->
             </div>
         </div>
-
+    
          <!-- Masonry Section -->
         <div class="u-cubeportfolio py-3 u-bg-light-blue-50 mt-6">
             <!-- Title -->
@@ -454,9 +447,9 @@
                 
                 <a href="bishal" class="logo-font mr-2 text-custom fa-size footer-logo">Conceptstor</a>
                 <span class="d-inline-block">
-                    <h5 class="mb-5"> 
+                    <h5 class="fs-1 mb-5 "> 
                         &copy; inSiti 2019 | 
-                        <a class="h5 u-link-light" href="https://www.insiti.co" target="_blank"> Groupe </a>
+                        <a class="fs-1 text-custom" href="http://www.insiti.co" target="_blank"> Groupe </a>
                     </h5>
                 </span>
                 
