@@ -710,11 +710,18 @@ figure {
 }
 /* =================== Responsive ================ */
 
-@media screen and (max-height: 823px){
+@media screen and (max-width: 320px), screen and (max-height: 568px){
   .bg-img{
-    height: 30vh;
+    height: 85vh !important;
   }
 }
+
+@media screen and (min-width: 360px), screen and (max-width: 411px), screen and (max-height: 823px){
+  .bg-img{
+    height: 75vh;
+  }
+}
+
 
 @media (max-width: 1200px){
   .masonry-container{
@@ -735,6 +742,11 @@ figure {
   .masonry-container{
       columns: 2;
   }
+
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 480px){
@@ -743,7 +755,7 @@ figure {
   }
 
   .s-heading{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
