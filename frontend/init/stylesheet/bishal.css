@@ -716,6 +716,12 @@ figure {
   }
 }
 
+@media screen and (min-width: 411px) and (min-height: 823px){
+  .bg-img{
+    height: 60vh !important;
+  }
+}
+
 @media screen and (min-width: 360px), screen and (max-width: 411px), screen and (max-height: 823px){
   .bg-img{
     height: 75vh;
