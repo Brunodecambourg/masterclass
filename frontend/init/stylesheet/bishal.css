@@ -493,6 +493,16 @@ figure {
   -webkit-filter: blur(0px);
 }
 
+
+
+.bg-img-2{
+  background-image: url(../bootstrap/theme/img/1920x800/img5.jpg);
+  background-repeat: no-repeat;
+  height: 130%;
+  transform: translate3d(0px, -91.5923px, 0px); 
+}
+
+
 .custom-position{
   top: 0;
   bottom: 0;
@@ -876,6 +886,11 @@ figure {
   color: #262626;
 }
 
+
+.modal-content-bg{
+  background: rgb(219, 218, 230) !important;
+}
+
 /* ==================== Responsive =======================*/
 
 @media (max-width: 1000px) {
@@ -920,3 +935,5 @@ figure {
     float: none;
   }
 }
+
+

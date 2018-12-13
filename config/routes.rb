@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'landing/show'
   get 'landing/bishal'
   get 'landing/bishal2'
-  
+  get 'landing/bishal3'
   
 
   root to: 'landing#show'

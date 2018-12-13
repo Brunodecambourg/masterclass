@@ -72,7 +72,8 @@ import "./js/components/hs.go-to.js"
 // import "./vendor/summernote/dist/summernote-bs4.min.js"
 // import "./vendor/summernote/dist/summernote-bs4.css"
 
-
+import "./vendor/dzsparallaxer/dzsparallaxer.css"
+import "./vendor/dzsparallaxer/dzsparallaxer.js"
 
 
 
@@ -166,6 +167,8 @@ import "./img/500x280/img5.jpg"
 import "./img/500x280/img6.jpg"
 import "./img/500x280/img9.jpg"
 
+
+
 import "./img/500x550/img2.jpg"
 import "./img/500x550/img3.jpg"
 import "./img/500x550/img6.jpg"
@@ -173,7 +176,12 @@ import "./img/500x900/img1.jpg"
 
 import "./img/600x600/img1.jpg"
 
+import "./img/900x450/img1.jpg"
+import "./img/900x450/img3.jpg"
+import "./img/900x450/img4.jpg"
+
 import "./img/1920x1080/img32.jpg"
+import "./img/1920x800/img5.jpg"
 import "./img/1920x1080/bg1.png"
 
 import "./img/bg-shapes/bg6.png"
