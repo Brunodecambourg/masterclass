@@ -545,6 +545,17 @@ figure {
   transition: all 0.2 ease-in;
 }
 
+.btn-connection{
+  background: rgba(15, 53, 82, 0.78824);
+  border: 1px solid rgba(15, 53, 82, 0.78824);
+}
+
+.btn-connection:hover{
+  background: transparent;
+  border: 2px solid rgba(15, 53, 82, 0.78824);
+  color: rgba(15, 53, 82, 0.78824) !important;
+}
+
 .text-green{
   color: #1de9b6;
 }
@@ -553,13 +564,25 @@ figure {
   color: #9251AC;
 }
 
-.text-custom{
-  color: #0f3552c9;
+.text-custom, .text-link{
+  color: rgba(15, 53, 82, 0.78824);
+}
+
+.text-link:hover{
+ color: #3b9272 !important;
 }
 
 
 .lh-1{
   line-height: 1.5rem !important;
+}
+
+.lh-2{
+  line-height: 1.3rem !important;
+}
+
+.fs-09{
+  font-size: 0.9rem;
 }
 
 .blog_card-bg--img1{
@@ -592,6 +615,11 @@ figure {
 .fs-1{
   font-size: 0.75rem;
 }
+
+.fs-5{
+  font-size: 5rem;
+}
+
 .t-5{
   top: 5px !important;
 }
@@ -888,7 +916,7 @@ figure {
 
 
 .modal-content-bg{
-  background: rgb(219, 218, 230) !important;
+  background: rgb(251, 251, 251) !important;
 }
 
 /* ==================== Responsive =======================*/

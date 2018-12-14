@@ -7,8 +7,8 @@
             <!-- Nav -->
             <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal mt-3 mb-6">
                 <!-- Logo -->
-                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Front">
-                    <span class="logo-font">Conceptstor</span>
+                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Conceptstor">
+                    <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/conceptstor-logo-blc.svg'), :alt => "Image Description", :class => "w-80"%>
                 </a>
                 <!-- End Logo -->
 
@@ -40,8 +40,8 @@
                         <!-- End Home -->
 
                         <!-- Button -->
-                        <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
-                            <a class="btn btn-custom btn-sm text-custom" href="#">
+                        <li class="nav-item d-md-inline-block pr-0">
+                            <a class="btn btn-custom btn-sm text-custom" href="#connectionModal" data-toggle="modal" data-target="#exampleModal">
                                 Me connecter
                             </a>
                         </li>
@@ -51,6 +51,32 @@
                 <!-- End Navigation -->
             </nav>
             <!-- End Nav --> 
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close text-right m-3 mr-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+
+                        <div class="d-block text-center p-2 text-custom">
+                            <h3 class="modal-title mx-auto" id="exampleModalLabel">Connectez-vous avec</h3>
+                            <h3 class="modal-title mx-auto" id="exampleModalLabel">votre compte <span class="font-weight-bold">inSiti </span> </h3>
+                        </div>
+
+                        <div class="mx-auto mb-2 w-80 text-center">
+                            <a class="btn btn-connection w-80 text-white mt-3" href="https://insiti.com/login">Connexion</a>
+                        </div>
+
+                        <div class="text-center mt-1 mb-3">
+                            <span class="small text-muted">Pas encore inscrit?</span>
+                            <a class="text-link  small" href="https://insiti.com/compte">Crée mon compte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
 
             <!-- Hero Section -->
             <div class="container mt-lg-5 mt-md-5 ">
@@ -150,7 +176,7 @@
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img1.jpg'), :alt => "Image", :class => "profile-img" %>
                         </span>
                         <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-justify mt-1">New snowfall throughout the season is displayed with 24 hour and 72-hour snow totals, providing a snapshot of mountain conditions.</p>
+                        <p class="text-left mt-1 lh-2">New snowfall throughout the season is displayed with 24 hour and 72-hour snow totals, providing a snapshot of mountain conditions.</p>
                     </div>
                 </article>
             </div>
@@ -169,7 +195,7 @@
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img4.jpg'), :alt => "Image", :class => "profile-img" %>
                         </span>
                         <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-justify mt-1">
+                        <p class="text-left mt-1 lh-2">
                             At Wake, our mission has always been focused on bringing openness.
                             At Wake, our mission has always been focused on bringing openness.
                             At Wake, our mission has always been focused on bringing openness.
@@ -193,7 +219,7 @@
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img2.jpg'), :alt => "Image", :class => "profile-img" %>
                         </span>
                         <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-justify mt-1">
+                        <p class="text-left mt-1 lh-2">
                             A healthy diet at any age is high in plant foods such as fruit and vegetables. A healthy diet at any age is high in plant foods such as fruit and vegetables.
                             A healthy diet at any age is high in plant foods such as fruit and vegetables. A healthy diet at any age is high in plant foods such as fruit and vegetables.
                         </p>
@@ -216,7 +242,7 @@
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img3.jpg'), :alt => "Image", :class => "profile-img" %>
                         </span>
                         <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-justify mt-1">
+                        <p class="text-left mt-1 lh-2">
                             The whispers, asides and shouts as heard in New York.
                             The whispers, asides and shouts as heard in New York.
                             The whispers, asides and shouts as heard in New York.
@@ -238,7 +264,7 @@
                     </header>
 
                     <footer class="mt-auto">
-                        <p class="text-justify text-white blog-content w-85 lh-1">They lived in a smart suburban home, owned nice cars and posed together on family holidays.</p>
+                        <p class="text-left text-white blog-content w-85 lh-2">They lived in a smart suburban home, owned nice cars and posed together on family holidays.</p>
                     </footer>
                     
                 </article>
@@ -258,7 +284,7 @@
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img6.jpg'), :alt => "Image", :class => "profile-img" %>
                         </span>
                         <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-justify mt-1">Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.</p>
+                        <p class="text-left mt-1 lh-2">Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.</p>
                     </div>
                 </article>
             </div>
@@ -277,7 +303,7 @@
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img9.jpg'), :alt => "Image", :class => "profile-img" %>
                         </span>
                         <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-justify mt-1">
+                        <p class="text-left mt-1 lh-2">
                             Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.
                             Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.
                             Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.    
@@ -300,7 +326,7 @@
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img1.jpg'), :alt => "Image", :class => "profile-img" %>
                         </span>
                         <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-justify mt-1">New snowfall throughout the season is displayed with 24 hour and 72-hour snow totals, providing a snapshot of mountain conditions.</p>
+                        <p class="text-left mt-1 lh-2">New snowfall throughout the season is displayed with 24 hour and 72-hour snow totals, providing a snapshot of mountain conditions.</p>
                     </div>
                 </article>
             </div>

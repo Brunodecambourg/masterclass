@@ -58,6 +58,10 @@ import "./vendor/slick-carousel/slick/slick-theme.css"
 import "./css/front.css"
 import "./js/front.min.js"
 import "./js/components/hs.slick-carousel.js"
+import "./js/components/hs.modal-window.js"
+import "./js/helpers/hs.focus-state.js"
+import "./js/components/hs.validation.js"
+import "./js/components/hs.show-animation.js"
 
 import "./vendor/jquery-migrate/dist/jquery-migrate.min.js"
 
@@ -202,3 +206,5 @@ import "./img/logos/conceptstor.png"
 
 import "./svg/logos/insiti-group_blc.svg"
 import "./svg/logos/projets-locaux-logo.svg"
+import "./svg/logos/conceptstor-logo-bleu.svg"
+import "./svg/logos/conceptstor-logo-blc.svg"

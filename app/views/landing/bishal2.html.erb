@@ -4,20 +4,9 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
             
-            <!-- Test 
-            <div class="logo-container mr-2">
-                <div class="logo-box">
-                    <div class="logo">
-                        <h4 class="logo-text logo-text-1">C</h4> <br/>
-                        <h4 class="logo-text logo-text-2">S</h4>
-                    </div>
-                </div>
-            </div>
-             End Test -->
-            
             <!-- Logo -->
             <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Conceptstor">
-                <span class="logo-font text-custom">Conceptstor</span>
+                <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/conceptstor-logo-bleu.svg'), :alt => "Image Description", :class => "w-80"%>
             </a>
             <!-- End Logo -->
 
@@ -34,7 +23,7 @@
                 <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
                     <!-- Home -->
                     <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
-                        <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0 text-custom" href="bishal3" aria-haspopup="true" aria-expanded="false">
+                        <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0 text-link" href="bishal3" aria-haspopup="true" aria-expanded="false">
                             A Propos     
                         </a>
                     </li>
@@ -42,15 +31,15 @@
 
                     <!-- Home -->
                     <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
-                        <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0 text-custom" href="http://www.insiti.co" target="_blank" aria-haspopup="true" aria-expanded="false">
+                        <a id="homeMegaMenu" class="nav-link text-link u-header__nav-link pl-0 " href="http://www.insiti.co" target="_blank" aria-haspopup="true" aria-expanded="false">
                             Groupe      
                         </a>
                     </li>
                     <!-- End Home -->
 
                     <!-- Button -->
-                    <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
-                        <a class="btn btn-custom-secondary btn-sm" href="#" >
+                    <li class="nav-item d-md-inline-block pr-0">
+                        <a class="btn btn-custom-secondary btn-sm" href="#connectionModal" data-toggle="modal" data-target="#exampleModal">
                             Me connecter
                         </a>
                     </li>
@@ -60,6 +49,35 @@
             <!-- End Navigation -->
         </nav>
         <!-- End Nav -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close text-right m-3 mr-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+
+                    <div class="d-block text-center p-2 text-custom">
+                        <h3 class="modal-title mx-auto" id="exampleModalLabel">Connectez-vous avec</h3>
+                        <h3 class="modal-title mx-auto" id="exampleModalLabel">votre compte <span class="font-weight-bold">inSiti </span> </h3>
+                    </div>
+
+                    <div class="mx-auto mb-2 w-80 text-center">
+                        <a class="btn btn-connection w-80 text-white mt-3" href="https://insiti.com/login">Connexion</a>
+                    </div>
+
+                    <div class="text-center mt-1 mb-3">
+                        <span class="small text-muted">Pas encore inscrit?</span>
+                        <a class="text-link small" href="https://insiti.com/compte">Crée mon compte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal -->
+
+
+
     </div>
 </header>
 <!-- End Header -->
@@ -76,7 +94,7 @@
                     <div class="js-sticky-block pl-lg-4 position-relative">
                         <div class="mb-6 p-3">
                             <h1 class="h4 text-custom font-weight-bold">Titre de l’image</h1>
-                            <p class="mb-0 text-justify">Displaying this large amount of content in a smooth and seamless way was quite a challenge. By loading assets in the background, playing and stopping audio on the fly, parallaxing hotspots, and use of large images we succeeded in giving the user a smooth experience.</p>
+                            <p class="mb-0 text-left">Displaying this large amount of content in a smooth and seamless way was quite a challenge. By loading assets in the background, playing and stopping audio on the fly, parallaxing hotspots, and use of large images we succeeded in giving the user a smooth experience.</p>
                         </div>
                         <hr class="my-5">
 
@@ -84,19 +102,19 @@
                         <ul class="list-unstyled p-3 mb-0">
                             <li class="media mb-1">
                                 <div class="d-flex w-100">
-                                    <a href="#"class="h6 text-custom font-weight-bold">Voir la page enseigne</a>
+                                    <a href="#"class="h6 text-link font-weight-bold">Voir la page enseigne</a>
                                 </div>
                             </li>
 
                             <li class="media mb-1">
                                 <div class="d-flex w-100">
-                                    <a href="#" class="h6 text-custom font-weight-bold">Contacter l’enseigne</a>
+                                    <a href="#connectionModal" class="h6 text-link font-weight-bold" data-toggle="modal" data-target="#exampleModal">Contacter l’enseigne</a>
                                 </div>
                             </li>
 
                             <li class="media mb-1">
                                 <div class="d-flex w-100">
-                                    <a href="#" class="h6 text-custom font-weight-bold">Comparer les chiffres-clé</a>
+                                    <a href="#" class="h6 text-link font-weight-bold">Comparer les chiffres-clé</a>
                                 </div>
                             </li>
                         </ul>
@@ -443,19 +461,22 @@
 <footer class="u-bg-light-blue-50">
     <div class="container u-space-1-top u-space-0-bottom">
         <div class="row justify-content-md-between align-items-md-start">
-            <div class="col-md-6 mb-md-0 text-center text-custom p-3">
-                
-                <a href="bishal" class="logo-font mr-2 text-custom fa-size footer-logo">Conceptstor</a>
+            <div class="col-md-6 mb-md-0 text-center text-custom"> 
+                <!-- Logo -->
+                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Conceptstor">
+                    <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/conceptstor-logo-bleu.svg'), :alt => "Image Description", :class => "w-80"%>
+                </a>
+                <!-- End Logo -->
+
                 <span class="d-inline-block">
                     <h5 class="fs-1 mb-5 "> 
                         &copy; inSiti 2019 | 
                         <a class="fs-1 text-custom" href="http://www.insiti.co" target="_blank"> Groupe </a>
                     </h5>
-                </span>
-                
+                </span>       
             </div>
 
-            <div class="col-md-6 mt-md-0 text-center  text-md-right p-3">
+            <div class="col-md-6 mt-md-0 text-center  text-md-right">
                 <!-- Social Networks -->
                 <ul class="list-inline">
                     <li class="list-inline-item">
