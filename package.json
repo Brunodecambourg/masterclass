@@ -1,5 +1,5 @@
 {
-  "name": "loop",
+  "name": "master_class",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
