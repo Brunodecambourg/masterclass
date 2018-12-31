@@ -100,7 +100,6 @@ import "./img/100x100/img8.jpg"
 import "./img/100x100/img9.jpg"
 import "./img/100x100/img10.jpg"
 import "./img/100x100/img11.jpg"
-import "./img/mockups/img12.png"
 import "./img/100x100/bishal.jpg"
 import "./img/160x160/bishal.jpg"
 import "./img/32x32/img1.jpg"
@@ -208,3 +207,15 @@ import "./svg/logos/insiti-group_blc.svg"
 import "./svg/logos/projets-locaux-logo.svg"
 import "./svg/logos/conceptstor-logo-bleu.svg"
 import "./svg/logos/conceptstor-logo-blc.svg"
+
+
+
+
+import "./img/bg-shapes/hero-bg.jpg"
+import "./img/bg-shapes/fc1.jpg"
+import "./img/bg-shapes/fc2.jpg"
+import "./img/bg-shapes/vs1.png"
+import "./img/bg-shapes/es1.jpg"
+import "./img/bg-shapes/es2.jpg"
+import "./img/bg-shapes/bp.png"
+import "./img/bg-shapes/bnp.png"

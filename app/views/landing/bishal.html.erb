@@ -1,361 +1,389 @@
 <!-- Header Section -->
-<header>
-    <div class="position-relative overflow-hidden">
-        <div class="bg-img"></div>
-        <div class="overlay"></div>
-        <div id="logoAndNav" class="container mw-95 position-absolute mx-auto custom-position">
-            <!-- Nav -->
-            <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal mt-3 mb-6">
-                <!-- Logo -->
-                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="bishal" aria-label="Conceptstor">
-                    <%= image_tag asset_pack_path('init/bootstrap/theme/svg/logos/conceptstor-logo-blc.svg'), :alt => "Image Description", :class => "w-80"%>
-                </a>
-                <!-- End Logo -->
+<header class="bg-img">    
+    <div class="site-header">
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-lg-3">
+                        <div class="site-branding">
+                            <h1 class="site-title"><a href="#" rel="home">Master<span>class</span></a></h1>
+                        </div><!-- .site-branding -->
+                    </div><!-- .col -->
 
-                <!-- Responsive Toggle Button -->
-                <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-                    <span id="hamburgerTrigger" class="u-hamburger__box">
-                    <span class="u-hamburger__inner"></span>
-                    </span>
-                </button>
-                <!-- End Responsive Toggle Button -->
+                    <div class="col-3 col-lg-9 d-flex justify-content-end align-content-center">
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li class="current-menu-item"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
 
-                <!-- Navigation -->
-                <div id="navBar" class="collapse navbar-collapse py-0">
-                    <ul class="navbar-nav u-header__navbar-nav ml-auto">
-                        <!-- Home -->
-                        <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
-                            <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0 text-white" href="bishal3" aria-haspopup="true" aria-expanded="false">
-                                A Propos     
-                            </a>
-                        </li>
-                        <!-- End Home -->
+                            <div class="hamburger-menu d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- .hamburger-menu -->
+                        </nav><!-- .site-navigation -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </div>
 
-                        <!-- Home -->
-                        <li class="nav-item hs-has-mega-menu u-header__nav-item hs-mega-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
-                            <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0 text-white" href="http://www.insiti.co" target="_blank" aria-haspopup="true" aria-expanded="false">
-                                Groupe      
-                            </a>
-                        </li>
-                        <!-- End Home -->
+    <div class="hero-content-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-content-wrap d-flex flex-column justify-content-center align-items-start">
+                        <header class="entry-header">
+                            <h4>Ouvrir une franchise</h4>
+                            <h1>
+                                FORMATION D’UNE JOURNEE POUR<br>
+                                ACCELERER VOTRE PROJET<br>
+                                D’OUVERTURE DE COMMERCE
+                            </h1>
+                        </header><!-- .entry-header -->
 
-                        <!-- Button -->
-                        <li class="nav-item d-md-inline-block pr-0">
-                            <a class="btn btn-custom btn-sm text-custom" href="#connectionModal" data-toggle="modal" data-target="#exampleModal">
-                                Me connecter
-                            </a>
-                        </li>
-                        <!-- End Button -->
-                    </ul>
-                </div>
-                <!-- End Navigation -->
-            </nav>
-            <!-- End Nav --> 
+                        <div class="entry-content">
+                            <p>
+                                Venez participer à l’une de nos journées de formation pour affiner votre projet de création de commerce, 
+                                en franchise ou en indépendant, et trouver les bons interlocuteurs.
+                            </p>
+                        </div><!-- .entry-content -->
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close text-right m-3 mr-2" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-
-                        <div class="d-block text-center p-2 text-custom">
-                            <h3 class="modal-title mx-auto" id="exampleModalLabel">Connectez-vous avec</h3>
-                            <h3 class="modal-title mx-auto" id="exampleModalLabel">votre compte <span class="font-weight-bold">inSiti </span> </h3>
-                        </div>
-
-                        <div class="mx-auto mb-2 w-80 text-center">
-                            <a class="btn btn-connection w-80 text-white mt-3" href="https://insiti.com/login">Connexion</a>
-                        </div>
-
-                        <div class="text-center mt-1 mb-3">
-                            <span class="small text-muted">Pas encore inscrit?</span>
-                            <a class="text-link  small" href="https://insiti.com/compte">Crée mon compte</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Modal -->
-
-            <!-- Hero Section -->
-            <div class="container mt-lg-5 mt-md-5 ">
-                <div class="w-lg-60 mb-5 mx-auto text-center">
-                    <h2 class="display-5 text-white font-weight-bold s-heading">Comparez toutes les franchises en quelques (milliers d’) images</h2>
-                    <p class="lead text-white">et contactez les meilleures.</p>
-                </div>
-
-                <!-- Choose section -->
-                <form class="js-validate">
-                    <div class="row w-lg-70 mx-auto">
-                        <!-- Input -->
-                        <div class="col-lg-5 col-sm-8 mx-auto mb-2">
-                            <div class="js-form-message">
-                                <select class="custom-select mb-2">
-                                    <option value="SecteurSelect1" disabled selected>Choisissez un secteur</option>
-                                    <option value="SecteurSelect2">Tous les secteurs</option>
-                                    <option value="SecteurSelect3">Alimentation</option>
-                                    <option value="SecteurSelect4">Auto-Motos-Cycles</option>
-                                    <option value="SecteurSelect5">Beauté - Santé</option>
-                                    <option value="SecteurSelect6">Equipement de ma maison</option>
-                                    <option value="SecteurSelect7">Hotellerie - Restautation</option>
-                                    <option value="SecteurSelect8">Loisirs</option>
-                                    <option value="SecteurSelect9">Services aux entreprises</option>
-                                    <option value="SecteurSelect10">Services aux particuliers</option>
-                                    <option value="SecteurSelect11">Textile & accessories</option>
-                                    <option value="SecteurSelect12">Travaux & Habitat</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- End Input -->
-                    
-
-                        <!-- Input -->
-                        <div class="col-lg-5 col-sm-8 mx-auto mb-2">
-                            <div class="js-form-message">
-                                <select class="custom-select mb-2">
-                                    <option id="choose" value="ThemeSelect1" disabled selected>Choisissez un thème</option>
-                                    <option id="choose" value="ThemeSelect2">People</option>
-                                    <option class="" value="ThemeSelect3">Savoir-faire</option>
-                                    <option class="" value="ThemeSelect3">Produit</option>
-                                    <option class="" value="ThemeSelect3">Design</option>
-                                    <option class="" value="ThemeSelect3">Vitrine</option>
-                                    <option class="" value="ThemeSelect3">Eco-responsabilité</option>
-                                    <option class="" value="ThemeSelect3">Animation</option>
-                                    <option class="" value="ThemeSelect3">Originalité</option>
-                                    <option class="" value="ThemeSelect3">Communication</option>
-                                    <option class="" value="ThemeSelect3">Digital</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- End Input -->
-
-                        <div class="col-lg-2 col-sm-8 mx-auto mb-2">
-                            <button type="submit" class="btn btn-block btn-custom u-btn-primary text-custom">Valider</button>
-                        </div>
-
-                    </div>
-                </form>
-                <!-- End Choose section -->
-            </div>
-            <!-- End Hero Section -->
-        </div>
-        <!-- SVG Background -->
-        <figure class="position-absolute-bottom-0 no-display">
-            <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="140px" viewBox="20 -20 300 100" style="margin-bottom: -8px;" xml:space="preserve">
-                <path class="u-fill-primary" opacity=".075" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
-                    c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"></path>
-                <path class="u-fill-primary" opacity=".075" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
-                    c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"></path>
-                <path class="u-fill-primary" opacity="0" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
-                    H42.401L43.415,98.342z"></path>
-                <path class="fill-light-blue-50" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
-                    c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"></path>
-            </svg>
-        </figure>
-        <!-- End SVG Background Section -->
+                        <footer class="entry-footer read-more">
+                            <a href="#">read more</a>
+                        </footer><!-- .entry-footer -->
+                    </div><!-- .hero-content-wrap -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
     </div>
 </header>
-<!-- End Header -->
 
-<!-- Main Section -->
-<main id="content" role="main">
-    <!-- Masonry Section -->
-    <div class="container-fluid u-cubeportfolio py-3 u-bg-light-blue-50">
-        <div class="masonry-container">
-            <!-- content -->
-            <div class="masonry-box">
-                <article class="transition-3d-hover">
-                    <!-- Image -->
-                    <a href= "bishal2" class="item-img mb-4">
-                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/500x280/img1.jpg'), :alt => "Image", :class => "img-fluid rounded"%>
-                    </a>
-                    <!-- End Image -->
-                    <div class="px-2">
-                        <span>
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img1.jpg'), :alt => "Image", :class => "profile-img" %>
-                        </span>
-                        <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-left mt-1 lh-2">New snowfall throughout the season is displayed with 24 hour and 72-hour snow totals, providing a snapshot of mountain conditions.</p>
-                    </div>
-                </article>
-            </div>
-            <!-- End content -->
+<section class="icon-boxes">
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-stretch">
+            <div class="icon-box">
+                <div class="icon">
+                    <span><i class="fas fa-user"></i></span>
+                </div><!-- .icon -->
 
-            <!-- content -->
-            <div class="masonry-box">
-                <article class="transition-3d-hover">
-                    <!-- Image -->
-                    <a href= "bishal2" class="item-img mb-4">
-                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/500x900/img1.jpg'), :alt => "Image", :class => "img-fluid item-img item-img rounded"%>
-                    </a>
-                    <!-- End Image -->
-                    <div class="px-2">
-                        <span>
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img4.jpg'), :alt => "Image", :class => "profile-img" %>
-                        </span>
-                        <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-left mt-1 lh-2">
-                            At Wake, our mission has always been focused on bringing openness.
-                            At Wake, our mission has always been focused on bringing openness.
-                            At Wake, our mission has always been focused on bringing openness.
-                        </p>
-                    </div>
-                </article>
-                
-            </div>
-            <!-- End content -->
+                <header class="entry-header">
+                    <h2 class="entry-title">Un masterclass d’une journée</h2>
+                </header><!-- .entry-header -->
 
-            <!-- content -->
-            <div class="masonry-box">
-                <article class="transition-3d-hover">
-                    <!-- Image -->
-                    <a href= "bishal2" class="item-img mb-4">
-                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/500x280/img3.jpg'), :alt => "Image", :class => "img-fluid rounded"%>
-                    </a>
-                    <!-- End Image -->
-                    <div class="px-2">
-                        <span>
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img2.jpg'), :alt => "Image", :class => "profile-img" %>
-                        </span>
-                        <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-left mt-1 lh-2">
-                            A healthy diet at any age is high in plant foods such as fruit and vegetables. A healthy diet at any age is high in plant foods such as fruit and vegetables.
-                            A healthy diet at any age is high in plant foods such as fruit and vegetables. A healthy diet at any age is high in plant foods such as fruit and vegetables.
-                        </p>
-                    </div>
-                </article>
-                
-            </div>
-            <!-- End content -->
+                <div class="entry-content">
+                    <p>Une petite journée bien remplie, accessible à tout porteur de projet de la région parisienne ou d’ailleurs</p>
+                </div><!-- .entry-content -->
+            </div><!-- .icon-box -->
 
-            <!-- content -->
-            <div class="masonry-box">
-                <article class="transition-3d-hover">
-                    <!-- Image -->
-                    <a href= "bishal2" class="item-img mb-4">
-                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/500x280/img4.jpg'), :alt => "Image", :class => "img-fluid rounded"%>
-                    </a>
-                    <!-- End Image -->
-                    <div class="px-2"> 
-                        <span>
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img3.jpg'), :alt => "Image", :class => "profile-img" %>
-                        </span>
-                        <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-left mt-1 lh-2">
-                            The whispers, asides and shouts as heard in New York.
-                            The whispers, asides and shouts as heard in New York.
-                            The whispers, asides and shouts as heard in New York.
-                        </p>
-                    </div>
-                </article>
-                
-            </div>
-            <!-- End content -->
+            <div class="icon-box">
+                <div class="icon">
+                    <span><i class="fas fa-folder"></i></span>
+                </div><!-- .icon -->
 
-            <!-- content -->
-            <div class="masonry-box">
-                <article class="transition-3d-hover blog_card-bg--img3 pl-3 rounded u-blog-overlay-v1">
-                    <header>
-                        <span>
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img3.jpg'), :alt => "Image", :class => "profile-img" %>
-                        </span>
-                        <h3 class="h6 masonry-title text-white">Nom du secteur</h3>
-                    </header>
+                <header class="entry-header">
+                    <h2 class="entry-title">Des ateliers pratiques</h2>
+                </header><!-- .entry-header -->
 
-                    <footer class="mt-auto">
-                        <p class="text-left text-white blog-content w-85 lh-2">They lived in a smart suburban home, owned nice cars and posed together on family holidays.</p>
-                    </footer>
-                    
-                </article>
-            </div>
-            <!-- End content -->
+                <div class="entry-content">
+                    <p>
+                        Une journée divisée en petits ateliers pratiques, appliqués au projet de 
+                        chaque participant pour préparer les éléments essentiels de son dossier
+                    </p>
+                </div><!-- .entry-content -->
+            </div><!-- .icon-box -->
 
-            <!-- content -->
-            <div class="masonry-box">
-                <article class="transition-3d-hover">
-                    <!-- Image -->
-                    <a href= "bishal2" class="item-img mb-4">
-                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/500x280/img6.jpg'), :alt => "Image", :class => "img-fluid rounded"%>
-                    </a>
-                    <!-- End Image -->
-                    <div class="px-2"> 
-                        <span>
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img6.jpg'), :alt => "Image", :class => "profile-img" %>
-                        </span>
-                        <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-left mt-1 lh-2">Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.</p>
-                    </div>
-                </article>
-            </div>
-            <!-- End content -->
+            <div class="icon-box">
+                <div class="icon">
+                    <span><i class="fas fa-book-open"></i></span>
+                </div><!-- .icon -->
 
-            <!-- content -->
-            <div class="masonry-box">
-                <article class="transition-3d-hover">
-                    <!-- Image -->
-                    <a href= "bishal2" class="item-img mb-4">
-                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/500x280/img10.jpg'), :alt => "Image", :class => "img-fluid rounded"%>
-                    </a>
-                    <!-- End Image -->
-                    <div class="px-2">
-                        <span>
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img9.jpg'), :alt => "Image", :class => "profile-img" %>
-                        </span>
-                        <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-left mt-1 lh-2">
-                            Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.
-                            Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.
-                            Like many of you, on many of these cold winter days I like nothing more than to sit indoors, under a blanket.    
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <!-- End content -->
+                <header class="entry-header">
+                    <h2 class="entry-title">Des intervenants extérieurs</h2>
+                </header><!-- .entry-header -->
 
-            <!-- content -->
-            <div class="masonry-box">
-                <article class="transition-3d-hover">
-                    <!-- Image -->
-                    <a href= "bishal2" class="item-img mb-4">
-                        <%= image_tag asset_pack_path('init/bootstrap/theme/img/500x280/img9.jpg'), :alt => "Image", :class => "img-fluid rounded"%>
-                    </a>
-                    <!-- End Image -->
-                    <div class="px-2">
-                        <span>
-                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/100x100/img1.jpg'), :alt => "Image", :class => "profile-img" %>
-                        </span>
-                        <h3 class="h6 masonry-title text-custom">Nom du secteur</h3>
-                        <p class="text-left mt-1 lh-2">New snowfall throughout the season is displayed with 24 hour and 72-hour snow totals, providing a snapshot of mountain conditions.</p>
-                    </div>
-                </article>
-            </div>
-            <!-- End content -->
+                <div class="entry-content">
+                    <p>Des ateliers encadrés et animés par des acteurs professionnels, franchises, banques, pour avancer concrètement.</p>
+                </div><!-- .entry-content -->
+            </div><!-- .icon-box -->
 
+            <div class="icon-box">
+                <div class="icon">
+                    <span><i class="fas fa-globe"></i></span>
+                </div><!-- .icon -->
+
+                <header class="entry-header">
+                    <h2 class="entry-title">Vous pouvez vous lancer</h2>
+                </header><!-- .entry-header -->
+
+                <div class="entry-content">
+                    <p>
+                        Le but de la journée est simple, permettre aux participants de venir avec des idées et 
+                        de repartir avec un ou plusieurs projets précis et les contacts nécessaires pour avancer 
+                    </p>
+                </div><!-- .entry-content -->
+            </div><!-- .icon-box -->
+        </div><!-- .row -->
+    </div><!-- .container-fluid -->
+</section>
+
+<section class="featured-courses horizontal-column courses-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="heading d-flex justify-content-between align-items-center">
+                    <h2 class="entry-title">Nos ateliers pratiques</h2>
+                </header><!-- .heading -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-6">
+                <div class="course-content d-flex flex-wrap h-80 justify-content-between align-content-lg-stretch">
+                    <figure class="course-thumbnail">
+                        <a href="#">
+                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/fc1.jpg'), :alt => "Image" %>
+                        </a>
+                    </figure><!-- .course-thumbnail -->
+
+                    <div class="course-content-wrap">
+                        <header class="entry-header">
+                            <div class="course-ratings d-flex align-items-center">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-o"></span>
+                                <span class="course-ratings-count">(4 votes)</span>
+                            </div><!-- .course-ratings -->
+
+                            <h2 class="entry-title"><a href="#">Choisir sa franchise / Etablir le contact avec les franchiseurs</a></h2>
+                        </header><!-- .entry-header -->
+
+                        <footer class="entry-footer d-flex justify-content-between align-items-center">
+                            <div class="course-cost">
+                                <span class="free-cost">Free</span>
+                            </div><!-- .course-cost -->
+                        </footer><!-- .entry-footer -->
+                    </div><!-- .course-content-wrap -->
+                </div><!-- .course-content -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-6">
+                <div class="course-content d-flex flex-wrap h-80 justify-content-between align-content-lg-stretch">
+                    <figure class="course-thumbnail">
+                        <a href="#">
+                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/fc2.jpg'), :alt => "Image" %>
+                        </a>
+                    </figure><!-- .course-thumbnail -->
+
+                    <div class="course-content-wrap">
+                        <header class="entry-header">
+                            <div class="course-ratings d-flex align-items-center">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-o"></span>
+
+                                <span class="course-ratings-count">(4 votes)</span>
+                            </div><!-- .course-ratings -->
+
+                            <h2 class="entry-title"><a href="#">Commencer l’étude de marché</a></h2>
+                        </header><!-- .entry-header -->
+
+                        <footer class="entry-footer d-flex justify-content-between align-items-center">
+                            <div class="course-cost">
+                                $32 <span class="price-drop">$59</span>
+                            </div><!-- .course-cost -->
+                        </footer><!-- .entry-footer -->
+                    </div><!-- .course-content-wrap -->
+                </div><!-- .course-content -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-6">
+                <div class="course-content d-flex flex-wrap h-80 justify-content-between align-content-lg-stretch">
+                    <figure class="course-thumbnail">
+                        <a href="#">
+                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/fc2.jpg'), :alt => "Image" %>
+                        </a>
+                    </figure><!-- .course-thumbnail -->
+
+                    <div class="course-content-wrap">
+                        <header class="entry-header">
+                            <div class="course-ratings d-flex align-items-center">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-o"></span>
+
+                                <span class="course-ratings-count">(4 votes)</span>
+                            </div><!-- .course-ratings -->
+
+                            <h2 class="entry-title"><a href="#">Monter son dossier bancaire</a></h2>
+                        </header><!-- .entry-header -->
+
+                        <footer class="entry-footer d-flex justify-content-between align-items-center">
+                            <div class="course-cost">
+                                $32 <span class="price-drop">$59</span>
+                            </div><!-- .course-cost -->
+                        </footer><!-- .entry-footer -->
+                    </div><!-- .course-content-wrap -->
+                </div><!-- .course-content -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-6">
+                <div class="course-content d-flex h-80 flex-wrap justify-content-between align-content-lg-stretch">
+                    <figure class="course-thumbnail">
+                        <a href="#">
+                            <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/fc1.jpg'), :alt => "Image" %>
+                        </a>
+                    </figure><!-- .course-thumbnail -->
+
+                    <div class="course-content-wrap">
+                        <header class="entry-header">
+                            <div class="course-ratings d-flex align-items-center">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-o"></span>
+                                <span class="course-ratings-count">(4 votes)</span>
+                            </div><!-- .course-ratings -->
+
+                            <h2 class="entry-title"><a href="#">Cibler les locaux potentiels</a></h2>
+                        </header><!-- .entry-header -->
+
+                        <footer class="entry-footer d-flex justify-content-between align-items-center">
+                            <div class="course-cost">
+                                <span class="free-cost">Free</span>
+                            </div><!-- .course-cost -->
+                        </footer><!-- .entry-footer -->
+                    </div><!-- .course-content-wrap -->
+                </div><!-- .course-content -->
+            </div><!-- .col -->
+
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 align-content-lg-stretch">
+                <header class="heading">
+                    <h2 class="entry-title">A propos de notre masterclass</h2>
+
+                    <p>
+                        Cette atelier de formation lancé par l’équipe d’inSiti est parti d’un constat partagé avec les managers de commerce, 
+                        dans les territoire: il y a des candidats à la franchises locaux mais ils manquent souvent d’un accompagnement pratique 
+                        leur permettant d’avancer efficacement dans leur projet. 
+                        Ainsi, imaginée avec la ville de Deauville, cette masterclass est née en 2018.
+                    </p>
+                </header><!-- .heading -->
+
+                <div class="entry-content masterclass-stats">
+                    <div class="masterclass-wrap d-flex flex-wrap justify-content-lg-between">
+                        <div class="masterclass-count">
+                            1800
+                            <p>ENSEIGNES PROPOSEES</p>
+                        </div><!-- .stats-count -->
+
+                        <div class="masterclass-count">
+                            4
+                            <p>BANQUES PARTENAIRES</p>
+                        </div><!-- .stats-count -->
+
+                        <div class="masterclass-count">
+                            4
+                            <p>ATELIERS PRATIQUES</p>
+                        </div><!-- .stats-count -->
+
+                        <div class="masterclass-count">
+                            5
+                            <p>HEURES INTENSIVES</p>
+                        </div><!-- .masterclass-count -->
+                    </div><!-- .masterclass-wrap -->
+                </div><!-- .masterclass-stats -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-6 d-flex align-content-center mt-5 mt-lg-0">
+                <div class="masterclass-image position-relative">
+                    <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/vs1.png'), :alt => "Image" %>
+                </div><!-- .ezuca-video -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+<section class="event-section spad">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Nos formats</h3>
         </div>
-
-        <!-- Load More Button -->
-        <div id="cubeLoadMore" class="text-center mt-4">
-            <a href="../../assets/include/ajax/home-blog-business-1/load-more.html" class="cbp-l-loadMore-link u-link f-color" rel="nofollow">
-                <span class="cbp-l-loadMore-defaultText text-secondary">
-                    Voir plus
-                    <span class="u-link__icon ml-1 bg-secondary">
-                        <span class="u-link__icon-inner">+</span>
-                    </span>
-                </span>
-                <span class="cbp-l-loadMore-loadingText">Loading...</span>
-                <span class="cbp-l-loadMore-noMoreLoading">No more works</span>
-            </a>
+        <div class="row mt-4">
+            <div class="col-md-6 event-item">
+                <div class="event-thumb">
+                    <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/es1.jpg'), :alt => "Image" %>
+                    <div class="event-date">
+                        <span>24 Mar 2018</span>
+                    </div>
+                </div>
+                <div class="event-info">
+                    <h4>A boulogne</h4>
+                    <p>Retrouvez nos masterclass du week-end dans nos bureaux de Boulogne Billancourt, 
+                        ouvertes à tous les porteurs de projet
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 event-item">
+                <div class="event-thumb">
+                    <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/es2.jpg'), :alt => "Image" %>
+                    <div class="event-date">
+                        <span>22 Mar 2018</span>
+                    </div>
+                </div>
+                <div class="event-info">
+                    <h4>Sur le terrain</h4>
+                    <p>
+                        Retrouvez nos masterclass itinérantes dans les villes, 
+                        avec les candidats locaux pour structurer et accélérer les projets d’implantations commerciales
+                    </p>
+                </div>
+            </div>
         </div>
-        <!-- End Load More Button -->
     </div>
-    <!-- End masonry section -->
+</section>
 
-  </main>
-<!-- End Main Section -->
+<section class="clients-logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 flex d-flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                <div class="logo-wrap">
+                    <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/bp.png'), :alt => "Image" %>
+                </div><!-- .logo-wrap -->
 
+                <div class="logo-wrap">
+                    <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/bnp.png'), :alt => "Image" %>
+                </div><!-- .logo-wrap -->
 
+                <div class="logo-wrap">
+                    <img src="images/logo-3.png" alt="">
+                </div><!-- .logo-wrap -->
 
+                <div class="logo-wrap">
+                    <img src="images/logo-4.png" alt="">
+                </div><!-- .logo-wrap -->
 
-
+                <div class="logo-wrap">
+                    <img src="images/logo-5.png" alt="">
+                </div><!-- .logo-wrap -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
 
