@@ -13,6 +13,29 @@ img {
   vertical-align: baseline;
 }
 
+a:visited {
+  color: #757686;
+}
+
+a {
+  color: #383749;
+}
+
+a:hover, a:active {
+  outline: 0;
+  list-style: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #383749;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
 /* ================= Master Class ====================== */
 
 /* Header Section */
@@ -48,27 +71,6 @@ img {
   color: #fff;
 }
 
-a:visited {
-  color: #757686;
-}
-
-a {
-  color: #383749;
-}
-
-a:hover, a:active {
-  outline: 0;
-  list-style: none;
-}
-
-a:hover, a:focus, a:active {
-  color: #383749;
-}
-
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
 
 .site-title a {
   color: #fff;
@@ -428,7 +430,7 @@ a.btn {
   margin-top: 16px;
   font-size: 2rem;
   line-height: 1.2;
-  color: #19c880;
+  color: #f6783a;
 }
 
 .masterclass-stats .masterclass-count span {
@@ -512,14 +514,13 @@ a.btn {
   font-weight: 500;
 }
 
-
 .event-item .event-info .event-readmore i {
   color: #f6783a;
 }
 
 /* Client Logo */
 .clients-logo {
-  margin-top: 100px;
+  margin-bottom: 50px;
   padding: 16px 0;
   background: #f7f7f7;
 }
@@ -528,10 +529,105 @@ a.btn {
   margin: 16px;
 }
 
+.logo-wrap-custom{
+  width: 100px;
+  filter: grayscale(80%);
+  opacity: 0.7;
+}
+
+/* Footer */
+.footer-widgets {
+  padding: 60px 0;
+  color: #757686;
+}
+
+.foot-about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #757686;
+}
+
+.foot-title{
+  color: #929299 !important;
+}
+
+
+p.footer-copyright {
+  color: #c0c1cd;
+}
+
+.footer-widgets h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #313235;
+}
+
+.footer-widgets ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-widgets ul li {
+  margin-bottom: 12px;
+}
+
+.footer-widgets ul li a {
+  color: #757686;
+  text-decoration: none;
+}
+
+.footer-widgets ul li a:hover {
+  color: #34d986;
+}
+
+.footer-widgets .follow-us .fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.footer-widgets .follow-us .fa-facebook-f {
+  background: #4b6cd0;
+}
+
+.footer-widgets .follow-us .fa-linkedin-in {
+  background: #0077B5;
+}
+
+.footer-widgets .follow-us .fa-instagram {
+  background: #bb8950;
+}
+
+.footer-widgets .follow-us .fa-twitter {
+  background: #49a7f3;
+}
+
+.footer-bar {
+  padding: 10px 0;
+}
+
+.footer-copyright a{
+  color: #c0c1cd;
+}
+
+.footer-copyright a:hover{
+  text-decoration: none;
+}
+
 /* Responsive */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
   .site-header {
       background: rgba(255,255,255,.1);
+  }
+
+  .masterclass-stats .masterclass-count {
+    width: 50%;
   }
 }
 
@@ -552,3 +648,34 @@ a.btn {
   }
 }
 
+@media screen and (max-width: 992px){
+  .icon-box {
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .icon-box {
+      width: 100%;
+      border-right: 0;
+      border-bottom: 1px solid #ebebeb;
+  }
+
+  .masterclass-stats .masterclass-count {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px), screen and (max-height: 568px){
+  .hero-content-wrap {
+    height: 525px;
+  }
+
+  .hero-content-wrap h1 {
+    font-size: 1rem;
+  }
+
+  .hero-content-wrap .read-more {
+    margin-top: 20px;
+  }
+}
