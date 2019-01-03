@@ -12,20 +12,9 @@
 
                     <div class="col-3 col-lg-9 d-flex justify-content-end align-content-center">
                         <nav class="site-navigation d-flex justify-content-end align-items-center">
-                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                <li class="current-menu-item"><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-
-                            <div class="hamburger-menu d-lg-none">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div><!-- .hamburger-menu -->
+                            <div class="read-more">
+                                <a href="#">INSCRIPTION</a>
+                            </div>
                         </nav><!-- .site-navigation -->
                     </div><!-- .col -->
                 </div><!-- .row -->
@@ -55,7 +44,7 @@
                         </div><!-- .entry-content -->
 
                         <footer class="entry-footer read-more">
-                            <a href="#">read more</a>
+                            <a href="#">Inscription</a>
                         </footer><!-- .entry-footer -->
                     </div><!-- .hero-content-wrap -->
                 </div><!-- .col -->
@@ -144,14 +133,15 @@
             <div class="col-12 col-lg-6">
                 <div class="course-content d-flex flex-wrap h-80 justify-content-between align-content-lg-stretch">
                     <figure class="course-thumbnail">
-                        <a href="#">
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/fc1.jpg'), :alt => "Image" %>
-                        </a>
                     </figure><!-- .course-thumbnail -->
 
                     <div class="course-content-wrap">
                         <header class="entry-header">
-                            <h2 class="entry-title"><a href="#">Choisir sa franchise / Etablir le contact avec les franchiseurs</a></h2>
+                            <h2 class="entry-title">
+                                Comparez les concepts commerciaux les plus innovants, 
+                                choisissez ceux qui vous intéressent et commencez à échanger avec les responsables de la franchise
+                            </h2>
                         </header><!-- .entry-header -->
                     </div><!-- .course-content-wrap -->
                 </div><!-- .course-content -->
@@ -160,14 +150,15 @@
             <div class="col-12 col-lg-6">
                 <div class="course-content d-flex flex-wrap h-80 justify-content-between align-content-lg-stretch">
                     <figure class="course-thumbnail">
-                        <a href="#">
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/fc2.jpg'), :alt => "Image" %>
-                        </a>
                     </figure><!-- .course-thumbnail -->
 
                     <div class="course-content-wrap">
                         <header class="entry-header">
-                            <h2 class="entry-title"><a href="#">Commencer l’étude de marché</a></h2>
+                            <h2 class="entry-title">
+                                Découvrez comment faire une étude de marché locale et évaluer le potentiel économique de votre projet. 
+                                Commencez sans délais la réalisation de votre étude. 
+                            </h2>
                         </header><!-- .entry-header -->
                     </div><!-- .course-content-wrap -->
                 </div><!-- .course-content -->
@@ -176,14 +167,15 @@
             <div class="col-12 col-lg-6">
                 <div class="course-content d-flex flex-wrap h-80 justify-content-between align-content-lg-stretch">
                     <figure class="course-thumbnail">
-                        <a href="#">
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/fc3.jpg'), :alt => "Image" %>
-                        </a>
                     </figure><!-- .course-thumbnail -->
 
                     <div class="course-content-wrap">
                         <header class="entry-header">
-                            <h2 class="entry-title"><a href="#">Monter son dossier bancaire</a></h2>
+                            <h2 class="entry-title">
+                                Effectuez les démarches pour obtenir le financement bancaire de votre projet et entamez 
+                                le dialogue avec la banque
+                            </h2>
                         </header><!-- .entry-header -->
                     </div><!-- .course-content-wrap -->
                 </div><!-- .course-content -->
@@ -192,14 +184,15 @@
             <div class="col-12 col-lg-6">
                 <div class="course-content d-flex h-80 flex-wrap justify-content-between align-content-lg-stretch">
                     <figure class="course-thumbnail">
-                        <a href="#">
                             <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/fc4.jpg'), :alt => "Image" %>
-                        </a>
                     </figure><!-- .course-thumbnail -->
 
                     <div class="course-content-wrap">
                         <header class="entry-header">
-                            <h2 class="entry-title"><a href="#">Cibler les locaux potentiels</a></h2>
+                            <h2 class="entry-title">
+                                Effectuez un premier repérage de locaux potentiels sur la zone géographique souhaitée, 
+                                sélectionnez des locaux et obtenez toutes les infos et contacts
+                            </h2>
                         </header><!-- .entry-header -->
                     </div><!-- .course-content-wrap -->
                 </div><!-- .course-content -->
@@ -215,12 +208,15 @@
             <div class="col-12 col-lg-6 align-content-lg-stretch">
                 <header class="heading">
                     <h2 class="entry-title">A propos de notre masterclass</h2>
-
-                    <p>
-                        Cette atelier de formation lancé par l’équipe d’inSiti est parti d’un constat partagé avec les managers de commerce, 
-                        dans les territoire: il y a des candidats à la franchises locaux mais ils manquent souvent d’un accompagnement pratique 
-                        leur permettant d’avancer efficacement dans leur projet. 
-                        Ainsi, imaginée avec la ville de Deauville, cette masterclass est née en 2018.
+                    <p class="text-justify">
+                        Une masterclass inSiti est une journée de 5h de formation intensive, en groupe de 8 à 15 personnes, 
+                        avec des intervenants professionnels. Ce format est idéal pour mettre en place et accélérer votre 
+                        projet de création de commerce. Choix de l’activité et de l’enseigne, dossier bancaire, ciblage du local. 
+                        Les masterclass reposent sur une pédagogie de la pratique: vous préparez votre projet sur place.
+                    </p>
+                    <p class="text-justify">
+                        L’objectif? Permettre à tous ceux qui souhaitent ouvrir un commerce, en franchise ou en indépendant, 
+                        de définir leur projet et de démarrer les échanges avec les bons interlocuteurs.
                     </p>
                 </header><!-- .heading -->
 
@@ -268,7 +264,7 @@
                 <div class="event-thumb">
                     <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/es3.jpg'), :alt => "Image" %>
                     <div class="event-date">
-                        <span>A boulogne</span>
+                        <span>A Paris</span>
                     </div>
                 </div>
                 <div class="event-info">
@@ -325,73 +321,41 @@
 </section>
 
 <footer>
-    <div class="footer-widgets">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="foot-about">
-                        <a href="#">
-                            <h2 class="site-title">
-                                <a href="#" rel="home" class="foot-title">inSiti <span>Masterclass</span></a>
-                            </h2>
-                        </a>
-
-                        <p class="text-justify">
-                            Venez participer à l’une de nos journées de formation pour affiner votre projet de création de commerce, 
-                            en franchise ou en indépendant, et trouver les bons interlocuteurs. 
-                        </p>
-                    </div><!-- .foot-about -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                    <div class="foot-contact">
-                        <h2>Contact Us</h2>
-
-                        <ul>
-                            <li>Email: info@inSiti.com</li>
-                            <li>Phone: (+33) 1 77 19 32 10</li>
-                            <li>Address: Billancourt, France</li>
-                        </ul>
-                    </div><!-- .foot-contact -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                    <div class="quick-links d-flex flex-wrap">
-                        <h2 class="w-100">Quick Links</h2>
-
-                        <ul class="w-50">
-                            <li><a href="#">About </a></li>
-                            <li><a href="#">Terms of Use </a></li>
-                            <li><a href="#">Privacy Policy </a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div><!-- .quick-links -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                    <div class="follow-us">
-                        <h2>Follow Us</h2>
-
-                        <ul class="follow-us d-flex flex-wrap align-items-center">
-                            <li><a href="https://www.facebook.com/inSitiNews/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>   
-                            <li><a href="https://www.facebook.com/inSitiNews/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="https://twitter.com/insitinews" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
-                    </div><!-- .quick-links -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .footer-widgets -->
-
     <div class="footer-bar">
         <div class="container">
             <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
-                <div class="col-12">
+                <div class="col-6">
                     <p class="footer-copyright">
                         Copyright © <a href="https://insiti.com/" target="_blank">inSiti </a> | 
                         <script>document.write(new Date().getFullYear());</script> All rights reserved 
                     </p>
+                </div>
+
+                 <div class="col-md-6 mt-md-0 text-center  text-md-right">
+                    <!-- Social Networks -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://www.facebook.com/inSitiNews/" target="_blank">
+                                <span class="fab fa-facebook-f u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://www.linkedin.com/company/insiti/about/" target="_blank">
+                                <span class="fab fa-linkedin u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://twitter.com/insitinews" target="_blank">
+                                <span class="fab fa-twitter u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://instagram.com/insiti_news" target="_blank">
+                                <span class="fab fa-instagram u-icon__inner"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Social Networks -->
                 </div>
             </div><!-- .row -->
         </div><!-- .container -->

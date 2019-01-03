@@ -17,5 +17,14 @@
 
   <body>
     <%= yield %>
+
+    <script>
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $("ul").toggleClass("active");
+          console.log("hello");
+        });
+      });
+    </script>
   </body>
 </html>

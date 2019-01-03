@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
   get 'landing/index'
-  get 'landing/bishal2'
-  get 'landing/bishal3'
   
 
   root to: 'landing#index'
