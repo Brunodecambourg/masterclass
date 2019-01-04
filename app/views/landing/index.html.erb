@@ -1,21 +1,50 @@
 <!-- Header Section -->
 <header class="bg-img">    
-    <div class="site-header">
+    <div class="site-header position-fixed">
         <div class="nav-bar">
             <div class="container">
                 <div class="row">
                     <div class="col-9 col-lg-3">
                         <div class="site-branding">
-                            <h1 class="site-title"><a href="#" rel="home">inSiti<span>Masterclass</span></a></h1>
+                            <h2 class="site-title"><a href="index" rel="home">inSiti<span> Masterclass</span></a></h2>
                         </div><!-- .site-branding -->
                     </div><!-- .col -->
 
                     <div class="col-3 col-lg-9 d-flex justify-content-end align-content-center">
                         <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <a href="landing/blog" target="_blank">Blog</a>
                             <div class="read-more">
-                                <a href="#">INSCRIPTION</a>
+                                <a href="#" data-toggle="modal" data-target="#modalinSiti">INSCRIPTION</a>
                             </div>
                         </nav><!-- .site-navigation -->
+
+                        <!-- Modal -->
+                        <div class="modal fade modal-dialog-bg" id="modalinSiti" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <button type="button" class="close text-right m-3 mr-2" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+
+                                    <div class="d-block text-center p-2">
+                                        <h4 class="modal-title mx-auto modal-title-text" id="exampleModalLabel">
+                                            Inscrivez-vous à notre Masterclass à <br/>partir de votre compte 
+                                            <span class="font-weight-bold">inSiti </span> 
+                                        </h4>
+                                    </div>
+
+                                    <div class="mx-auto mb-2 w-80 text-center">
+                                        <a class="btn btn-connection text-connection w-80 mt-3" href="https://insiti.com/login" target="_blank">Connexion</a>
+                                    </div>
+
+                                    <div class="text-center mt-1 mb-7">
+                                        <span class="small text-muted">Pas encore inscrit?</span>
+                                        <a class="small" href="https://insiti.com/compte" target="_blank">M'inscrive gratuitement</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -28,12 +57,12 @@
                 <div class="col-12">
                     <div class="hero-content-wrap d-flex flex-column justify-content-center align-items-start">
                         <header class="entry-header">
-                            <h4>Ouvrir une franchise</h4>
-                            <h1>
-                                FORMATION D’UNE JOURNEE POUR<br>
-                                ACCELERER VOTRE PROJET<br>
+                            <h1>La formation pour <strong>ouvrir une franchise </strong></h1>
+                            <h4 class="mt-5">
+                                ACCOMPAGNEMENT D’UNE JOURNEE POUR<br>
+                                ACCELERER VOTRE PROJET
                                 D’OUVERTURE DE COMMERCE
-                            </h1>
+                            </h4>
                         </header><!-- .entry-header -->
 
                         <div class="entry-content">
@@ -44,7 +73,7 @@
                         </div><!-- .entry-content -->
 
                         <footer class="entry-footer read-more">
-                            <a href="#">Inscription</a>
+                            <a href="#" data-toggle="modal" data-target="#modalinSiti">Inscription</a>
                         </footer><!-- .entry-footer -->
                     </div><!-- .hero-content-wrap -->
                 </div><!-- .col -->
@@ -66,7 +95,7 @@
                 </header><!-- .entry-header -->
 
                 <div class="entry-content">
-                    <p>Une petite journée bien remplie, accessible à tout porteur de projet de la région parisienne ou d’ailleurs</p>
+                    <p>Une journée bien remplie, accessible à tout porteur de projet de la région parisienne ou d’ailleurs</p>
                 </div><!-- .entry-content -->
             </div><!-- .icon-box -->
 
@@ -81,7 +110,7 @@
 
                 <div class="entry-content">
                     <p>
-                        Une journée divisée en petits ateliers pratiques, appliqués au projet de 
+                        Une journée divisée en ateliers pratiques, appliqués au projet de 
                         chaque participant pour préparer les éléments essentiels de son dossier
                     </p>
                 </div><!-- .entry-content -->
@@ -97,7 +126,7 @@
                 </header><!-- .entry-header -->
 
                 <div class="entry-content">
-                    <p>Des ateliers encadrés et animés par des acteurs professionnels, franchises, banques, pour avancer concrètement.</p>
+                    <p>Des ateliers encadrés et animés par des acteurs professionnels, franchiseurs, banques, pour avancer concrètement.</p>
                 </div><!-- .entry-content -->
             </div><!-- .icon-box -->
 
@@ -122,8 +151,8 @@
 </section>
 
 <section class="featured-courses horizontal-column courses-wrap">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row pl-7 pr-7">
             <div class="col-12">
                 <header class="heading d-flex justify-content-between align-items-center">
                     <h2 class="entry-title">Nos ateliers pratiques</h2>
@@ -138,10 +167,13 @@
 
                     <div class="course-content-wrap">
                         <header class="entry-header">
-                            <h2 class="entry-title">
-                                Comparez les concepts commerciaux les plus innovants, 
-                                choisissez ceux qui vous intéressent et commencez à échanger avec les responsables de la franchise
+                            <h2 class="entry-title mb-3">
+                                Choisir sa franchise / Etablir le contact avec les franchiseurs
                             </h2>
+                            <p>
+                                Comparez les concepts commerciaux les plus innovants, 
+                                choisissez ceux qui vous intéressent et commencez à échanger avec les responsables de la franchise.
+                            </p>
                         </header><!-- .entry-header -->
                     </div><!-- .course-content-wrap -->
                 </div><!-- .course-content -->
@@ -155,10 +187,13 @@
 
                     <div class="course-content-wrap">
                         <header class="entry-header">
-                            <h2 class="entry-title">
+                            <h2 class="entry-title mb-3">
+                                Commencer l’étude de marché
+                            </h2>
+                            <p>
                                 Découvrez comment faire une étude de marché locale et évaluer le potentiel économique de votre projet. 
                                 Commencez sans délais la réalisation de votre étude. 
-                            </h2>
+                            </p>
                         </header><!-- .entry-header -->
                     </div><!-- .course-content-wrap -->
                 </div><!-- .course-content -->
@@ -172,10 +207,14 @@
 
                     <div class="course-content-wrap">
                         <header class="entry-header">
-                            <h2 class="entry-title">
-                                Effectuez les démarches pour obtenir le financement bancaire de votre projet et entamez 
-                                le dialogue avec la banque
+                            <h2 class="entry-title mb-3">
+                                Monter son dossier bancaire
                             </h2>
+
+                            <p>
+                                Effectuez les démarches pour obtenir le financement bancaire de votre projet et entamez 
+                                le dialogue avec la banque.
+                            </p>
                         </header><!-- .entry-header -->
                     </div><!-- .course-content-wrap -->
                 </div><!-- .course-content -->
@@ -189,10 +228,14 @@
 
                     <div class="course-content-wrap">
                         <header class="entry-header">
-                            <h2 class="entry-title">
-                                Effectuez un premier repérage de locaux potentiels sur la zone géographique souhaitée, 
-                                sélectionnez des locaux et obtenez toutes les infos et contacts
+                            <h2 class="entry-title mb-3">
+                               Cibler les locaux potentiels
                             </h2>
+
+                             <p>
+                                Effectuez un premier repérage de locaux potentiels sur la zone géographique souhaitée, 
+                                sélectionnez des locaux et obtenez toutes les infos et contacts.
+                            </p>
                         </header><!-- .entry-header -->
                     </div><!-- .course-content-wrap -->
                 </div><!-- .course-content -->
@@ -203,11 +246,16 @@
 </section>
 
 <section class="about-section">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row pl-7 pr-7">
+            <div class="col-12">
+                <header class="heading d-flex justify-content-between align-items-center">
+                    <h2 class="entry-title mb-4">A propos de notre masterclass</h2>
+                </header><!-- .heading -->
+            </div><!-- .col -->
+
             <div class="col-12 col-lg-6 align-content-lg-stretch">
                 <header class="heading">
-                    <h2 class="entry-title">A propos de notre masterclass</h2>
                     <p class="text-justify">
                         Une masterclass inSiti est une journée de 5h de formation intensive, en groupe de 8 à 15 personnes, 
                         avec des intervenants professionnels. Ce format est idéal pour mettre en place et accélérer votre 
@@ -245,7 +293,7 @@
                 </div><!-- .masterclass-stats -->
             </div><!-- .col -->
 
-            <div class="col-12 col-lg-6 d-flex align-content-center mt-5 mt-lg-0">
+            <div class="col-12 col-lg-6 d-flex align-content-center mt-lg-0 p-lg-8">
                 <div class="masterclass-image position-relative">
                     <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/vs1.jpeg'), :alt => "Image" %>
                 </div><!-- .ezuca-video -->
@@ -256,10 +304,11 @@
 
 <section class="event-section spad">
     <div class="container">
-        <div class="section-title text-center">
-            <h3>Nos formats</h3>
-        </div>
-        <div class="row mt-4">
+        <header class="heading d-flex justify-content-between align-items-center">
+            <h2 class="entry-title m-auto">Nos formats</h2>
+        </header><!-- .heading -->
+       
+        <div class="row mt-6">
             <div class="col-md-6 event-item">
                 <div class="event-thumb">
                     <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/es3.jpg'), :alt => "Image" %>
@@ -267,7 +316,7 @@
                         <span>A Paris</span>
                     </div>
                 </div>
-                <div class="event-info">
+                <div class="event-info w-80 m-auto">
                     <p>
                         Retrouvez nos masterclass du week-end dans nos bureaux de Boulogne Billancourt, 
                         ouvertes à tous les porteurs de projet
@@ -281,7 +330,7 @@
                         <span>Sur le terrain</span>
                     </div>
                 </div>
-                <div class="event-info">
+                <div class="event-info w-80 m-auto">
                     <p>
                         Retrouvez nos masterclass itinérantes dans les villes, 
                         avec les candidats locaux pour structurer et accélérer les projets d’implantations commerciales
@@ -293,8 +342,8 @@
 </section>
 
 <section class="clients-logo">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row pl-7 pr-7">
             <div class="col-12 d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
                 <div class="logo-wrap logo-wrap-custom">
                     <%= image_tag asset_pack_path('init/bootstrap/theme/img/bg-shapes/bp.png'), :alt => "Image", :class=> "h-50 w-50" %>
@@ -322,12 +371,12 @@
 
 <footer>
     <div class="footer-bar">
-        <div class="container">
-            <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
+        <div class="container-fluid">
+            <div class="row pl-7 pr-7 flex-wrap justify-content-center justify-content-lg-between align-items-center">
                 <div class="col-6">
                     <p class="footer-copyright">
                         Copyright © <a href="https://insiti.com/" target="_blank">inSiti </a> | 
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved 
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://www.insiti.co/" target="_blank"> inSiti Groupe</a>
                     </p>
                 </div>
 
