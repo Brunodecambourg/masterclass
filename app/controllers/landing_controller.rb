@@ -4,4 +4,7 @@ class LandingController < ApplicationController
 
   def blog
   end
+
+  def blogPage
+  end
 end

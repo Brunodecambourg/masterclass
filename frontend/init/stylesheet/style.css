@@ -677,6 +677,10 @@ p.footer-copyright {
   }
 }
 
+.bg-color{
+  background-color: #080000c9 !important;
+}
+
 @media screen and (max-width: 992px){
   .icon-box {
       width: 50%;
