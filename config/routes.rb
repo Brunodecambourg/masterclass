@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'landing/show'
-  get 'landing/lorraine'
-  get 'landing/bishal'
+  get 'landing/index'
+  get 'landing/blog'
+  get 'landing/blogPage'
+  
 
-  root to: 'landing#show'
+  root to: 'landing#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

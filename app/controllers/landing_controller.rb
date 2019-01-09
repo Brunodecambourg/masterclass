@@ -1,10 +1,10 @@
 class LandingController < ApplicationController
-  def show
+  def index
   end
 
-  def lorraine
+  def blog
   end
 
-  def bishal
+  def blogPage
   end
 end
