@@ -111,3 +111,5 @@ import "./img/500x280/img17.jpg"
 import "./img/500x280/img19.jpg"
 import "./img/500x280/img18.jpg"
 import "./img/100x100/img1.jpg"
+import "./img/logos/favicon.ico"
+
