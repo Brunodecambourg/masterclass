@@ -747,4 +747,14 @@ p.footer-copyright {
 }
 
 
+@media screen and (min-height: 651px) and (max-height: 700px){
+  
+  .hero-content-wrap {
+    height: 535px;
+  }
 
+  .hero-content-wrap .read-more {
+    margin-top: 10px;
+  }
+ 
+}
