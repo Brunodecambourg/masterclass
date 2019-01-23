@@ -1,0 +1,31 @@
+<% if post['profiles'].size == 1 %>
+  <% profile = @post['profiles'].first %>
+
+  <%= content_tag :div, class: 'cta-1__wrapper' do %>
+    <%= tag.div class: 'pure-g' do %>
+      <%= tag.div class: 'pure-u-1 pure-u-md-4-5 cta-1__body' do %>
+        <%= content_tag(:h1, "La franchise #{profile['name']} vous intéresse ?") %>
+        <%= content_tag(:h2, "Contactez le bon interlocuteur sur inSiti") %>
+      <% end %>
+      <%= tag.div class: 'pure-u-1 pure-u-md-1-5 cta-1__action' do %>
+        <%= link_to "Contacter #{profile['name']}", insiti_profile_url(profile['slug']),
+          class: 'btn btn-success' %>
+      <% end %>
+    <% end %>
+    <%= content_tag :div, nil, class: 'cta-1__background' %>
+  <% end %>
+<% else %>
+  <%= content_tag :div, class: 'cta-1__wrapper' do %>
+    <%= tag.div class: 'pure-g' do %>
+      <%= tag.div class: 'pure-u-1 pure-u-md-4-5 cta-1__body' do %>
+        <%= content_tag(:h1, 'Les franchises de l\'article vous intéressent ?') %>
+        <%= content_tag(:h2, "Découvrir leurs profils sur inSiti") %>
+      <% end %>
+      <%= tag.div class: 'pure-u-1 pure-u-md-1-5 cta-1__action' do %>
+        <%= link_to 'Découvrir les enseignes', insiti_profiles_url,
+          class: 'btn btn-success' %>
+      <% end %>
+    <% end %>
+    <%= content_tag :div, nil, class: 'cta-1__background' %>
+  <% end %>
+<% end %>

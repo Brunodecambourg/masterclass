@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   get 'landing/index'
-  get 'landing/blog'
-  get 'landing/blogPage'
-  
-
+  get 'blog', to: 'posts#index', as: :posts
+  get 'blog/:slug', to: 'posts#show', as: :post
+  get '/insiti/franchise/:slug' => redirect('https://www.insiti.com/franchise/%{slug}'), as: :insiti_profile
+  get '/insiti/franchises' => redirect('https://www.insiti.com/franchises'), as: :insiti_profiles
   root to: 'landing#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

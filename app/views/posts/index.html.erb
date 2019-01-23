@@ -1,0 +1,65 @@
+<header>    
+    <div class="site-header">
+        <%= render partial: 'layouts/nav' %>
+    </div>  
+</header>
+<%= paginate @posts %>
+<!-- Blog Classic Section -->
+<section class="container u-space-3 space-top-md-5 space-top-lg-4">
+    <!-- Title -->
+    <div class="w-md-100 w-lg-100 mb-9">
+        <h2 class="font-weight-normal">Conseils et infos pour <span class="font-weight-semi-bold">ouvrir une franchise</span></h2>
+    </div>
+    <!-- End Title -->
+
+    <!-- News Classic -->
+    <div class="card-deck d-flex d-sm-flex d-md-flex card-sm-gutters-3 mb-sm-7">
+
+        <%= render partial: 'post', collection: @posts, as: :post %>
+
+    </div>
+
+</section>
+<!-- Blog Classic Section -->
+
+<footer>
+    <div class="footer-bar">
+        <div class="container-fluid">
+            <div class="row pl-7 pr-7 flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                <div class="col-12 col-lg-6 col-md-12 text-center text-lg-left">
+                    <p class="footer-copyright">
+                        Copyright © <a href="https://insiti.com/" target="_blank">inSiti </a> | 
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://www.insiti.co/" target="_blank"> inSiti Groupe</a>
+                    </p>
+                </div>
+
+                 <div class="col-12 col-lg-6 col-md-12 mt-md-0 text-center text-lg-right">
+                    <!-- Social Networks -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://www.facebook.com/inSitiNews/" target="_blank">
+                                <span class="fab fa-facebook-f u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://www.linkedin.com/company/insiti/about/" target="_blank">
+                                <span class="fab fa-linkedin u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://twitter.com/insitinews" target="_blank">
+                                <span class="fab fa-twitter u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://instagram.com/insiti_news" target="_blank">
+                                <span class="fab fa-instagram u-icon__inner"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Social Networks -->
+                </div>
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .footer-bar -->
+</footer>

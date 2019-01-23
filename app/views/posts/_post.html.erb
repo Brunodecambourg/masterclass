@@ -1,0 +1,17 @@
+<article class="card border-0">
+    <div class="card-body p-0">
+        <div class="mb-5">
+            <%= image_tag "#{INSITI_URL}#{post['image_large']}", alt: post['seo_description'], class: "img-fluid w-100 rounded" %>
+        </div>
+        <small class="d-block text-secondary mb-1"><%= post['published_at'].to_date.strftime('%e %b %Y') %></small>
+        <h2 class="h5">
+            <%= link_to(post['title'], post_url(slug: post['slug'])) %>
+        </h2>
+        <p><%= post['introduction'] %></p>
+    </div>
+</article>
+
+<% if (post_counter+1) % 2 == 0 %>
+    </div>
+    <div class="card-deck d-flex d-sm-flex d-md-flex card-sm-gutters-3 mb-sm-7">
+<% end %> 

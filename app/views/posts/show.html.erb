@@ -1,0 +1,96 @@
+<header>    
+    <div class="site-header">
+        <%= render partial: 'layouts/nav' %>   
+    </div>
+</header>
+
+<section class="dzsparallaxer auto-init height-is-based-on-content bg-color">
+    <div class="container u-space-3-top u-space-1-bottom">
+        <div class="text-center w-lg-80 mx-auto u-space-2-bottom">
+            <h1 class="display-4 font-size-48--md-down text-white font-weight-normal mb-0"><%= @post['title'] %></h1>
+        </div>
+    </div>
+    <!-- Content -->
+</section>
+
+<section class="container u-space-2-top">
+    <div class="w-lg-60 mx-auto">
+    <div class="mb-4">
+        <span class="text-muted"><%= @post['published_at'].to_date.strftime('%e %b %Y') %></span>
+    </div>
+
+    <div class="mb-5">
+        <%= image_tag "#{INSITI_URL}#{@post['image_large']}" %>
+        <br>
+        <%= @post['introduction'] %>
+    </div>
+    <div>
+        <%= post_html_body(@post) %>
+    </div>
+</section>
+
+<!-- Social Networks
+<section class="container u-space-2-top u-space-3-bottom">
+    <div class="w-lg-60 mx-auto text-center">
+            <div class="u-label u-label--xs u-label--secondary" href="#">Partager</div>
+        
+        <hr class="my-2">
+        <ul class="list-inline text-center mb-0">
+            <li class="list-inline-item">
+            <a class="u-bg-transparent u-icon u-icon-secondary--air" href="#">
+                <span class="fab fa-facebook-f u-icon__inner"></span>
+            </a>
+            </li>
+            <li class="list-inline-item">
+            <a class="u-bg-transparent u-icon u-icon-secondary--air" href="#">
+                <span class="fab fa-twitter u-icon__inner"></span>
+            </a>
+            </li>
+        </ul>
+
+    </div>
+</section>
+End Social Networks -->
+
+<footer>
+    <div class="footer-bar">
+        <div class="container-fluid">
+            <div class="row pl-7 pr-7 flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                <div class="col-12 col-lg-6 col-md-12 text-center text-lg-left">
+                    <p class="footer-copyright">
+                        Copyright © <a href="https://insiti.com/" target="_blank">inSiti </a> | 
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://www.insiti.co/" target="_blank"> inSiti Groupe</a>
+                    </p>
+                </div>
+
+                 <div class="col-12 col-lg-6 col-md-12 mt-md-0 text-center text-lg-right">
+                    <!-- Social Networks -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://www.facebook.com/inSitiNews/" target="_blank">
+                                <span class="fab fa-facebook-f u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://www.linkedin.com/company/insiti/about/" target="_blank">
+                                <span class="fab fa-linkedin u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://twitter.com/insitinews" target="_blank">
+                                <span class="fab fa-twitter u-icon__inner"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="u-bg-transparent u-icon u-icon-light--air" href="https://instagram.com/insiti_news" target="_blank">
+                                <span class="fab fa-instagram u-icon__inner"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Social Networks -->
+                </div>
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .footer-bar -->
+</footer>
+

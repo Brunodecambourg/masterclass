@@ -1,58 +1,7 @@
 <!-- Header Section -->
 <header class="bg-img">    
     <div class="site-header position-fixed">
-        <div class="nav-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-9 col-lg-3">
-                        <div class="site-branding">
-                            <h2 class="site-title">
-                                <%= link_to root_url, rel: 'home' do %>
-                                    inSiti<span> Masterclass</span>
-                                <% end %>
-                            </h2>
-                        </div><!-- .site-branding -->
-                    </div><!-- .col -->
-
-                    <div class="col-3 col-lg-9 d-flex justify-content-end align-content-center">
-                        <nav class="site-navigation d-flex justify-content-end align-items-center">
-                            <a href="#" >Blog</a>
-                            <div class="read-more">
-                                <a href="#" data-toggle="modal" data-target="#modalinSiti">INSCRIPTION</a>
-                            </div>
-                        </nav><!-- .site-navigation -->
-
-                        <!-- Modal -->
-                        <div class="modal fade modal-dialog-bg" id="modalinSiti" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <button type="button" class="close text-right m-3 mr-2" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-
-                                    <div class="d-block text-center p-2">
-                                        <h4 class="modal-title mx-auto modal-title-text" id="exampleModalLabel">
-                                            Inscrivez-vous à notre Masterclass à <br/>partir de votre compte 
-                                            <span class="font-weight-bold">inSiti </span> 
-                                        </h4>
-                                    </div>
-
-                                    <div class="mx-auto mb-2 w-80 text-center">
-                                        <a class="btn btn-connection text-connection w-80 mt-3" href="https://www.insiti.com/login/source/masterclass" target="_blank">Connexion</a>
-                                    </div>
-
-                                    <div class="text-center mt-1 mb-7">
-                                        <span class="small text-muted">Pas encore inscrit?</span>
-                                        <a class="small" href="https://www.insiti.com/compte/source/masterclass" target="_blank">M'inscrive gratuitement</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Modal -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .nav-bar -->
+        <%= render partial: 'layouts/nav' %>
     </div>
 
     <div class="hero-content-overlay">

@@ -45,6 +45,7 @@ gem 'pundit', '~> 2.0'
 gem 'ransack', '~> 2.0', '>= 2.0.1'
 gem 'sidekiq', '~> 5.2', '>= 5.2.2'
 gem 'shrine', '~> 2.12'
+gem 'rest-client'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
